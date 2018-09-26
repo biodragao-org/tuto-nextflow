@@ -1,3 +1,1 @@
-# tuto-nextflow
-
-Tutorial nextflow
+This branch installs nextflow.
