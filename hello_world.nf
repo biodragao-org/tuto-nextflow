@@ -10,11 +10,12 @@ process sayHello {
 		file("message.txt")
 	script:
 	
-	"""
-	echo '${params.salutation} ${params.name}!' > message.txt
-
-	echo "\${PWD}" 
-	echo "\${HOME}" 1>&2 
-
-	"""
+"""
+#!/usr/bin/env python
+x =  "${params.salutation}"
+y =  "${params.name}" 
+f = open("message.txt", "w") 
+f.write( "%s - %s !" % (x,y) )
+f.close()
+"""
 }
