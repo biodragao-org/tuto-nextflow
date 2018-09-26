@@ -3,6 +3,8 @@ SHELL=/bin/bash
 
 all:  ./nextflow hello_world.nf
 	./hello_world.nf
+	./hello_world.nf --salutation Bonjour --name Monde
+	./nextflow run -config my.config hello_world.nf
 
 test-install: ./nextflow
 	./nextflow -v
