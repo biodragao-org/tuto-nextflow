@@ -12,5 +12,9 @@ process sayHello {
 	
 	"""
 	echo '${params.salutation} ${params.name}!' > message.txt
+
+	echo "\${PWD}" 
+	echo "\${HOME}" 1>&2 
+
 	"""
 }
