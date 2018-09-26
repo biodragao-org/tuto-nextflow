@@ -3,4 +3,14 @@
 params.salutation  = "Hello"
 params.name  = "world"
 
-println "${params.salutation} ${params.name}!"
+process sayHello {
+	tag "saying ${params.salutation} to ${params.name}"
+	
+	output:
+		file("message.txt")
+	script:
+	
+	"""
+	echo '${params.salutation} ${params.name}!' > message.txt
+	"""
+}
