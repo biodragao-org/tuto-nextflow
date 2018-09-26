@@ -2,5 +2,6 @@ jeter*
 *~
 nextflow
 .nextflow.log
+.nextflow.log.*
 .nextflow
 

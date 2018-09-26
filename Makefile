@@ -16,5 +16,5 @@ self-update: ./nextflow
 	wget -q -O - "https://get.nextflow.io" | bash
 
 clean:
-	rm -f .nextflow.log .nextflow nextflow
+	rm -f .nextflow.log* .nextflow nextflow
 
