@@ -1,1 +1,3 @@
+#!./nextflow
+
 println "Hello world!"
