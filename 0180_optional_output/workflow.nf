@@ -53,9 +53,27 @@ process eachAcn {
 	input:	
 		val acn from distinct_acns.splitCsv(sep:',',strip:true).map{ARRAY->ARRAY[0]}
 	output:
-		file("${acn}.fa")
+		file("${acn}.fa") into fastas
 	script:
 	"""
 	wget -O "${acn}.fa" "https://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${acn}&rettype=fasta"
 	"""
+	}
+
+process filterSize {
+	tag "size for ${fasta}"
+
+	input:
+		file fasta from fastas
+	output:
+		file("${fasta}.small.fa") optional true into smallfastas
+	script:
+
+	"""
+	if [ `grep -v ">" ${fasta} | tr -d '\\n ' | wc -c` -lt 100 ]; then
+		cp "${fasta}"  "${fasta}.small.fa"
+	fi
+	"""
+
+
 	}
