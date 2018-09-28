@@ -11,8 +11,8 @@ println "Hello world!"
 
 ```
 ../bin/nextflow run workflow.nf
-N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [special_varahamihira] - revision: d8a29ed2c9
+N E X T F L O W  ~  version 0.32.0
+Launching `workflow.nf` [stupefied_euclid] - revision: d8a29ed2c9
 Hello world!
 ```
 

@@ -88,219 +88,164 @@ process filterSize {
 ## Execute
 
 ```
-../bin/nextflow run workflow.nf --acns '../data/list*.acns.txt'
-N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [trusting_heyrovsky] - revision: 5a86ad5e38
+../bin/nextflow run -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
+N E X T F L O W  ~  version 0.32.0
+Launching `workflow.nf` [festering_shirley] - revision: 5a86ad5e38
 [warm up] executor > local
-[81/c138c7] Submitted process > sortAcns (sorting list1.acns.txt)
-[d0/1c1f35] Submitted process > sortAcns (sorting list4.acns.txt)
-[16/70bc66] Submitted process > sortAcns (sorting list2.acns.txt)
-[d7/63698a] Submitted process > sortAcns (sorting list3.acns.txt)
-[b5/00f691] Submitted process > commonAcns (comm list2.acns.txt vs list4.acns.txt)
-[a0/27d672] Submitted process > commonAcns (comm list1.acns.txt vs list4.acns.txt)
-[c1/24d409] Submitted process > commonAcns (comm list1.acns.txt vs list2.acns.txt)
-[72/1156f7] Submitted process > commonAcns (comm list3.acns.txt vs list4.acns.txt)
-[59/cf8716] Submitted process > commonAcns (comm list2.acns.txt vs list3.acns.txt)
-[56/d4c3d4] Submitted process > commonAcns (comm list1.acns.txt vs list3.acns.txt)
-[e1/bf265a] Submitted process > listCommons (common list size: 6)
-[8a/314987] Submitted process > eachAcn (dowloading AF002815.1)
-[15/eb36d5] Submitted process > eachAcn (dowloading AF002816.1)
-[4e/0477b7] Submitted process > filterSize (size for AF002815.1.fa)
-[9e/911994] Submitted process > filterSize (size for AF002816.1.fa)
-[19/39675c] Submitted process > eachAcn (dowloading AF004836.1)
-[ff/1d9cd2] Submitted process > filterSize (size for AF004836.1.fa)
-[5c/f8dd7b] Submitted process > eachAcn (dowloading AF188126.1)
-[58/6d1a04] Submitted process > eachAcn (dowloading AF188530.1)
-[ed/12f680] Submitted process > filterSize (size for AF188126.1.fa)
-[67/e31ce7] Submitted process > eachAcn (dowloading AX244961.1)
-[7a/84fc33] Submitted process > filterSize (size for AF188530.1.fa)
-[73/172e4a] Submitted process > eachAcn (dowloading AX244962.1)
-[02/6aa0ca] Submitted process > filterSize (size for AX244961.1.fa)
-[ee/a43847] Submitted process > eachAcn (dowloading AX244963.1)
-[42/0ba28a] Submitted process > filterSize (size for AX244962.1.fa)
-[1c/e1c3ef] Submitted process > eachAcn (dowloading AX244964.1)
-[74/d0c7c5] Submitted process > filterSize (size for AX244963.1.fa)
-[5d/e240cb] Submitted process > eachAcn (dowloading AX244965.1)
-[f3/77b692] Submitted process > filterSize (size for AX244964.1.fa)
-[57/5dbc43] Submitted process > eachAcn (dowloading AX244966.1)
-[be/c6ae0a] Submitted process > filterSize (size for AX244965.1.fa)
-[e8/c820cd] Submitted process > filterSize (size for AX244966.1.fa)
-[73/8f7ab2] Submitted process > eachAcn (dowloading AX244967.1)
-[31/f48fe1] Submitted process > eachAcn (dowloading AX244968.1)
-[82/caab06] Submitted process > filterSize (size for AX244967.1.fa)
-[ac/1f3d1c] Submitted process > eachAcn (dowloading AY116592.1)
-[40/3f43d9] Submitted process > filterSize (size for AX244968.1.fa)
-[7d/feafd7] Submitted process > filterSize (size for AY116592.1.fa)
-[17/cda59a] Submitted process > eachAcn (dowloading NM_017590.5)
-[40/2748c0] Submitted process > filterSize (size for NM_017590.5.fa)
+[80/c25e36] Submitted process > sortAcns (sorting list2.acns.txt)
+[84/9240ae] Submitted process > sortAcns (sorting list3.acns.txt)
+[20/4c93a7] Submitted process > sortAcns (sorting list4.acns.txt)
+[c7/57fc6e] Submitted process > sortAcns (sorting list1.acns.txt)
+[51/8e9396] Submitted process > commonAcns (comm list2.acns.txt vs list3.acns.txt)
+[a0/40f384] Submitted process > commonAcns (comm list3.acns.txt vs list4.acns.txt)
+[9f/ea7cfe] Submitted process > commonAcns (comm list2.acns.txt vs list4.acns.txt)
+[2e/5caa83] Submitted process > commonAcns (comm list1.acns.txt vs list4.acns.txt)
+[e7/9538d1] Submitted process > commonAcns (comm list1.acns.txt vs list2.acns.txt)
+[fc/dcb89b] Submitted process > commonAcns (comm list1.acns.txt vs list3.acns.txt)
+[1b/dc99c8] Submitted process > listCommons (common list size: 6)
+[dc/383cf6] Submitted process > eachAcn (dowloading AF002815.1)
+[c1/077b3a] Submitted process > eachAcn (dowloading AF002816.1)
+[5a/5ea9c5] Submitted process > filterSize (size for AF002815.1.fa)
+[28/d8c8b4] Submitted process > filterSize (size for AF002816.1.fa)
+[1e/dfc74a] Submitted process > eachAcn (dowloading AF004836.1)
+[a8/3a107f] Submitted process > filterSize (size for AF004836.1.fa)
+[65/6050ff] Submitted process > eachAcn (dowloading AF188126.1)
+[7e/2959b3] Submitted process > eachAcn (dowloading AF188530.1)
+[47/85de93] Submitted process > filterSize (size for AF188126.1.fa)
+[57/470ee9] Submitted process > eachAcn (dowloading AX244961.1)
+[b4/62e26f] Submitted process > filterSize (size for AF188530.1.fa)
+[09/36b7b4] Submitted process > filterSize (size for AX244961.1.fa)
+[53/5207bd] Submitted process > eachAcn (dowloading AX244962.1)
+[8a/393846] Submitted process > eachAcn (dowloading AX244963.1)
+[33/46eafd] Submitted process > filterSize (size for AX244962.1.fa)
+[69/56928d] Submitted process > filterSize (size for AX244963.1.fa)
+[ca/de4d41] Submitted process > eachAcn (dowloading AX244964.1)
+[96/488f32] Submitted process > filterSize (size for AX244964.1.fa)
+[72/6650bd] Submitted process > eachAcn (dowloading AX244965.1)
+[22/374b5b] Submitted process > eachAcn (dowloading AX244966.1)
+[6e/d42e07] Submitted process > filterSize (size for AX244965.1.fa)
+[35/7482ed] Submitted process > filterSize (size for AX244966.1.fa)
+[25/2b7d91] Submitted process > eachAcn (dowloading AX244967.1)
+[05/926e5c] Submitted process > eachAcn (dowloading AX244968.1)
+[11/7ca914] Submitted process > filterSize (size for AX244967.1.fa)
+[45/437480] Submitted process > eachAcn (dowloading AY116592.1)
+[15/0ac9e8] Submitted process > filterSize (size for AX244968.1.fa)
+[c9/2e16e6] Submitted process > eachAcn (dowloading NM_017590.5)
+[f3/41f268] Submitted process > filterSize (size for AY116592.1.fa)
+[9d/003927] Submitted process > filterSize (size for NM_017590.5.fa)
 ```
 
 
 ## Files
 
 ```
-work/73/172e4afa18fe8e9c1fe107f9032d9d/AX244962.1.fa
-work/73/8f7ab2c80f2375d09503ded67e4a8d/AX244967.1.fa
-work/38/a4bc229092d472a1f728b36fc7ea85/list1.acns.txt
-work/38/a4bc229092d472a1f728b36fc7ea85/list1.acns.txt.sorted.txt
-work/00/d14a0800fa29ec79b771843291cfb1/AF002815.1.fa
-work/e8/c820cd41c9fe0ba991a2e309b2fbda/AX244966.1.fa.small.fa
-work/e8/c820cd41c9fe0ba991a2e309b2fbda/AX244966.1.fa
-work/81/c138c7ccb5a65444c77076b6e1729a/list1.acns.txt
-work/81/c138c7ccb5a65444c77076b6e1729a/list1.acns.txt.sorted.txt
-work/cd/399343befa12aa3f8320c92cb9a093/AF188126.1.fa
-work/58/6d1a0436c8e1b4f44ebf12c1cf6a74/AF188530.1.fa
-work/58/508eca5211995bed1f7c0f69027a56/AX244961.1.fa
-work/58/508eca5211995bed1f7c0f69027a56/AX244961.1.fa.small.fa
-work/a8/db375827585f5e20fb69fca740f4c0/AF188530.1.fa
-work/a8/b0b716481af570eaeb43eedaf0d441/comm.txt
-work/c3/b69a9e385ee0562bec313e8891aa32/AX244963.1.fa
-work/31/f48fe1eb4f1e15927d6106d481ec1a/AX244968.1.fa
-work/5d/e240cb639adefb24d6ad8e736d6f74/AX244965.1.fa
-work/f5/35ba63debcd68c7cb973529e4fb969/comm.txt
-work/df/d629b041691c59bf1c228acb090e12/comm.txt
-work/df/033ce52312f12bfda09b66e0f40985/AF188530.1.fa
-work/bb/ccf42f5a3e1f5137ec323c4681e98d/AF002816.1.fa
-work/d0/1c1f35574097f99813ef110bd6ea41/list4.acns.txt
-work/d0/1c1f35574097f99813ef110bd6ea41/list4.acns.txt.sorted.txt
-work/ee/a43847d5b192a107013261c8afa790/AX244963.1.fa
-work/60/d1c8e38379f6a9163bc088477e2f26/AX244961.1.fa
-work/60/d1c8e38379f6a9163bc088477e2f26/AX244961.1.fa.small.fa
-work/f9/b526f0ce6e4e912351f636922f678b/AF002815.1.fa
-work/0a/51fb53849ff0078ba8824ae3573a44/AF004836.1.fa
-work/97/1260da651905471f3989cd9687d64e/NM_017590.5.fa
-work/b5/00f691352a2df59c25e2ca732ceea7/comm.txt
-work/b5/9e149686bd98807d8455f336d9b651/comm.txt
-work/43/b034cdf0f47e43a850ed0cf21bf078/NM_017590.5.fa
-work/41/dee083b51336a72b09f627b9286fc2/AX244968.1.fa.small.fa
-work/41/dee083b51336a72b09f627b9286fc2/AX244968.1.fa
-work/18/344f0fc455f05feedb04345a94e5e6/list3.acns.txt
-work/18/344f0fc455f05feedb04345a94e5e6/list3.acns.txt.sorted.txt
-work/86/279311363a80061c50016593a568ca/table.csv
-work/86/279311363a80061c50016593a568ca/distcint.acns.txt
-work/86/7b0caa9f015b4b56f09da765a89b91/comm.txt
-work/bc/fefb62c77aac379c5e22fbc2b9ca19/AX244963.1.fa
-work/1c/e1c3ef91978ef5b429e3386a116774/AX244964.1.fa
-work/5a/a596c299d81115edc64b1a6878ed67/AF004836.1.fa
-work/5a/331cdf98ba2b8e728f2d447e12732b/AX244964.1.fa
-work/5a/331cdf98ba2b8e728f2d447e12732b/AX244964.1.fa.small.fa
-work/84/dded91c0d4cf5f5a0e0255ea92f74e/AX244962.1.fa.small.fa
-work/84/dded91c0d4cf5f5a0e0255ea92f74e/AX244962.1.fa
-work/fc/828bcbd321b3168147279cebaec503/AX244968.1.fa
-work/da/b1aed90cf6360839e38b71d1b5cb24/NM_017590.5.fa
-work/20/a2b8f1d7d22b44e1a055cc4885fc12/AX244961.1.fa
-work/5c/f8dd7b60e86baade67abd208893894/AF188126.1.fa
-work/e1/25c1516cbaf54082bc93a4df00c233/AX244968.1.fa
-work/e1/bf265afc59266334d07607dfa09652/table.csv
-work/e1/bf265afc59266334d07607dfa09652/distcint.acns.txt
-work/52/62f683052a1cc18c1333bcfb1cda65/AF004836.1.fa
-work/c1/24d4099f4e9555eae3492fcb913252/comm.txt
-work/10/dd9d1cddaad328c0374caf0fb2b899/AF188126.1.fa
-work/45/7e953cfc93611b0cc0726325f4b7fe/list2.acns.txt.sorted.txt
-work/45/7e953cfc93611b0cc0726325f4b7fe/list2.acns.txt
-work/45/e3d943e9b671d2a9574eeade1d7f8c/comm.txt
-work/7d/feafd7697737baf9fa2ab9e9e462b2/AY116592.1.fa
-work/67/45ad1cb2f1968e145ce345f5bd331f/AX244964.1.fa
-work/67/b106cbf1b999a074d98094b9aca8d2/AX244962.1.fa.small.fa
-work/67/b106cbf1b999a074d98094b9aca8d2/AX244962.1.fa
-work/67/e31ce7e11f82bab2a67102dce2c1b3/AX244961.1.fa
-work/ac/1f3d1cf8a04fcf53af451f7e3caaed/AY116592.1.fa
-work/ac/3a068dfec9919dd5d8ed6c6c79be3d/AF002816.1.fa
-work/40/2748c0d906028c5b5c66afb7d362a6/NM_017590.5.fa
-work/40/3f43d9d779d2250c4e0b6109573d29/AX244968.1.fa.small.fa
-work/40/3f43d9d779d2250c4e0b6109573d29/AX244968.1.fa
-work/4e/44445459a9847420dffab5d9bb48cf/comm.txt
-work/4e/0477b7aa84d54b77432322a59090ad/AF002815.1.fa
-work/8b/fae5e25720102e0d9c60888c2819b4/AX244966.1.fa.small.fa
-work/8b/fae5e25720102e0d9c60888c2819b4/AX244966.1.fa
-work/56/d4c3d4e728d83354331cbd5dd2d674/comm.txt
-work/6e/db48d151a455b6ce8513a99a120394/AF002816.1.fa
-work/d6/9d4941437c1baac3ce70357ee53f23/AX244962.1.fa
-work/59/cf87166133349794d8a162c563c7f9/comm.txt
-work/59/b5a3e857a285ed4b375cb7203abaf2/AX244965.1.fa.small.fa
-work/59/b5a3e857a285ed4b375cb7203abaf2/AX244965.1.fa
-work/b2/7db528d0d5b005a1a1c6b0892eca7d/AX244964.1.fa
-work/b2/7db528d0d5b005a1a1c6b0892eca7d/AX244964.1.fa.small.fa
-work/d7/63698a258e53c1f037dc6dad3a9a1c/list3.acns.txt
-work/d7/63698a258e53c1f037dc6dad3a9a1c/list3.acns.txt.sorted.txt
-work/de/87e6336b80c4eb30234f62d6e6dbd8/AX244967.1.fa
-work/7a/84fc339fb20791e17ef73b652276f0/AF188530.1.fa
-work/8a/31498797088d07d5275e933d0e96c8/AF002815.1.fa
-work/d5/abaa19a17ac0709664354991d84557/AF002815.1.fa
-work/15/87323cde2084fa81f3c3d42069df75/NM_017590.5.fa
-work/15/6c7299163950b774d2525e725f3419/AX244965.1.fa
-work/15/eb36d53cdb2740a22ad286f025ccf3/AF002816.1.fa
-work/69/781fefc6a8702959feb10175033536/list1.acns.txt
-work/69/781fefc6a8702959feb10175033536/list1.acns.txt.sorted.txt
-work/57/fc07aff4863682a25908367ac8d9bb/AF004836.1.fa
-work/57/5dbc43c0f3d4a7c7fb37388adce117/AX244966.1.fa
-work/a4/79bfb6fa2dea26319ccdc2e16a7c79/AY116592.1.fa
-work/34/48d39f7f560e5bde80b97cfb2f4780/comm.txt
-work/16/70bc66f75fe2c6e052b3c88567ee9e/list2.acns.txt.sorted.txt
-work/16/70bc66f75fe2c6e052b3c88567ee9e/list2.acns.txt
-work/9e/911994d90fd7f0e528edb71b8bb7cc/AF002816.1.fa
-work/9e/e86f31c4618a1e6152517a68ca834f/list2.acns.txt.sorted.txt
-work/9e/e86f31c4618a1e6152517a68ca834f/list2.acns.txt
-work/fb/099eaa41b18253c811462293fefe10/AX244963.1.fa
-work/fb/099eaa41b18253c811462293fefe10/AX244963.1.fa.small.fa
-work/fb/0dbe3b9a1709e9a43989c6551899fc/AY116592.1.fa
-work/19/39675c804f073a828e5490f75e0d7f/AF004836.1.fa
-work/be/c6ae0a9fe874bbf4dd69e01345af24/AX244965.1.fa.small.fa
-work/be/c6ae0a9fe874bbf4dd69e01345af24/AX244965.1.fa
-work/bd/fbed540e13bde834b67a06ba68b475/AX244966.1.fa.small.fa
-work/bd/fbed540e13bde834b67a06ba68b475/AX244966.1.fa
-work/01/3dd67045b17fd2402588d6d949dfb8/AX244961.1.fa
-work/36/61e5c48efc64295387591b699d1c60/AX244966.1.fa
-work/36/1a7648d296229d9e13946c2cc72d7a/AX244967.1.fa
-work/17/cda59aa382430f5435af783bb2c6ae/NM_017590.5.fa
-work/9c/368519919851c710f3f2013eeca20e/AX244963.1.fa
-work/9c/368519919851c710f3f2013eeca20e/AX244963.1.fa.small.fa
-work/30/87b409612cb02b44254d476ff19b4e/AF188530.1.fa
-work/e3/61e634d0e1f30e42daa8dd48189dff/AX244962.1.fa
-work/e3/69d52f3457a4444fb95bafb662cdbb/AY116592.1.fa
-work/82/caab0636f48eeb36ee600da280ad3c/AX244967.1.fa.small.fa
-work/82/caab0636f48eeb36ee600da280ad3c/AX244967.1.fa
-work/f1/c183cc0e261702b4d20fde3fc48bff/list4.acns.txt
-work/f1/c183cc0e261702b4d20fde3fc48bff/list4.acns.txt.sorted.txt
-work/cc/f5c07ff8e586cd607c0b182fcfc389/AX244967.1.fa.small.fa
-work/cc/f5c07ff8e586cd607c0b182fcfc389/AX244967.1.fa
-work/49/cf0cb508c2c636ecc1f5575d1e4401/AX244965.1.fa.small.fa
-work/49/cf0cb508c2c636ecc1f5575d1e4401/AX244965.1.fa
-work/72/1156f767309498c2fbf28f7955a8b4/comm.txt
-work/b4/118c789d7eed5791e346140ca55f33/AF188126.1.fa
-work/ed/12f680c3bea66610946e50bf741eb9/AF188126.1.fa
-work/75/8474ee46be58406fdbde36560063b8/AX244968.1.fa.small.fa
-work/75/8474ee46be58406fdbde36560063b8/AX244968.1.fa
-work/c2/4797487f0dc13f82bc9bacc486e9a8/AX244966.1.fa
-work/ff/1d9cd285c6888003dec99644a5fb4d/AF004836.1.fa
-work/1f/7e1a95b2ab7dc06bf830013ae7c865/AF002816.1.fa
-work/26/9efb8060cf8cb931787ec4c7d88504/comm.txt
-work/74/d0c7c5ae9c6e7c74c659aad3008e04/AX244963.1.fa
-work/74/d0c7c5ae9c6e7c74c659aad3008e04/AX244963.1.fa.small.fa
-work/aa/aa4e7d7fc5bf422c7bdcb6ea242394/AF188126.1.fa
-work/c6/2b6a1ec78e3d908c283d84c3de740d/table.csv
-work/c6/2b6a1ec78e3d908c283d84c3de740d/distcint.acns.txt
-work/11/e20e0212e12b28459dc8e25d2afb60/AY116592.1.fa
-work/5b/94a639f45b415241cc3e3047e2c320/AX244967.1.fa.small.fa
-work/5b/94a639f45b415241cc3e3047e2c320/AX244967.1.fa
-work/cf/2f740119b76d27c2cb34cfea49bfe7/list4.acns.txt
-work/cf/2f740119b76d27c2cb34cfea49bfe7/list4.acns.txt.sorted.txt
-work/a1/cbe5e55788bace18e95509d14cd88a/list3.acns.txt
-work/a1/cbe5e55788bace18e95509d14cd88a/list3.acns.txt.sorted.txt
-work/f3/77b69239403bbb3b2376ab42f9a251/AX244964.1.fa
-work/f3/77b69239403bbb3b2376ab42f9a251/AX244964.1.fa.small.fa
-work/9f/47f3906a0facf99cbdffb3be11c036/comm.txt
-work/e0/a981e4346d4142db121b94b7ed72d6/AX244965.1.fa
-work/ef/41fdc0f398145bf32098b5a7a1403c/AX244964.1.fa
-work/02/36973533995f883db6fb2bce0f5847/comm.txt
-work/02/6aa0ca8590077889df21dbadd73d6f/AX244961.1.fa
-work/02/6aa0ca8590077889df21dbadd73d6f/AX244961.1.fa.small.fa
-work/7c/4ca316726758b226d68e945d865f4e/AF188530.1.fa
-work/42/0ba28a87046db63f5b51321b9a6b65/AX244962.1.fa.small.fa
-work/42/0ba28a87046db63f5b51321b9a6b65/AX244962.1.fa
-work/a6/9f774553838084a62d232b3d23a2f7/comm.txt
-work/ba/b1e9960e07939cfc18c8f9ab51e1bf/AF002815.1.fa
-work/a0/27d67239bcee5266f95230a4379e60/comm.txt
+work/80/c25e3605248c55395539d78c976ab7/list2.acns.txt
+work/80/c25e3605248c55395539d78c976ab7/list2.acns.txt.sorted.txt
+work/84/9240ae31bdcb6d91e1e37fec201565/list3.acns.txt
+work/84/9240ae31bdcb6d91e1e37fec201565/list3.acns.txt.sorted.txt
+work/20/4c93a7fc717e66fcf728adbd7d146d/list4.acns.txt
+work/20/4c93a7fc717e66fcf728adbd7d146d/list4.acns.txt.sorted.txt
+work/c7/57fc6e6b9e30441fe5b87bbe058d0c/list1.acns.txt
+work/c7/57fc6e6b9e30441fe5b87bbe058d0c/list1.acns.txt.sorted.txt
+work/51/8e9396799ff36496f674e2f1822840/comm.txt
+work/a0/40f3847b15f9f8aaf267f83e0c100c/comm.txt
+work/9f/ea7cfe5774ff7690e5e3df41831475/comm.txt
+work/2e/5caa8372c5b8b4495eda3cdb5267de/comm.txt
+work/e7/9538d1eedc63bf827e0f7592f880ed/comm.txt
+work/fc/dcb89becf04ef9a0426279c0959ad8/comm.txt
+work/1b/dc99c82de0678cf68e45d2c2ee04a3/table.csv
+work/1b/dc99c82de0678cf68e45d2c2ee04a3/distcint.acns.txt
+work/dc/383cf6cf72aa931d5849e7f1bf4cfa/AF002815.1.fa
+work/c1/077b3a5002a619ca7d238cec295127/AF002816.1.fa
+work/5a/5ea9c5ab294b150042414d4f47e735/AF002815.1.fa
+work/28/d8c8b40ca9bfd0c845abe26c78129c/AF002816.1.fa
+work/1e/dfc74a517de10483762eba7bb4b5a1/AF004836.1.fa
+work/a8/3a107f900596b867282592b083a68d/AF004836.1.fa
+work/65/6050fffd725106ac3f2b11cc764aa9/AF188126.1.fa
+work/7e/2959b3a5216e251fc7ee32667ff4fd/AF188530.1.fa
+work/47/85de9325ce2dabae214c8ad4993114/AF188126.1.fa
+work/57/470ee99ba1f86448aa00c1fdb46d4c/AX244961.1.fa
+work/b4/62e26f97f67b6926f00ebc9e399441/AF188530.1.fa
+work/09/36b7b4052a1b0795c3c3e07d2491a6/AX244961.1.fa
+work/09/36b7b4052a1b0795c3c3e07d2491a6/AX244961.1.fa.small.fa
+work/53/5207bd0a14c9bd1c5ef63272b0d37c/AX244962.1.fa
+work/8a/393846c4fd24100586490cfab61ad9/AX244963.1.fa
+work/33/46eafd0f32a294e35e183caba84ae9/AX244962.1.fa
+work/33/46eafd0f32a294e35e183caba84ae9/AX244962.1.fa.small.fa
+work/69/56928dc919b61f311fd4b02d3f6ad8/AX244963.1.fa
+work/69/56928dc919b61f311fd4b02d3f6ad8/AX244963.1.fa.small.fa
+work/ca/de4d41892fe6e27b7ec4776964f9ba/AX244964.1.fa
+work/96/488f32ef356fcc531f619eea9568d4/AX244964.1.fa
+work/96/488f32ef356fcc531f619eea9568d4/AX244964.1.fa.small.fa
+work/72/6650bdbd0496f5d2c9590dbfc7b85a/AX244965.1.fa
+work/22/374b5b7980c2406c25323243e4d159/AX244966.1.fa
+work/6e/d42e07d5f406c88a02b236d6746041/AX244965.1.fa
+work/6e/d42e07d5f406c88a02b236d6746041/AX244965.1.fa.small.fa
+work/35/7482edb16344bc818a179521e4c9f7/AX244966.1.fa
+work/35/7482edb16344bc818a179521e4c9f7/AX244966.1.fa.small.fa
+work/25/2b7d915a4f873cd199c8beca8a825f/AX244967.1.fa
+work/05/926e5caba179ef7da1e78d1e73c8a0/AX244968.1.fa
+work/11/7ca9147ccc3c156736893520bc72d6/AX244967.1.fa
+work/11/7ca9147ccc3c156736893520bc72d6/AX244967.1.fa.small.fa
+work/45/437480545da28c4eeac9f186d2f455/AY116592.1.fa
+work/15/0ac9e8767704de5d4e6521acc69464/AX244968.1.fa
+work/15/0ac9e8767704de5d4e6521acc69464/AX244968.1.fa.small.fa
+work/c9/2e16e60503912b07ddac55dad4448c/NM_017590.5.fa
+work/f3/41f2685c1c67844fbcde3c9e2cdad5/AY116592.1.fa
+work/9d/00392718752a78ce6f05a51b89e57f/NM_017590.5.fa
 ```
 
+
+
+## Workflow
+
+![Workflow](flowchart.png)
+
+
+## Trace
+
+```
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+2	80/c25e36	3840	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-09-28 13:15:17.667	421ms	31ms	0.0%	0	0	0	0
+3	84/9240ae	3843	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-09-28 13:15:17.695	444ms	31ms	0.0%	0	0	0	0
+4	20/4c93a7	3849	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-09-28 13:15:17.714	452ms	45ms	0.0%	0	0	0	0
+1	c7/57fc6e	3855	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-09-28 13:15:17.731	459ms	27ms	0.0%	0	0	0	0
+5	51/8e9396	4091	commonAcns (comm list2.acns.txt vs list3.acns.txt)	COMPLETED	0	2018-09-28 13:15:18.168	478ms	38ms	0.0%	0	0	0	0
+9	2e/5caa83	4101	commonAcns (comm list1.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-09-28 13:15:18.246	432ms	51ms	0.0%	0	0	0	0
+6	9f/ea7cfe	4098	commonAcns (comm list2.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-09-28 13:15:18.227	472ms	46ms	0.0%	0	0	0	0
+7	a0/40f384	4093	commonAcns (comm list3.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-09-28 13:15:18.191	520ms	53ms	0.0%	0	0	0	0
+8	e7/9538d1	4329	commonAcns (comm list1.acns.txt vs list2.acns.txt)	COMPLETED	0	2018-09-28 13:15:18.653	296ms	21ms	0.0%	0	0	0	0
+10	fc/dcb89b	4338	commonAcns (comm list1.acns.txt vs list3.acns.txt)	COMPLETED	0	2018-09-28 13:15:18.690	285ms	19ms	0.0%	0	0	0	0
+11	1b/dc99c8	4450	listCommons (common list size: 6)	COMPLETED	0	2018-09-28 13:15:19.009	470ms	64ms	0.0%	0	0	0	0
+12	dc/383cf6	4587	eachAcn (dowloading AF002815.1)	COMPLETED	0	2018-09-28 13:15:19.510	723ms	482ms	0.0%	7.4 MB	50.2 MB	83.9 KB	682 B
+13	5a/5ea9c5	4725	filterSize (size for AF002815.1.fa)	COMPLETED	0	2018-09-28 13:15:20.268	363ms	25ms	0.0%	0	0	0	0
+14	c1/077b3a	4724	eachAcn (dowloading AF002816.1)	COMPLETED	0	2018-09-28 13:15:20.254	822ms	495ms	0.0%	7.4 MB	50.1 MB	83.9 KB	682 B
+15	28/d8c8b4	4975	filterSize (size for AF002816.1.fa)	COMPLETED	0	2018-09-28 13:15:21.091	291ms	34ms	0.0%	0	0	0	0
+16	1e/dfc74a	4977	eachAcn (dowloading AF004836.1)	COMPLETED	0	2018-09-28 13:15:21.105	619ms	470ms	0.0%	8.7 MB	50.1 MB	88.8 KB	1.1 KB
+17	a8/3a107f	5176	filterSize (size for AF004836.1.fa)	COMPLETED	0	2018-09-28 13:15:21.744	426ms	28ms	0.0%	0	0	0	0
+18	65/6050ff	5177	eachAcn (dowloading AF188126.1)	COMPLETED	0	2018-09-28 13:15:21.753	776ms	492ms	0.0%	7.3 MB	50.1 MB	83.9 KB	682 B
+20	47/85de93	5448	filterSize (size for AF188126.1.fa)	COMPLETED	0	2018-09-28 13:15:22.568	349ms	28ms	0.0%	0	0	0	0
+19	7e/2959b3	5447	eachAcn (dowloading AF188530.1)	COMPLETED	0	2018-09-28 13:15:22.557	791ms	478ms	0.0%	7.4 MB	50.1 MB	88.5 KB	808 B
+21	b4/62e26f	5653	filterSize (size for AF188530.1.fa)	COMPLETED	0	2018-09-28 13:15:23.377	461ms	29ms	0.0%	0	0	0	0
+22	57/470ee9	5652	eachAcn (dowloading AX244961.1)	COMPLETED	0	2018-09-28 13:15:23.365	756ms	501ms	0.0%	8.7 MB	50.1 MB	88.8 KB	1.1 KB
+24	09/36b7b4	5877	filterSize (size for AX244961.1.fa)	COMPLETED	0	2018-09-28 13:15:24.146	353ms	28ms	0.0%	0	0	0	0
+23	53/5207bd	5878	eachAcn (dowloading AX244962.1)	COMPLETED	0	2018-09-28 13:15:24.162	774ms	484ms	0.0%	7.5 MB	50.1 MB	83.9 KB	682 B
+25	33/46eafd	6103	filterSize (size for AX244962.1.fa)	COMPLETED	0	2018-09-28 13:15:24.968	297ms	34ms	0.0%	0	0	0	0
+26	8a/393846	6102	eachAcn (dowloading AX244963.1)	COMPLETED	0	2018-09-28 13:15:24.956	723ms	490ms	0.0%	7.3 MB	50.1 MB	83.9 KB	682 B
+28	69/56928d	6308	filterSize (size for AX244963.1.fa)	COMPLETED	0	2018-09-28 13:15:25.692	479ms	48ms	0.0%	0	0	0	0
+27	ca/de4d41	6310	eachAcn (dowloading AX244964.1)	COMPLETED	0	2018-09-28 13:15:25.707	742ms	495ms	0.0%	7.3 MB	50.1 MB	83.9 KB	682 B
+29	96/488f32	6602	filterSize (size for AX244964.1.fa)	COMPLETED	0	2018-09-28 13:15:26.472	441ms	44ms	0.0%	0	0	0	0
+30	72/6650bd	6604	eachAcn (dowloading AX244965.1)	COMPLETED	0	2018-09-28 13:15:26.483	738ms	541ms	0.0%	8.7 MB	50 MB	88.8 KB	1.1 KB
+31	6e/d42e07	6875	filterSize (size for AX244965.1.fa)	COMPLETED	0	2018-09-28 13:15:27.256	331ms	31ms	0.0%	0	0	0	0
+32	22/374b5b	6873	eachAcn (dowloading AX244966.1)	COMPLETED	0	2018-09-28 13:15:27.240	702ms	485ms	0.0%	8.6 MB	50.1 MB	83.9 KB	682 B
+33	35/7482ed	7191	filterSize (size for AX244966.1.fa)	COMPLETED	0	2018-09-28 13:15:27.953	338ms	40ms	0.0%	0	0	0	0
+34	25/2b7d91	7193	eachAcn (dowloading AX244967.1)	COMPLETED	0	2018-09-28 13:15:27.963	756ms	495ms	0.0%	7.4 MB	50.1 MB	83.9 KB	682 B
+35	11/7ca914	7422	filterSize (size for AX244967.1.fa)	COMPLETED	0	2018-09-28 13:15:28.752	311ms	43ms	0.0%	0	0	0	0
+36	05/926e5c	7421	eachAcn (dowloading AX244968.1)	COMPLETED	0	2018-09-28 13:15:28.739	784ms	489ms	0.0%	7.4 MB	50 MB	83.9 KB	682 B
+37	15/0ac9e8	7657	filterSize (size for AX244968.1.fa)	COMPLETED	0	2018-09-28 13:15:29.551	493ms	41ms	0.0%	0	0	0	0
+38	45/437480	7656	eachAcn (dowloading AY116592.1)	COMPLETED	0	2018-09-28 13:15:29.542	754ms	501ms	0.0%	7.4 MB	50.1 MB	83.9 KB	682 B
+39	f3/41f268	7965	filterSize (size for AY116592.1.fa)	COMPLETED	0	2018-09-28 13:15:30.316	322ms	28ms	0.0%	0	0	0	0
+40	c9/2e16e6	7963	eachAcn (dowloading NM_017590.5)	COMPLETED	0	2018-09-28 13:15:30.306	751ms	498ms	0.0%	7.3 MB	50.1 MB	83.9 KB	683 B
+41	9d/003927	8165	filterSize (size for NM_017590.5.fa)	COMPLETED	0	2018-09-28 13:15:31.077	332ms	25ms	0.0%	0	0	0	0
+```
 

@@ -23,36 +23,44 @@ process sortAcns {
 ## Execute
 
 ```
-../bin/nextflow run workflow.nf --acns '../data/list*.acns.txt'
-N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [elated_mahavira] - revision: 5846808ae4
+../bin/nextflow run -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
+N E X T F L O W  ~  version 0.32.0
+Launching `workflow.nf` [awesome_jang] - revision: 5846808ae4
 [warm up] executor > local
-[a8/f8e15f] Submitted process > sortAcns (sorting list3.acns.txt)
-[6c/f0ef49] Submitted process > sortAcns (sorting list2.acns.txt)
-[ed/cb9145] Submitted process > sortAcns (sorting list4.acns.txt)
-[5a/1100df] Submitted process > sortAcns (sorting list1.acns.txt)
+[1e/a57678] Submitted process > sortAcns (sorting list1.acns.txt)
+[61/07b59f] Submitted process > sortAcns (sorting list2.acns.txt)
+[e7/54a076] Submitted process > sortAcns (sorting list4.acns.txt)
+[d9/6d86f6] Submitted process > sortAcns (sorting list3.acns.txt)
 ```
 
 
 ## Files
 
 ```
-work/a8/f8e15fd6cecdabad1fc1a17d509cd8/list3.acns.txt
-work/a8/f8e15fd6cecdabad1fc1a17d509cd8/list3.acns.txt.sorted.txt
-work/32/63187f6c0eef126dacea9b4b4bf41e/list4.acns.txt
-work/32/63187f6c0eef126dacea9b4b4bf41e/list4.acns.txt.sorted.txt
-work/bc/6650c1f165fa79c66ece57b7558980/list3.acns.txt
-work/bc/6650c1f165fa79c66ece57b7558980/list3.acns.txt.sorted.txt
-work/5a/1100df12a52159ab8d18b141ea7f78/list1.acns.txt
-work/5a/1100df12a52159ab8d18b141ea7f78/list1.acns.txt.sorted.txt
-work/6c/f0ef492e65692e065bbee09adecf8f/list2.acns.txt.sorted.txt
-work/6c/f0ef492e65692e065bbee09adecf8f/list2.acns.txt
-work/15/7517e0b82324505cdedfc52c645875/list2.acns.txt.sorted.txt
-work/15/7517e0b82324505cdedfc52c645875/list2.acns.txt
-work/ed/cb91451c93e583375c74b254fff4f2/list4.acns.txt
-work/ed/cb91451c93e583375c74b254fff4f2/list4.acns.txt.sorted.txt
-work/a1/75ff6926526b6bd179efc14d536354/list1.acns.txt
-work/a1/75ff6926526b6bd179efc14d536354/list1.acns.txt.sorted.txt
+work/d9/6d86f64efde038ac903a07c32f85aa/list3.acns.txt
+work/d9/6d86f64efde038ac903a07c32f85aa/list3.acns.txt.sorted.txt
+work/1e/a57678d0a8d3cc1a2d78f4a6cb90dd/list1.acns.txt
+work/1e/a57678d0a8d3cc1a2d78f4a6cb90dd/list1.acns.txt.sorted.txt
+work/61/07b59f900120861d9229e144c0bc7d/list2.acns.txt
+work/61/07b59f900120861d9229e144c0bc7d/list2.acns.txt.sorted.txt
+work/e7/54a0762378d6bcc914cc53e35e4ff9/list4.acns.txt
+work/e7/54a0762378d6bcc914cc53e35e4ff9/list4.acns.txt.sorted.txt
 ```
 
+
+
+## Workflow
+
+![Workflow](flowchart.png)
+
+
+## Trace
+
+```
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	1e/a57678	31484	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-09-28 13:14:27.689	502ms	65ms	0.0%	0	0	0	0
+3	61/07b59f	31490	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-09-28 13:14:27.744	531ms	40ms	0.0%	0	0	0	0
+4	e7/54a076	31498	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-09-28 13:14:27.767	518ms	33ms	0.0%	0	0	0	0
+2	d9/6d86f6	31503	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-09-28 13:14:27.805	490ms	25ms	0.0%	0	0	0	0
+```
 

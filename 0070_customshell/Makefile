@@ -1,4 +1,4 @@
-NF=../bin/nextflow
+include ../data/nextflow.mk
 
 all: workflow.nf
-	$(NF) run $< 
+	$(NF) run $(NFRUNFLAGS) $< 

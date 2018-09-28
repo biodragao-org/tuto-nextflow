@@ -5,3 +5,9 @@ nextflow
 .nextflow.log.*
 .nextflow
 work
+
+flowchart.png.*
+report.*
+timeline.*
+trace.*
+

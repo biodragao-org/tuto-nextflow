@@ -14,16 +14,16 @@ println "${params.salutation} ${params.name}!"
 
 ```
 ../bin/nextflow run workflow.nf 
-N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [curious_perlman] - revision: 65a92cdec3
+N E X T F L O W  ~  version 0.32.0
+Launching `workflow.nf` [zen_goldstine] - revision: 65a92cdec3
 Hello world!
 ../bin/nextflow run workflow.nf  --salutation Bonjour --name Monde
-N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [lethal_bhaskara] - revision: 65a92cdec3
+N E X T F L O W  ~  version 0.32.0
+Launching `workflow.nf` [evil_hypatia] - revision: 65a92cdec3
 Bonjour Monde!
 ../bin/nextflow run -config my.config workflow.nf  
-N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [infallible_mandelbrot] - revision: 65a92cdec3
+N E X T F L O W  ~  version 0.32.0
+Launching `workflow.nf` [sad_elion] - revision: 65a92cdec3
 Hola Muchachos!
 ```
 

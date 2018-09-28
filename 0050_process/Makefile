@@ -1,4 +1,4 @@
-NF=../bin/nextflow
+include ../data/nextflow.mk
 
 all: test1 test2 test3
 

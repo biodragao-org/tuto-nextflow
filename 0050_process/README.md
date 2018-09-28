@@ -26,38 +26,29 @@ process sayHello {
 
 ```
 ../bin/nextflow run workflow.nf 
-N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [distraught_curran] - revision: fa4daadc32
+N E X T F L O W  ~  version 0.32.0
+Launching `workflow.nf` [condescending_wing] - revision: fa4daadc32
 [warm up] executor > local
-[d2/fd133d] Submitted process > sayHello (saying Hello to world)
+[da/08b811] Submitted process > sayHello (saying Hello to world)
 ../bin/nextflow run workflow.nf  --salutation Bonjour --name Monde
-N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [lethal_visvesvaraya] - revision: fa4daadc32
+N E X T F L O W  ~  version 0.32.0
+Launching `workflow.nf` [condescending_lalande] - revision: fa4daadc32
 [warm up] executor > local
-[35/9bf65b] Submitted process > sayHello (saying Bonjour to Monde)
+[47/a58d7e] Submitted process > sayHello (saying Bonjour to Monde)
 ../bin/nextflow run -config my.config workflow.nf  
-N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [prickly_bassi] - revision: fa4daadc32
+N E X T F L O W  ~  version 0.32.0
+Launching `workflow.nf` [distraught_jennings] - revision: fa4daadc32
 [warm up] executor > local
-[92/a7eaa7] Submitted process > sayHello (saying Hola to Muchachos)
+[d8/c942f7] Submitted process > sayHello (saying Hola to Muchachos)
 ```
 
 
 ## Files
 
 ```
-work/73/c3fc08120df55641649084ebd17f5b/message.txt
-work/a8/60031ef27a6bef110312363f4063b7/message.txt
-work/5d/34b7ea12ece8e138b76b9c5ea74051/message.txt
-work/45/213ee27e68c55eb608ab16ddf144c7/message.txt
-work/92/a7eaa77ee6083c763a9ef9d5da40a9/message.txt
-work/4a/897aa5311d5d61c6b50eae6fbc99b5/message.txt
-work/d2/fd133de8612c13962dab89c01d6cc4/message.txt
-work/35/9bf65bca9e9a422a58363f4b094fdd/message.txt
-work/e3/2e6d26563fbb59a8ae8fc795a541df/message.txt
-work/af/e0838ad492169edf39543b7c9d8ca7/message.txt
-work/8f/a942cc937ff952d11b3d81c054ddbf/message.txt
-work/1e/6c17387f55248906783e7bd47e7c5e/message.txt
+work/da/08b811a0804b2b2620c3823e495850/message.txt
+work/47/a58d7ec599994884bf24178b23a7bf/message.txt
+work/d8/c942f7f05b277985a05c517b768b4f/message.txt
 ```
 
 

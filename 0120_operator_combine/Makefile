@@ -1,4 +1,4 @@
-NF=../bin/nextflow
+include ../data/nextflow.mk
 
 all : workflow.nf
-	$(NF) run $< --acns '../data/list*.acns.txt'
+	$(NF) run $(NFRUNFLAGS) $< --acns '../data/list*.acns.txt'

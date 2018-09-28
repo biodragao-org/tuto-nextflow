@@ -30,23 +30,31 @@ f.close()
 ## Execute
 
 ```
-../bin/nextflow run workflow.nf 
-N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [silly_colden] - revision: db56321d98
+../bin/nextflow run -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf 
+N E X T F L O W  ~  version 0.32.0
+Launching `workflow.nf` [shrivelled_chandrasekhar] - revision: db56321d98
 [warm up] executor > local
-[70/960d0e] Submitted process > sayHello (saying Hello to world)
+[15/fcbb75] Submitted process > sayHello (saying Hello to world)
 ```
 
 
 ## Files
 
 ```
-work/f0/bbf1f1125f1e5cf9e403fdbee31b99/message.txt
-work/3d/3101100d705b5355dec0083b148ea2/message.txt
-work/56/bb53aa084dc6beaada153cb7c945d6/message.txt
-work/fe/001eaf7552a5e035a2d948b24274f3/message.txt
-work/70/960d0e3f3272a8b1b486b8595f8942/message.txt
-work/7c/70ff83920626c1ae7e9055fd43fe9b/message.txt
+work/15/fcbb75e39f791b2d60bc834fbe1a09/message.txt
 ```
 
+
+
+## Workflow
+
+![Workflow](flowchart.png)
+
+
+## Trace
+
+```
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
+1	15/fcbb75	31077	sayHello (saying Hello to world)	COMPLETED	0	2018-09-28 13:14:14.677	379ms	142ms	0.0%	6.3 MB	24 MB	0	0
+```
 
