@@ -27,19 +27,19 @@ process sayHello {
 ```
 ../bin/nextflow run workflow.nf 
 N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [agitated_waddington] - revision: fa4daadc32
+Launching `workflow.nf` [berserk_magritte] - revision: fa4daadc32
 [warm up] executor > local
-[12/667296] Submitted process > sayHello (saying Hello to world)
+[59/ff4df8] Submitted process > sayHello (saying Hello to world)
 ../bin/nextflow run workflow.nf  --salutation Bonjour --name Monde
 N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [hungry_torricelli] - revision: fa4daadc32
+Launching `workflow.nf` [disturbed_mccarthy] - revision: fa4daadc32
 [warm up] executor > local
-[6d/cf4e98] Submitted process > sayHello (saying Bonjour to Monde)
+[20/25f96a] Submitted process > sayHello (saying Bonjour to Monde)
 ../bin/nextflow run -config my.config workflow.nf  
 N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [wise_brown] - revision: fa4daadc32
+Launching `workflow.nf` [naughty_feynman] - revision: fa4daadc32
 [warm up] executor > local
-[e1/f43ca1] Submitted process > sayHello (saying Hola to Muchachos)
+[6e/1d6abc] Submitted process > sayHello (saying Hola to Muchachos)
 ```
 
 
@@ -49,6 +49,9 @@ Launching `workflow.nf` [wise_brown] - revision: fa4daadc32
 work/12/66729602e7e4efb793c667047c0ee3/message.txt
 work/6d/cf4e98282f201a79a80635ce15c944/message.txt
 work/e1/f43ca1632b3406e1ff887c1d3bd690/message.txt
+work/59/ff4df895f5a63ad67004aabbe5a1dc/message.txt
+work/20/25f96a604729ffc6766f2bcefbae9c/message.txt
+work/6e/1d6abc0bd43fa1aea3063ff5731e89/message.txt
 ```
 
 

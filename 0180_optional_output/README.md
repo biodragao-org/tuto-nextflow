@@ -90,49 +90,49 @@ process filterSize {
 ```
 ../bin/nextflow run -resume -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
 N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [goofy_picasso] - revision: 5a86ad5e38
+Launching `workflow.nf` [amazing_austin] - revision: 5a86ad5e38
 [warm up] executor > local
-[c7/57fc6e] Submitted process > sortAcns (sorting list1.acns.txt)
-[80/c25e36] Submitted process > sortAcns (sorting list2.acns.txt)
-[84/9240ae] Submitted process > sortAcns (sorting list3.acns.txt)
-[20/4c93a7] Submitted process > sortAcns (sorting list4.acns.txt)
-[ab/3f214f] Submitted process > commonAcns (comm list2.acns.txt vs list3.acns.txt)
-[50/ecda9a] Submitted process > commonAcns (comm list1.acns.txt vs list3.acns.txt)
-[b9/1378d7] Submitted process > commonAcns (comm list3.acns.txt vs list4.acns.txt)
-[e6/369d1b] Submitted process > commonAcns (comm list1.acns.txt vs list2.acns.txt)
-[7a/dc8a74] Submitted process > commonAcns (comm list1.acns.txt vs list4.acns.txt)
-[07/65edf5] Submitted process > commonAcns (comm list2.acns.txt vs list4.acns.txt)
-[47/58f0f2] Submitted process > listCommons (common list size: 6)
-[dc/383cf6] Submitted process > eachAcn (dowloading AF002815.1)
-[c1/077b3a] Submitted process > eachAcn (dowloading AF002816.1)
-[77/8a0a91] Submitted process > filterSize (size for AF002815.1.fa)
-[1e/dfc74a] Submitted process > eachAcn (dowloading AF004836.1)
-[fc/ab9f71] Submitted process > filterSize (size for AF002816.1.fa)
-[65/6050ff] Submitted process > eachAcn (dowloading AF188126.1)
-[42/cbe5bf] Submitted process > filterSize (size for AF004836.1.fa)
-[7e/2959b3] Submitted process > eachAcn (dowloading AF188530.1)
-[e7/92bf2c] Submitted process > filterSize (size for AF188126.1.fa)
-[57/470ee9] Submitted process > eachAcn (dowloading AX244961.1)
-[67/942d69] Submitted process > filterSize (size for AF188530.1.fa)
-[67/53b150] Submitted process > filterSize (size for AX244961.1.fa)
-[53/5207bd] Submitted process > eachAcn (dowloading AX244962.1)
-[8a/393846] Submitted process > eachAcn (dowloading AX244963.1)
-[fb/22313e] Submitted process > filterSize (size for AX244962.1.fa)
-[ca/de4d41] Submitted process > eachAcn (dowloading AX244964.1)
-[ae/58fc6b] Submitted process > filterSize (size for AX244963.1.fa)
-[d6/013e29] Submitted process > filterSize (size for AX244964.1.fa)
-[72/6650bd] Submitted process > eachAcn (dowloading AX244965.1)
-[22/374b5b] Submitted process > eachAcn (dowloading AX244966.1)
-[2b/8761a6] Submitted process > filterSize (size for AX244965.1.fa)
-[25/2b7d91] Submitted process > eachAcn (dowloading AX244967.1)
-[52/4f8c94] Submitted process > filterSize (size for AX244966.1.fa)
-[05/926e5c] Submitted process > eachAcn (dowloading AX244968.1)
-[b9/81bfb7] Submitted process > filterSize (size for AX244967.1.fa)
-[45/437480] Submitted process > eachAcn (dowloading AY116592.1)
-[61/c07799] Submitted process > filterSize (size for AX244968.1.fa)
-[c9/2e16e6] Submitted process > eachAcn (dowloading NM_017590.5)
-[2a/4e0ec6] Submitted process > filterSize (size for AY116592.1.fa)
-[5f/83a6b3] Submitted process > filterSize (size for NM_017590.5.fa)
+[80/c25e36] Cached process > sortAcns (sorting list2.acns.txt)
+[20/4c93a7] Cached process > sortAcns (sorting list4.acns.txt)
+[84/9240ae] Cached process > sortAcns (sorting list3.acns.txt)
+[c7/57fc6e] Cached process > sortAcns (sorting list1.acns.txt)
+[7a/dc8a74] Cached process > commonAcns (comm list1.acns.txt vs list4.acns.txt)
+[e6/369d1b] Cached process > commonAcns (comm list1.acns.txt vs list2.acns.txt)
+[b9/1378d7] Cached process > commonAcns (comm list3.acns.txt vs list4.acns.txt)
+[07/65edf5] Cached process > commonAcns (comm list2.acns.txt vs list4.acns.txt)
+[ab/3f214f] Cached process > commonAcns (comm list2.acns.txt vs list3.acns.txt)
+[50/ecda9a] Cached process > commonAcns (comm list1.acns.txt vs list3.acns.txt)
+[47/58f0f2] Cached process > listCommons (common list size: 6)
+[dc/383cf6] Cached process > eachAcn (dowloading AF002815.1)
+[77/8a0a91] Cached process > filterSize (size for AF002815.1.fa)
+[c1/077b3a] Cached process > eachAcn (dowloading AF002816.1)
+[fc/ab9f71] Cached process > filterSize (size for AF002816.1.fa)
+[1e/dfc74a] Cached process > eachAcn (dowloading AF004836.1)
+[65/6050ff] Cached process > eachAcn (dowloading AF188126.1)
+[42/cbe5bf] Cached process > filterSize (size for AF004836.1.fa)
+[e7/92bf2c] Cached process > filterSize (size for AF188126.1.fa)
+[7e/2959b3] Cached process > eachAcn (dowloading AF188530.1)
+[57/470ee9] Cached process > eachAcn (dowloading AX244961.1)
+[53/5207bd] Cached process > eachAcn (dowloading AX244962.1)
+[fb/22313e] Cached process > filterSize (size for AX244962.1.fa)
+[67/53b150] Cached process > filterSize (size for AX244961.1.fa)
+[8a/393846] Cached process > eachAcn (dowloading AX244963.1)
+[67/942d69] Cached process > filterSize (size for AF188530.1.fa)
+[ca/de4d41] Cached process > eachAcn (dowloading AX244964.1)
+[72/6650bd] Cached process > eachAcn (dowloading AX244965.1)
+[2b/8761a6] Cached process > filterSize (size for AX244965.1.fa)
+[ae/58fc6b] Cached process > filterSize (size for AX244963.1.fa)
+[d6/013e29] Cached process > filterSize (size for AX244964.1.fa)
+[22/374b5b] Cached process > eachAcn (dowloading AX244966.1)
+[52/4f8c94] Cached process > filterSize (size for AX244966.1.fa)
+[25/2b7d91] Cached process > eachAcn (dowloading AX244967.1)
+[05/926e5c] Cached process > eachAcn (dowloading AX244968.1)
+[b9/81bfb7] Cached process > filterSize (size for AX244967.1.fa)
+[61/c07799] Cached process > filterSize (size for AX244968.1.fa)
+[45/437480] Cached process > eachAcn (dowloading AY116592.1)
+[2a/4e0ec6] Cached process > filterSize (size for AY116592.1.fa)
+[c9/2e16e6] Cached process > eachAcn (dowloading NM_017590.5)
+[5f/83a6b3] Cached process > filterSize (size for NM_017590.5.fa)
 ```
 
 
@@ -204,48 +204,48 @@ work/5f/83a6b3b57042d99a9adc31ada6eede/NM_017590.5.fa
 
 ## Trace
 
-```tsv
+```
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
-3	84/9240ae	14589	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-09-28 13:21:24.429	405ms	47ms	0.0%	0	0	0	0
-1	c7/57fc6e	14583	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-09-28 13:21:24.361	555ms	27ms	0.0%	0	0	0	0
-2	80/c25e36	14586	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-09-28 13:21:24.397	530ms	43ms	0.0%	0	0	0	0
-4	20/4c93a7	14595	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-09-28 13:21:24.442	497ms	37ms	0.0%	0	0	0	0
-6	e6/369d1b	14864	commonAcns (comm list1.acns.txt vs list2.acns.txt)	COMPLETED	0	2018-09-28 13:21:24.990	367ms	49ms	0.0%	0	0	0	0
-7	ab/3f214f	14859	commonAcns (comm list2.acns.txt vs list3.acns.txt)	COMPLETED	0	2018-09-28 13:21:24.962	453ms	49ms	0.0%	0	0	0	0
-5	50/ecda9a	14860	commonAcns (comm list1.acns.txt vs list3.acns.txt)	COMPLETED	0	2018-09-28 13:21:24.971	499ms	41ms	0.0%	0	0	0	0
-8	b9/1378d7	14861	commonAcns (comm list3.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-09-28 13:21:24.980	498ms	50ms	0.0%	0	0	0	0
-9	7a/dc8a74	15139	commonAcns (comm list1.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-09-28 13:21:25.376	393ms	27ms	0.0%	0	0	0	0
-10	07/65edf5	15146	commonAcns (comm list2.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-09-28 13:21:25.430	348ms	36ms	0.0%	0	0	0	0
-11	47/58f0f2	15259	listCommons (common list size: 6)	COMPLETED	0	2018-09-28 13:21:25.808	512ms	71ms	0.0%	0	0	0	0
-12	dc/383cf6	15396	eachAcn (dowloading AF002815.1)	COMPLETED	0	2018-09-28 13:21:26.349	662ms	488ms	0.0%	8.6 MB	50.1 MB	88.8 KB	1.1 KB
-14	77/8a0a91	15539	filterSize (size for AF002815.1.fa)	COMPLETED	0	2018-09-28 13:21:27.053	444ms	28ms	0.0%	0	0	0	0
-13	c1/077b3a	15537	eachAcn (dowloading AF002816.1)	COMPLETED	0	2018-09-28 13:21:27.041	731ms	486ms	0.0%	7.4 MB	50.1 MB	83.9 KB	682 B
-16	fc/ab9f71	15833	filterSize (size for AF002816.1.fa)	COMPLETED	0	2018-09-28 13:21:27.802	290ms	23ms	0.0%	0	0	0	0
-15	1e/dfc74a	15830	eachAcn (dowloading AF004836.1)	COMPLETED	0	2018-09-28 13:21:27.787	623ms	483ms	0.0%	8.7 MB	50.1 MB	88.8 KB	1.1 KB
-17	42/cbe5bf	16032	filterSize (size for AF004836.1.fa)	COMPLETED	0	2018-09-28 13:21:28.438	400ms	21ms	0.0%	0	0	0	0
-18	65/6050ff	16031	eachAcn (dowloading AF188126.1)	COMPLETED	0	2018-09-28 13:21:28.429	654ms	475ms	0.0%	8.7 MB	50.1 MB	88.8 KB	1.1 KB
-19	e7/92bf2c	16306	filterSize (size for AF188126.1.fa)	COMPLETED	0	2018-09-28 13:21:29.116	303ms	25ms	0.0%	0	0	0	0
-20	7e/2959b3	16305	eachAcn (dowloading AF188530.1)	COMPLETED	0	2018-09-28 13:21:29.105	763ms	488ms	0.0%	7.4 MB	50.1 MB	83.9 KB	682 B
-21	67/942d69	16507	filterSize (size for AF188530.1.fa)	COMPLETED	0	2018-09-28 13:21:29.902	307ms	24ms	0.0%	0	0	0	0
-22	57/470ee9	16506	eachAcn (dowloading AX244961.1)	COMPLETED	0	2018-09-28 13:21:29.890	726ms	480ms	0.0%	7.5 MB	50 MB	83.9 KB	682 B
-23	67/53b150	16707	filterSize (size for AX244961.1.fa)	COMPLETED	0	2018-09-28 13:21:30.635	277ms	34ms	0.0%	0	0	0	0
-24	53/5207bd	16708	eachAcn (dowloading AX244962.1)	COMPLETED	0	2018-09-28 13:21:30.645	653ms	481ms	0.0%	8.5 MB	50 MB	88.8 KB	1.1 KB
-25	fb/22313e	16914	filterSize (size for AX244962.1.fa)	COMPLETED	0	2018-09-28 13:21:31.318	493ms	38ms	0.0%	0	0	0	0
-26	8a/393846	16913	eachAcn (dowloading AX244963.1)	COMPLETED	0	2018-09-28 13:21:31.311	757ms	477ms	0.0%	7.3 MB	50.1 MB	83.9 KB	682 B
-28	ae/58fc6b	17208	filterSize (size for AX244963.1.fa)	COMPLETED	0	2018-09-28 13:21:32.098	362ms	33ms	0.0%	0	0	0	0
-27	ca/de4d41	17207	eachAcn (dowloading AX244964.1)	COMPLETED	0	2018-09-28 13:21:32.087	711ms	487ms	0.0%	8.6 MB	50.1 MB	88.8 KB	1.1 KB
-29	d6/013e29	17432	filterSize (size for AX244964.1.fa)	COMPLETED	0	2018-09-28 13:21:32.819	355ms	28ms	0.0%	0	0	0	0
-30	72/6650bd	17433	eachAcn (dowloading AX244965.1)	COMPLETED	0	2018-09-28 13:21:32.829	743ms	497ms	0.0%	7.4 MB	50.1 MB	83.9 KB	682 B
-32	2b/8761a6	17662	filterSize (size for AX244965.1.fa)	COMPLETED	0	2018-09-28 13:21:33.596	286ms	32ms	0.0%	0	0	0	0
-31	22/374b5b	17661	eachAcn (dowloading AX244966.1)	COMPLETED	0	2018-09-28 13:21:33.586	738ms	482ms	0.0%	7.3 MB	50.1 MB	83.9 KB	682 B
-33	52/4f8c94	17864	filterSize (size for AX244966.1.fa)	COMPLETED	0	2018-09-28 13:21:34.355	385ms	32ms	0.0%	0	0	0	0
-34	25/2b7d91	17863	eachAcn (dowloading AX244967.1)	COMPLETED	0	2018-09-28 13:21:34.344	744ms	482ms	0.0%	7.3 MB	50.1 MB	83.9 KB	682 B
-35	b9/81bfb7	18089	filterSize (size for AX244967.1.fa)	COMPLETED	0	2018-09-28 13:21:35.118	323ms	35ms	0.0%	0	0	0	0
-36	05/926e5c	18088	eachAcn (dowloading AX244968.1)	COMPLETED	0	2018-09-28 13:21:35.106	762ms	504ms	0.0%	7.4 MB	50.1 MB	83.9 KB	682 B
-37	61/c07799	18295	filterSize (size for AX244968.1.fa)	COMPLETED	0	2018-09-28 13:21:35.883	332ms	36ms	0.0%	0	0	0	0
-38	45/437480	18294	eachAcn (dowloading AY116592.1)	COMPLETED	0	2018-09-28 13:21:35.878	741ms	481ms	0.0%	7.5 MB	50.1 MB	83.9 KB	682 B
-39	2a/4e0ec6	18520	filterSize (size for AY116592.1.fa)	COMPLETED	0	2018-09-28 13:21:36.648	304ms	24ms	0.0%	0	0	0	0
-40	c9/2e16e6	18519	eachAcn (dowloading NM_017590.5)	COMPLETED	0	2018-09-28 13:21:36.637	757ms	485ms	0.0%	7.3 MB	50.1 MB	83.9 KB	683 B
-41	5f/83a6b3	18720	filterSize (size for NM_017590.5.fa)	COMPLETED	0	2018-09-28 13:21:37.405	318ms	25ms	0.0%	0	0	0	0
+2	80/c25e36	14586	sortAcns (sorting list2.acns.txt)	CACHED	0	2018-09-28 13:21:24.397	530ms	43ms	0.0%	0	0	0	0
+4	20/4c93a7	14595	sortAcns (sorting list4.acns.txt)	CACHED	0	2018-09-28 13:21:24.442	497ms	37ms	0.0%	0	0	0	0
+1	c7/57fc6e	14583	sortAcns (sorting list1.acns.txt)	CACHED	0	2018-09-28 13:21:24.361	555ms	27ms	0.0%	0	0	0	0
+3	84/9240ae	14589	sortAcns (sorting list3.acns.txt)	CACHED	0	2018-09-28 13:21:24.429	405ms	47ms	0.0%	0	0	0	0
+9	7a/dc8a74	15139	commonAcns (comm list1.acns.txt vs list4.acns.txt)	CACHED	0	2018-09-28 13:21:25.376	393ms	27ms	0.0%	0	0	0	0
+6	e6/369d1b	14864	commonAcns (comm list1.acns.txt vs list2.acns.txt)	CACHED	0	2018-09-28 13:21:24.990	367ms	49ms	0.0%	0	0	0	0
+8	b9/1378d7	14861	commonAcns (comm list3.acns.txt vs list4.acns.txt)	CACHED	0	2018-09-28 13:21:24.980	498ms	50ms	0.0%	0	0	0	0
+10	07/65edf5	15146	commonAcns (comm list2.acns.txt vs list4.acns.txt)	CACHED	0	2018-09-28 13:21:25.430	348ms	36ms	0.0%	0	0	0	0
+5	50/ecda9a	14860	commonAcns (comm list1.acns.txt vs list3.acns.txt)	CACHED	0	2018-09-28 13:21:24.971	499ms	41ms	0.0%	0	0	0	0
+7	ab/3f214f	14859	commonAcns (comm list2.acns.txt vs list3.acns.txt)	CACHED	0	2018-09-28 13:21:24.962	453ms	49ms	0.0%	0	0	0	0
+11	47/58f0f2	15259	listCommons (common list size: 6)	CACHED	0	2018-09-28 13:21:25.808	512ms	71ms	0.0%	0	0	0	0
+12	dc/383cf6	15396	eachAcn (dowloading AF002815.1)	CACHED	0	2018-09-28 13:21:26.349	662ms	488ms	0.0%	8.6 MB	50.1 MB	88.8 KB	1.1 KB
+14	77/8a0a91	15539	filterSize (size for AF002815.1.fa)	CACHED	0	2018-09-28 13:21:27.053	444ms	28ms	0.0%	0	0	0	0
+13	c1/077b3a	15537	eachAcn (dowloading AF002816.1)	CACHED	0	2018-09-28 13:21:27.041	731ms	486ms	0.0%	7.4 MB	50.1 MB	83.9 KB	682 B
+16	fc/ab9f71	15833	filterSize (size for AF002816.1.fa)	CACHED	0	2018-09-28 13:21:27.802	290ms	23ms	0.0%	0	0	0	0
+15	1e/dfc74a	15830	eachAcn (dowloading AF004836.1)	CACHED	0	2018-09-28 13:21:27.787	623ms	483ms	0.0%	8.7 MB	50.1 MB	88.8 KB	1.1 KB
+18	65/6050ff	16031	eachAcn (dowloading AF188126.1)	CACHED	0	2018-09-28 13:21:28.429	654ms	475ms	0.0%	8.7 MB	50.1 MB	88.8 KB	1.1 KB
+17	42/cbe5bf	16032	filterSize (size for AF004836.1.fa)	CACHED	0	2018-09-28 13:21:28.438	400ms	21ms	0.0%	0	0	0	0
+19	e7/92bf2c	16306	filterSize (size for AF188126.1.fa)	CACHED	0	2018-09-28 13:21:29.116	303ms	25ms	0.0%	0	0	0	0
+20	7e/2959b3	16305	eachAcn (dowloading AF188530.1)	CACHED	0	2018-09-28 13:21:29.105	763ms	488ms	0.0%	7.4 MB	50.1 MB	83.9 KB	682 B
+22	57/470ee9	16506	eachAcn (dowloading AX244961.1)	CACHED	0	2018-09-28 13:21:29.890	726ms	480ms	0.0%	7.5 MB	50 MB	83.9 KB	682 B
+24	53/5207bd	16708	eachAcn (dowloading AX244962.1)	CACHED	0	2018-09-28 13:21:30.645	653ms	481ms	0.0%	8.5 MB	50 MB	88.8 KB	1.1 KB
+23	67/53b150	16707	filterSize (size for AX244961.1.fa)	CACHED	0	2018-09-28 13:21:30.635	277ms	34ms	0.0%	0	0	0	0
+26	8a/393846	16913	eachAcn (dowloading AX244963.1)	CACHED	0	2018-09-28 13:21:31.311	757ms	477ms	0.0%	7.3 MB	50.1 MB	83.9 KB	682 B
+21	67/942d69	16507	filterSize (size for AF188530.1.fa)	CACHED	0	2018-09-28 13:21:29.902	307ms	24ms	0.0%	0	0	0	0
+25	fb/22313e	16914	filterSize (size for AX244962.1.fa)	CACHED	0	2018-09-28 13:21:31.318	493ms	38ms	0.0%	0	0	0	0
+27	ca/de4d41	17207	eachAcn (dowloading AX244964.1)	CACHED	0	2018-09-28 13:21:32.087	711ms	487ms	0.0%	8.6 MB	50.1 MB	88.8 KB	1.1 KB
+30	72/6650bd	17433	eachAcn (dowloading AX244965.1)	CACHED	0	2018-09-28 13:21:32.829	743ms	497ms	0.0%	7.4 MB	50.1 MB	83.9 KB	682 B
+32	2b/8761a6	17662	filterSize (size for AX244965.1.fa)	CACHED	0	2018-09-28 13:21:33.596	286ms	32ms	0.0%	0	0	0	0
+28	ae/58fc6b	17208	filterSize (size for AX244963.1.fa)	CACHED	0	2018-09-28 13:21:32.098	362ms	33ms	0.0%	0	0	0	0
+29	d6/013e29	17432	filterSize (size for AX244964.1.fa)	CACHED	0	2018-09-28 13:21:32.819	355ms	28ms	0.0%	0	0	0	0
+31	22/374b5b	17661	eachAcn (dowloading AX244966.1)	CACHED	0	2018-09-28 13:21:33.586	738ms	482ms	0.0%	7.3 MB	50.1 MB	83.9 KB	682 B
+33	52/4f8c94	17864	filterSize (size for AX244966.1.fa)	CACHED	0	2018-09-28 13:21:34.355	385ms	32ms	0.0%	0	0	0	0
+34	25/2b7d91	17863	eachAcn (dowloading AX244967.1)	CACHED	0	2018-09-28 13:21:34.344	744ms	482ms	0.0%	7.3 MB	50.1 MB	83.9 KB	682 B
+36	05/926e5c	18088	eachAcn (dowloading AX244968.1)	CACHED	0	2018-09-28 13:21:35.106	762ms	504ms	0.0%	7.4 MB	50.1 MB	83.9 KB	682 B
+35	b9/81bfb7	18089	filterSize (size for AX244967.1.fa)	CACHED	0	2018-09-28 13:21:35.118	323ms	35ms	0.0%	0	0	0	0
+37	61/c07799	18295	filterSize (size for AX244968.1.fa)	CACHED	0	2018-09-28 13:21:35.883	332ms	36ms	0.0%	0	0	0	0
+38	45/437480	18294	eachAcn (dowloading AY116592.1)	CACHED	0	2018-09-28 13:21:35.878	741ms	481ms	0.0%	7.5 MB	50.1 MB	83.9 KB	682 B
+39	2a/4e0ec6	18520	filterSize (size for AY116592.1.fa)	CACHED	0	2018-09-28 13:21:36.648	304ms	24ms	0.0%	0	0	0	0
+40	c9/2e16e6	18519	eachAcn (dowloading NM_017590.5)	CACHED	0	2018-09-28 13:21:36.637	757ms	485ms	0.0%	7.3 MB	50.1 MB	83.9 KB	683 B
+41	5f/83a6b3	18720	filterSize (size for NM_017590.5.fa)	CACHED	0	2018-09-28 13:21:37.405	318ms	25ms	0.0%	0	0	0	0
 ```
 

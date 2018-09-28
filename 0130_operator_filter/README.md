@@ -39,20 +39,19 @@ process commonAcns {
 ```
 ../bin/nextflow run -resume -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
 N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [determined_becquerel] - revision: 41d209f8fc
+Launching `workflow.nf` [happy_miescher] - revision: 41d209f8fc
 [warm up] executor > local
-[1b/a0b2e1] Submitted process > sortAcns (sorting list3.acns.txt)
-[5f/2e1a9c] Submitted process > sortAcns (sorting list1.acns.txt)
-[a5/69e3c0] Submitted process > sortAcns (sorting list2.acns.txt)
-[ae/0a7064] Submitted process > sortAcns (sorting list4.acns.txt)
-ERROR ~ Error executing process > 'commonAcns (comm list1.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)'
+[5f/2e1a9c] Cached process > sortAcns (sorting list1.acns.txt)
+[a5/69e3c0] Cached process > sortAcns (sorting list2.acns.txt)
+[1b/a0b2e1] Cached process > sortAcns (sorting list3.acns.txt)
+[ae/0a7064] Cached process > sortAcns (sorting list4.acns.txt)
+ERROR ~ Error executing process > 'commonAcns (comm list2.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)'
 
 Caused by:
   java.nio.file.ProviderMismatchException
 
 
  -- Check '.nextflow.log' file for details
-WARN: Killing pending tasks (1)
 Makefile:4: recipe for target 'all' failed
 make[1]: *** [all] Error 1
 ```
@@ -82,9 +81,9 @@ work/1b/a0b2e1ce35cf6c209c3955883b27cb/list3.acns.txt.sorted.txt
 
 ```
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
-1	5f/2e1a9c	11575	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-09-28 13:20:52.347	492ms	42ms	0.0%	0	0	0	0
-4	ae/0a7064	11589	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-09-28 13:20:52.391	489ms	30ms	0.0%	0	0	0	0
-2	a5/69e3c0	11585	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-09-28 13:20:52.371	524ms	49ms	0.0%	0	0	0	0
-3	1b/a0b2e1	11573	sortAcns (sorting list3.acns.txt)	ABORTED	-	2018-09-28 13:20:52.317	-	-	-	-	-	-	-
+3	1b/a0b2e1	11573	sortAcns (sorting list3.acns.txt)	CACHED	-	2018-09-28 13:20:52.317	-	-	-	-	-	-	-
+1	5f/2e1a9c	11575	sortAcns (sorting list1.acns.txt)	CACHED	0	2018-09-28 13:20:52.347	492ms	42ms	0.0%	0	0	0	0
+2	a5/69e3c0	11585	sortAcns (sorting list2.acns.txt)	CACHED	0	2018-09-28 13:20:52.371	524ms	49ms	0.0%	0	0	0	0
+4	ae/0a7064	11589	sortAcns (sorting list4.acns.txt)	CACHED	0	2018-09-28 13:20:52.391	489ms	30ms	0.0%	0	0	0	0
 ```
 
