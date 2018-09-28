@@ -12,7 +12,7 @@ println "Hello world!"
 ```
 ../bin/nextflow run workflow.nf
 N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [stupefied_euclid] - revision: d8a29ed2c9
+Launching `workflow.nf` [sharp_solvay] - revision: d8a29ed2c9
 Hello world!
 ```
 

@@ -35,14 +35,14 @@ process commonAcns {
 ## Execute
 
 ```
-../bin/nextflow run -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
+../bin/nextflow run -resume -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
 N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [berserk_cori] - revision: 58a06a28ba
+Launching `workflow.nf` [nasty_morse] - revision: 58a06a28ba
 [warm up] executor > local
-[94/0bbf80] Submitted process > sortAcns (sorting list1.acns.txt)
-[f1/2e7c0d] Submitted process > sortAcns (sorting list4.acns.txt)
-[8f/cd8b70] Submitted process > sortAcns (sorting list3.acns.txt)
 [77/d746a6] Submitted process > sortAcns (sorting list2.acns.txt)
+[f1/2e7c0d] Submitted process > sortAcns (sorting list4.acns.txt)
+[94/0bbf80] Submitted process > sortAcns (sorting list1.acns.txt)
+[8f/cd8b70] Submitted process > sortAcns (sorting list3.acns.txt)
 ERROR ~ Error executing process > 'commonAcns (comm list4.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)'
 
 Caused by:
@@ -50,7 +50,7 @@ Caused by:
 
 
  -- Check '.nextflow.log' file for details
-WARN: Killing pending tasks (2)
+WARN: Killing pending tasks (3)
 Makefile:4: recipe for target 'all' failed
 make[1]: *** [all] Error 1
 ```
@@ -59,14 +59,14 @@ make[1]: *** [all] Error 1
 ## Files
 
 ```
-work/f1/2e7c0d7b50fd16d698e3c6b8af03b4/list4.acns.txt
-work/f1/2e7c0d7b50fd16d698e3c6b8af03b4/list4.acns.txt.sorted.txt
 work/77/d746a6ba85a52b2bca4c6499708a53/list2.acns.txt
 work/77/d746a6ba85a52b2bca4c6499708a53/list2.acns.txt.sorted.txt
-work/8f/cd8b70f22a52f78d5b194c7059aee3/list3.acns.txt
-work/8f/cd8b70f22a52f78d5b194c7059aee3/list3.acns.txt.sorted.txt
+work/f1/2e7c0d7b50fd16d698e3c6b8af03b4/list4.acns.txt
+work/f1/2e7c0d7b50fd16d698e3c6b8af03b4/list4.acns.txt.sorted.txt
 work/94/0bbf8015956679e17672231696087a/list1.acns.txt
 work/94/0bbf8015956679e17672231696087a/list1.acns.txt.sorted.txt
+work/8f/cd8b70f22a52f78d5b194c7059aee3/list3.acns.txt
+work/8f/cd8b70f22a52f78d5b194c7059aee3/list3.acns.txt.sorted.txt
 ```
 
 
@@ -80,9 +80,9 @@ work/94/0bbf8015956679e17672231696087a/list1.acns.txt.sorted.txt
 
 ```
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
-4	f1/2e7c0d	32638	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-09-28 13:14:40.657	430ms	42ms	0.0%	0	0	0	0
-3	8f/cd8b70	32644	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-09-28 13:14:40.689	463ms	57ms	0.0%	0	0	0	0
-1	94/0bbf80	32635	sortAcns (sorting list1.acns.txt)	ABORTED	-	2018-09-28 13:14:40.619	-	-	-	-	-	-	-
-2	77/d746a6	32654	sortAcns (sorting list2.acns.txt)	ABORTED	-	2018-09-28 13:14:40.706	-	-	-	-	-	-	-
+3	f1/2e7c0d	11182	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-09-28 13:20:48.119	441ms	46ms	0.0%	0	0	0	0
+2	77/d746a6	11179	sortAcns (sorting list2.acns.txt)	ABORTED	-	2018-09-28 13:20:48.087	-	-	-	-	-	-	-
+1	94/0bbf80	11193	sortAcns (sorting list1.acns.txt)	ABORTED	-	2018-09-28 13:20:48.151	-	-	-	-	-	-	-
+4	8f/cd8b70	11199	sortAcns (sorting list3.acns.txt)	ABORTED	-	2018-09-28 13:20:48.170	-	-	-	-	-	-	-
 ```
 

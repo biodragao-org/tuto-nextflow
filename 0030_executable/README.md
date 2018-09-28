@@ -14,7 +14,7 @@ println "Hello world!"
 ```
 ./workflow.nf
 N E X T F L O W  ~  version 0.32.0
-Launching `./workflow.nf` [stoic_davinci] - revision: 40e8acd072
+Launching `./workflow.nf` [magical_poitras] - revision: 40e8acd072
 Hello world!
 ```
 

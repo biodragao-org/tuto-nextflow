@@ -72,71 +72,71 @@ process eachAcn {
 ```
 ../bin/nextflow run  workflow.nf --acns '../data/list*.acns.txt'
 N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [lonely_booth] - revision: a352490a63
+Launching `workflow.nf` [evil_pare] - revision: a352490a63
 [warm up] executor > local
-[4b/1bb158] Submitted process > sortAcns (sorting list1.acns.txt)
-[38/095c74] Submitted process > sortAcns (sorting list2.acns.txt)
-[b4/1092e3] Submitted process > sortAcns (sorting list3.acns.txt)
-[ed/7e43fe] Submitted process > sortAcns (sorting list4.acns.txt)
-[85/6cf62d] Submitted process > commonAcns (comm list2.acns.txt vs list3.acns.txt)
-[0f/de11a7] Submitted process > commonAcns (comm list1.acns.txt vs list2.acns.txt)
-[d7/0c3f9a] Submitted process > commonAcns (comm list1.acns.txt vs list3.acns.txt)
-[87/9c5767] Submitted process > commonAcns (comm list2.acns.txt vs list4.acns.txt)
-[91/02808f] Submitted process > commonAcns (comm list1.acns.txt vs list4.acns.txt)
-[b5/6b3f68] Submitted process > commonAcns (comm list3.acns.txt vs list4.acns.txt)
-[36/47f30a] Submitted process > listCommons (common list size: 6)
-[36/3921f3] Submitted process > eachAcn (dowloading AF002815.1)
-[93/3f095b] Submitted process > eachAcn (dowloading AF002816.1)
-[32/930ad2] Submitted process > eachAcn (dowloading AF004836.1)
-[e6/aad45d] Submitted process > eachAcn (dowloading AF188126.1)
-[04/65b961] Submitted process > eachAcn (dowloading AF188530.1)
-[7a/95c7e7] Submitted process > eachAcn (dowloading AX244961.1)
-[bf/7b50df] Submitted process > eachAcn (dowloading AX244962.1)
-[e3/d50349] Submitted process > eachAcn (dowloading AX244963.1)
-[d7/0ee7b9] Submitted process > eachAcn (dowloading AX244964.1)
-[c9/75fec5] Submitted process > eachAcn (dowloading AX244965.1)
-[3b/493c27] Submitted process > eachAcn (dowloading AX244966.1)
-[2d/2ce484] Submitted process > eachAcn (dowloading AX244967.1)
-[a6/12801d] Submitted process > eachAcn (dowloading AX244968.1)
-[ed/cfd674] Submitted process > eachAcn (dowloading AY116592.1)
-[55/87902f] Submitted process > eachAcn (dowloading NM_017590.5)
+[47/e8b04c] Submitted process > sortAcns (sorting list3.acns.txt)
+[8a/62b980] Submitted process > sortAcns (sorting list4.acns.txt)
+[d4/5cf791] Submitted process > sortAcns (sorting list2.acns.txt)
+[50/3ecc21] Submitted process > sortAcns (sorting list1.acns.txt)
+[7a/c3a510] Submitted process > commonAcns (comm list3.acns.txt vs list4.acns.txt)
+[10/638c78] Submitted process > commonAcns (comm list2.acns.txt vs list4.acns.txt)
+[78/8e37bc] Submitted process > commonAcns (comm list2.acns.txt vs list3.acns.txt)
+[0d/674499] Submitted process > commonAcns (comm list1.acns.txt vs list2.acns.txt)
+[87/307f6c] Submitted process > commonAcns (comm list1.acns.txt vs list3.acns.txt)
+[8c/90b1fc] Submitted process > commonAcns (comm list1.acns.txt vs list4.acns.txt)
+[7d/b8a0d6] Submitted process > listCommons (common list size: 6)
+[bf/1385b7] Submitted process > eachAcn (dowloading AF002815.1)
+[d0/a7e4c0] Submitted process > eachAcn (dowloading AF002816.1)
+[31/398237] Submitted process > eachAcn (dowloading AF004836.1)
+[9f/5ee909] Submitted process > eachAcn (dowloading AF188126.1)
+[89/9a6072] Submitted process > eachAcn (dowloading AF188530.1)
+[4c/70bd98] Submitted process > eachAcn (dowloading AX244961.1)
+[6e/fa932f] Submitted process > eachAcn (dowloading AX244962.1)
+[f7/0972ff] Submitted process > eachAcn (dowloading AX244963.1)
+[7c/34dfb2] Submitted process > eachAcn (dowloading AX244964.1)
+[6e/c3c89b] Submitted process > eachAcn (dowloading AX244965.1)
+[3f/203785] Submitted process > eachAcn (dowloading AX244966.1)
+[28/77f2b0] Submitted process > eachAcn (dowloading AX244967.1)
+[6c/9fa5cb] Submitted process > eachAcn (dowloading AX244968.1)
+[8f/4342f9] Submitted process > eachAcn (dowloading AY116592.1)
+[cd/540faf] Submitted process > eachAcn (dowloading NM_017590.5)
 ```
 
 
 ## Files
 
 ```
-work/4b/1bb15897b5cf4ddc03d1e3dee07e7c/list1.acns.txt
-work/4b/1bb15897b5cf4ddc03d1e3dee07e7c/list1.acns.txt.sorted.txt
-work/38/095c749bfe16a37f6fe276aa35b09b/list2.acns.txt
-work/38/095c749bfe16a37f6fe276aa35b09b/list2.acns.txt.sorted.txt
-work/b4/1092e3df547f6885efaad9861f7ab6/list3.acns.txt
-work/b4/1092e3df547f6885efaad9861f7ab6/list3.acns.txt.sorted.txt
-work/ed/7e43fe3f39fd8d530d28f886d5daf3/list4.acns.txt
-work/ed/7e43fe3f39fd8d530d28f886d5daf3/list4.acns.txt.sorted.txt
-work/ed/cfd674c0dc96b2c261e7c8deaf53f5/AY116592.1.fa
-work/85/6cf62dd29c4e052d37e116e08b0d28/comm.txt
-work/0f/de11a786e05d04ebe1f127dec8bfbd/comm.txt
-work/d7/0c3f9a7d95ee96430e80db8f52ad7c/comm.txt
-work/d7/0ee7b962f4dc8ec08033b438e0da3f/AX244964.1.fa
-work/87/9c57675100d530abd9cd00e52a3a21/comm.txt
-work/b5/6b3f6843a794675265e940c11fa38d/comm.txt
-work/91/02808f4caa8c8915a8b740fc2ba0d9/comm.txt
-work/36/47f30a156a904eb33705bc09c01aa2/table.csv
-work/36/47f30a156a904eb33705bc09c01aa2/distcint.acns.txt
-work/36/3921f32a7bdd45d25cc4ba4d541b51/AF002815.1.fa
-work/93/3f095bda1839aec4a34daea0197221/AF002816.1.fa
-work/32/930ad20bd2d8b2d8f4ff19eacad9d1/AF004836.1.fa
-work/e6/aad45dc9dcabe296407a23fd276aba/AF188126.1.fa
-work/04/65b961d1272600f1bea88d3842baa6/AF188530.1.fa
-work/7a/95c7e7c46c1d345cdfcce2621fa93d/AX244961.1.fa
-work/bf/7b50dfb98cf918c8bb30fe414bdb6a/AX244962.1.fa
-work/e3/d5034947833d729aba07f78f8081f9/AX244963.1.fa
-work/c9/75fec52d8da3583055a6de4c4d9a14/AX244965.1.fa
-work/3b/493c27d46d84ef1dc0c5249aa33be6/AX244966.1.fa
-work/2d/2ce4844a66d223c59159c536656546/AX244967.1.fa
-work/a6/12801d347cc389a42c2fb780f8568b/AX244968.1.fa
-work/55/87902f3f7369d6d6cb19bd15217dbb/NM_017590.5.fa
+work/d4/5cf791eca81bd9bd2fb1d7b45e4324/list2.acns.txt
+work/d4/5cf791eca81bd9bd2fb1d7b45e4324/list2.acns.txt.sorted.txt
+work/50/3ecc21b922a72513440020bae4932c/list1.acns.txt
+work/50/3ecc21b922a72513440020bae4932c/list1.acns.txt.sorted.txt
+work/47/e8b04ce96152f297a2effaa6f7f86b/list3.acns.txt
+work/47/e8b04ce96152f297a2effaa6f7f86b/list3.acns.txt.sorted.txt
+work/8a/62b980cb2963033993fad1db4a5a81/list4.acns.txt
+work/8a/62b980cb2963033993fad1db4a5a81/list4.acns.txt.sorted.txt
+work/7a/c3a510a4696a5069339fda69d7ee51/comm.txt
+work/10/638c789c27e14bfbfa925fc90d5a1b/comm.txt
+work/78/8e37bc260ea65d0d4bf63fd88e14e5/comm.txt
+work/0d/6744993b1194a9e96dcc6324ed2885/comm.txt
+work/87/307f6c1f2cdcfc59333fee1197de7c/comm.txt
+work/8c/90b1fc4607295c32f9e072a2e3e4fd/comm.txt
+work/7d/b8a0d6b1e1aaa9be0f4ac96ec046aa/table.csv
+work/7d/b8a0d6b1e1aaa9be0f4ac96ec046aa/distcint.acns.txt
+work/bf/1385b7cfeb4f94b210dd940f4432c0/AF002815.1.fa
+work/d0/a7e4c0fc6b56a84797116e95bd6b9c/AF002816.1.fa
+work/31/398237211e9eaa92dd279b1e29db4a/AF004836.1.fa
+work/9f/5ee909bd7e53e628c33f9bce7601c6/AF188126.1.fa
+work/89/9a6072efe729eecda0006ef89addd9/AF188530.1.fa
+work/4c/70bd98fe73e5f73eb04b87ea9a76df/AX244961.1.fa
+work/6e/fa932f431d589a40660b66f8d01bc2/AX244962.1.fa
+work/6e/c3c89b7975d4a690a1fa1e56618d9c/AX244965.1.fa
+work/f7/0972ff2778883c294f3b85a3a8162e/AX244963.1.fa
+work/7c/34dfb266b238099ba7f7891c5f72c7/AX244964.1.fa
+work/3f/203785c693cc2bd30134ed8be0bed9/AX244966.1.fa
+work/28/77f2b0877384320b8d6be73381b345/AX244967.1.fa
+work/6c/9fa5cb0ab7f3c75f4da31e174d4805/AX244968.1.fa
+work/8f/4342f902a881b724a930a233c1075a/AY116592.1.fa
+work/cd/540faf6c1573b98911bf4f79225b91/NM_017590.5.fa
 ```
 
 

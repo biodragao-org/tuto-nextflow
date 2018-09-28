@@ -68,56 +68,56 @@ process each {
 ```
 ../bin/nextflow run  workflow.nf --acns '../data/list*.acns.txt'
 N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [clever_mccarthy] - revision: 111c7d7269
+Launching `workflow.nf` [loving_nightingale] - revision: 111c7d7269
 [warm up] executor > local
-[fe/d431a3] Submitted process > sortAcns (sorting list4.acns.txt)
-[87/21f4e0] Submitted process > sortAcns (sorting list1.acns.txt)
-[96/9c5f6d] Submitted process > sortAcns (sorting list3.acns.txt)
-[a8/7b4bbb] Submitted process > sortAcns (sorting list2.acns.txt)
-[03/f3e6d0] Submitted process > commonAcns (comm list3.acns.txt vs list4.acns.txt)
-[ff/2b16c0] Submitted process > commonAcns (comm list1.acns.txt vs list4.acns.txt)
-[4f/b9a7b6] Submitted process > commonAcns (comm list1.acns.txt vs list3.acns.txt)
-[b1/6a2d80] Submitted process > commonAcns (comm list2.acns.txt vs list4.acns.txt)
-[aa/a38135] Submitted process > commonAcns (comm list1.acns.txt vs list2.acns.txt)
-[3f/8c8bf2] Submitted process > commonAcns (comm list2.acns.txt vs list3.acns.txt)
-[60/65ef5c] Submitted process > listCommons (common list size: 6)
-[07/383969] Submitted process > each (processing AF188126.1)
-[1c/522a1a] Submitted process > each (processing AF002816.1)
-[dc/9f3696] Submitted process > each (processing AF004836.1)
-[73/08796f] Submitted process > each (processing AX244961.1)
-[3b/359ccf] Submitted process > each (processing AF002815.1)
-[e3/5544c9] Submitted process > each (processing AX244962.1)
-[59/e76a89] Submitted process > each (processing AF188530.1)
-[1f/e32102] Submitted process > each (processing AX244963.1)
-[1e/ad8b3d] Submitted process > each (processing AX244964.1)
-[40/9f7c35] Submitted process > each (processing AX244967.1)
-[86/a70e0f] Submitted process > each (processing AX244965.1)
-[5e/2e50fd] Submitted process > each (processing AX244966.1)
-[3a/423f33] Submitted process > each (processing AY116592.1)
-[f7/44e607] Submitted process > each (processing NM_017590.5)
-[aa/33598d] Submitted process > each (processing AX244968.1)
+[6e/3460f0] Submitted process > sortAcns (sorting list3.acns.txt)
+[c1/8b179e] Submitted process > sortAcns (sorting list1.acns.txt)
+[04/6aacdc] Submitted process > sortAcns (sorting list4.acns.txt)
+[e3/e44b68] Submitted process > sortAcns (sorting list2.acns.txt)
+[24/06e656] Submitted process > commonAcns (comm list1.acns.txt vs list4.acns.txt)
+[f7/5657f1] Submitted process > commonAcns (comm list3.acns.txt vs list4.acns.txt)
+[e4/cbc71d] Submitted process > commonAcns (comm list1.acns.txt vs list2.acns.txt)
+[55/32339f] Submitted process > commonAcns (comm list1.acns.txt vs list3.acns.txt)
+[73/310fb7] Submitted process > commonAcns (comm list2.acns.txt vs list3.acns.txt)
+[9d/67f767] Submitted process > commonAcns (comm list2.acns.txt vs list4.acns.txt)
+[ef/d1b121] Submitted process > listCommons (common list size: 6)
+[7d/b6b8e3] Submitted process > each (processing AF002816.1)
+[63/ab4226] Submitted process > each (processing AF188126.1)
+[ac/6d140e] Submitted process > each (processing AF004836.1)
+[2b/e6b145] Submitted process > each (processing AF002815.1)
+[a1/69e573] Submitted process > each (processing AX244962.1)
+[07/b728e7] Submitted process > each (processing AF188530.1)
+[01/65f341] Submitted process > each (processing AX244963.1)
+[8d/3ebd51] Submitted process > each (processing AX244964.1)
+[8d/601a97] Submitted process > each (processing AX244967.1)
+[21/1b19cf] Submitted process > each (processing AX244965.1)
+[40/c0aa32] Submitted process > each (processing AX244961.1)
+[e9/e15b47] Submitted process > each (processing AY116592.1)
+[56/c66e90] Submitted process > each (processing AX244968.1)
+[22/a51e1a] Submitted process > each (processing NM_017590.5)
+[89/58333e] Submitted process > each (processing AX244966.1)
 ```
 
 
 ## Files
 
 ```
-work/fe/d431a3679625941aa86c4c60520a0a/list4.acns.txt
-work/fe/d431a3679625941aa86c4c60520a0a/list4.acns.txt.sorted.txt
-work/a8/7b4bbb0bd07a78b43987819dc8f8c0/list2.acns.txt
-work/a8/7b4bbb0bd07a78b43987819dc8f8c0/list2.acns.txt.sorted.txt
-work/87/21f4e0e186ddd1ff1895f713034503/list1.acns.txt
-work/87/21f4e0e186ddd1ff1895f713034503/list1.acns.txt.sorted.txt
-work/96/9c5f6dbfb98a306180f5bcfa3f4ef9/list3.acns.txt
-work/96/9c5f6dbfb98a306180f5bcfa3f4ef9/list3.acns.txt.sorted.txt
-work/03/f3e6d021b1b47b6bcf5654a4854c32/comm.txt
-work/ff/2b16c0089f3332b186277d7cb6bbe2/comm.txt
-work/4f/b9a7b6ff26c5180b3d6cf6a2777c54/comm.txt
-work/b1/6a2d8071a1bb99566940d3c0f5634c/comm.txt
-work/aa/a381353e2bb17a882ee6e16990432b/comm.txt
-work/3f/8c8bf26a996cd5b990bcf5adaa84a7/comm.txt
-work/60/65ef5cd2c0b70f69af6022b22adcb9/table.csv
-work/60/65ef5cd2c0b70f69af6022b22adcb9/distcint.acns.txt
+work/04/6aacdc77ac5bef423076c78181f3fc/list4.acns.txt
+work/04/6aacdc77ac5bef423076c78181f3fc/list4.acns.txt.sorted.txt
+work/e3/e44b68597328966c52ddf3ce2c0848/list2.acns.txt
+work/e3/e44b68597328966c52ddf3ce2c0848/list2.acns.txt.sorted.txt
+work/6e/3460f01fbd633b186b9d7d34c8637a/list3.acns.txt
+work/6e/3460f01fbd633b186b9d7d34c8637a/list3.acns.txt.sorted.txt
+work/c1/8b179eb353818338046a7a78295831/list1.acns.txt
+work/c1/8b179eb353818338046a7a78295831/list1.acns.txt.sorted.txt
+work/24/06e65673ef60cb772bfa988700f93f/comm.txt
+work/55/32339fca1edec2e3258290e5b940ac/comm.txt
+work/f7/5657f14fcf2aeea71e1f493908af2f/comm.txt
+work/e4/cbc71d0745c6317e8baf93916678db/comm.txt
+work/73/310fb7c3f0149b97b501c5a24c013a/comm.txt
+work/9d/67f76777b4dcefcc404569d171c836/comm.txt
+work/ef/d1b121e28292c42d1a544f01cd6505/table.csv
+work/ef/d1b121e28292c42d1a544f01cd6505/distcint.acns.txt
 ```
 
 

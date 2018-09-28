@@ -29,28 +29,28 @@ process sayHello {
 ```
 ../bin/nextflow run workflow.nf 
 N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [zen_dijkstra] - revision: 638169095b
+Launching `workflow.nf` [modest_faggin] - revision: 638169095b
 [warm up] executor > local
-[fd/3d2554] Submitted process > sayHello (saying Hello to world)
+[20/8261a5] Submitted process > sayHello (saying Hello to world)
 ../bin/nextflow run workflow.nf  --salutation Bonjour --name Monde
 N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [cranky_joliot] - revision: 638169095b
+Launching `workflow.nf` [gloomy_descartes] - revision: 638169095b
 [warm up] executor > local
-[ba/3f6eb1] Submitted process > sayHello (saying Bonjour to Monde)
+[aa/bd0bed] Submitted process > sayHello (saying Bonjour to Monde)
 ../bin/nextflow run -config my.config workflow.nf  
 N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [shrivelled_ride] - revision: 638169095b
+Launching `workflow.nf` [high_golick] - revision: 638169095b
 [warm up] executor > local
-[0b/bd33d5] Submitted process > sayHello (saying Hola to Muchachos)
+[e2/447749] Submitted process > sayHello (saying Hola to Muchachos)
 ```
 
 
 ## Files
 
 ```
-work/fd/3d2554a96b8f480f9ace71582507c9/message.txt
-work/ba/3f6eb1c6d2d0bc06c75ca3c1f84d71/message.txt
-work/0b/bd33d5b45ffb47e5b965e80ac4a67a/message.txt
+work/20/8261a5cdc4f15c58b05c0b2a55d13b/message.txt
+work/aa/bd0bedf672a977df02723eed0a3918/message.txt
+work/e2/447749b7efb9ea2f0477ac36920df6/message.txt
 ```
 
 
