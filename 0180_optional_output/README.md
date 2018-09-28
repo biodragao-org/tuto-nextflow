@@ -204,7 +204,7 @@ work/5f/83a6b3b57042d99a9adc31ada6eede/NM_017590.5.fa
 
 ## Trace
 
-```
+```tsv
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
 3	84/9240ae	14589	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-09-28 13:21:24.429	405ms	47ms	0.0%	0	0	0	0
 1	c7/57fc6e	14583	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-09-28 13:21:24.361	555ms	27ms	0.0%	0	0	0	0
