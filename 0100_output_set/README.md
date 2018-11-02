@@ -24,27 +24,27 @@ process sortAcns {
 
 ```
 ../bin/nextflow run -resume -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
-N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [desperate_coulomb] - revision: efdcb56eb1
+N E X T F L O W  ~  version 0.31.1
+Launching `workflow.nf` [cheeky_montalcini] - revision: efdcb56eb1
 [warm up] executor > local
-[62/efc0a5] Cached process > sortAcns (sorting list3.acns.txt)
-[77/df90f3] Cached process > sortAcns (sorting list2.acns.txt)
-[38/77dae1] Cached process > sortAcns (sorting list1.acns.txt)
-[c9/a6b603] Cached process > sortAcns (sorting list4.acns.txt)
+[59/db35c9] Submitted process > sortAcns (sorting list3.acns.txt)
+[37/f120d7] Submitted process > sortAcns (sorting list4.acns.txt)
+[47/36df62] Submitted process > sortAcns (sorting list2.acns.txt)
+[49/38e8e4] Submitted process > sortAcns (sorting list1.acns.txt)
 ```
 
 
 ## Files
 
 ```
-work/77/df90f335ff1bd68689af2244b8369d/list2.acns.txt
-work/77/df90f335ff1bd68689af2244b8369d/list2.acns.txt.sorted.txt
-work/c9/a6b6039c599956d0d7c51b45c8e37e/list4.acns.txt
-work/c9/a6b6039c599956d0d7c51b45c8e37e/list4.acns.txt.sorted.txt
-work/38/77dae1e6a97e24eaeb5eda19712c27/list1.acns.txt
-work/38/77dae1e6a97e24eaeb5eda19712c27/list1.acns.txt.sorted.txt
-work/62/efc0a56192c779c3a403c9a4115829/list3.acns.txt
-work/62/efc0a56192c779c3a403c9a4115829/list3.acns.txt.sorted.txt
+work/59/db35c920c0fc2f86f2d17cdfa1c4ca/list3.acns.txt
+work/59/db35c920c0fc2f86f2d17cdfa1c4ca/list3.acns.txt.sorted.txt
+work/37/f120d793451005ccbb5d40d16633b8/list4.acns.txt.sorted.txt
+work/37/f120d793451005ccbb5d40d16633b8/list4.acns.txt
+work/49/38e8e41dc64e29a7387ec57d1db501/list1.acns.txt.sorted.txt
+work/49/38e8e41dc64e29a7387ec57d1db501/list1.acns.txt
+work/47/36df62b51d61e795a13ce1abc3bc90/list2.acns.txt.sorted.txt
+work/47/36df62b51d61e795a13ce1abc3bc90/list2.acns.txt
 ```
 
 
@@ -58,9 +58,9 @@ work/62/efc0a56192c779c3a403c9a4115829/list3.acns.txt.sorted.txt
 
 ```
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
-3	62/efc0a5	10505	sortAcns (sorting list3.acns.txt)	CACHED	0	2018-09-28 13:20:39.666	523ms	50ms	0.0%	0	0	0	0
-1	38/77dae1	10486	sortAcns (sorting list1.acns.txt)	CACHED	0	2018-09-28 13:20:39.573	490ms	23ms	0.0%	0	0	0	0
-4	c9/a6b603	10489	sortAcns (sorting list4.acns.txt)	CACHED	0	2018-09-28 13:20:39.619	536ms	30ms	0.0%	0	0	0	0
-2	77/df90f3	10500	sortAcns (sorting list2.acns.txt)	CACHED	0	2018-09-28 13:20:39.651	524ms	26ms	0.0%	0	0	0	0
+2	37/f120d7	30793	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-11-02 16:09:49.191	574ms	70ms	0.0%	0	0	0	0
+1	59/db35c9	30786	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-11-02 16:09:49.100	781ms	46ms	0.0%	0	0	0	0
+4	49/38e8e4	30922	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-11-02 16:09:49.897	404ms	31ms	0.0%	0	0	0	0
+3	47/36df62	30912	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-11-02 16:09:49.806	596ms	48ms	0.0%	0	0	0	0
 ```
 

@@ -58,7 +58,7 @@ process fetchAcn {
 ```
 ../bin/nextflow run workflow.nf --help
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [nice_ardinghelli] - revision: a63838f993
+Launching `workflow.nf` [naughty_pauling] - revision: a63838f993
 WARN: Access to undefined parameter `acns` -- Initialise it to a default value eg. `params.acns = some_value`
 
 =========================================

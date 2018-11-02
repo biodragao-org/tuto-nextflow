@@ -36,26 +36,26 @@ process fetchAcn {
 ```
 ../bin/nextflow run workflow.nf --acns '../data/list1.acns.txt' --web wget
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [serene_raman] - revision: 1d5587e209
+Launching `workflow.nf` [sleepy_lamarr] - revision: 1d5587e209
 [warm up] executor > local
-[c1/6d49dc] Submitted process > fetchAcn (download NM_017590.5 using wget)
-[a5/7f4d74] Submitted process > fetchAcn (download LP969861.1 using wget)
+[d2/900123] Submitted process > fetchAcn (download NM_017590.5 using wget)
+[af/4b5db0] Submitted process > fetchAcn (download LP969861.1 using wget)
 ../bin/nextflow run workflow.nf --acns '../data/list1.acns.txt' --web curl
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [kickass_wiles] - revision: 1d5587e209
+Launching `workflow.nf` [adoring_feynman] - revision: 1d5587e209
 [warm up] executor > local
-[f7/b778ec] Submitted process > fetchAcn (download NM_017590.5 using curl)
-[4a/b05aaa] Submitted process > fetchAcn (download LP969861.1 using curl)
+[dd/093a13] Submitted process > fetchAcn (download NM_017590.5 using curl)
+[f9/3584b1] Submitted process > fetchAcn (download LP969861.1 using curl)
 ```
 
 
 ## Files
 
 ```
-work/c1/6d49dca4b65063fcc0aea2e96af826/NM_017590.5.fa
-work/4a/b05aaa7a8a503e7a66b17ab2365c49/LP969861.1.fa
-work/f7/b778ec7c190327be1cefecdfadc8d6/NM_017590.5.fa
-work/a5/7f4d74ad789bfa2424c1487f3cb3e7/LP969861.1.fa
+work/af/4b5db054ff978b26d24d690fc7b6c7/LP969861.1.fa
+work/f9/3584b1dff4d70065af465e10f8c0b0/LP969861.1.fa
+work/d2/900123686d1aaebb6f4f287f37f02c/NM_017590.5.fa
+work/dd/093a132239c1d3289cfb333916e88a/NM_017590.5.fa
 ```
 
 

@@ -31,17 +31,17 @@ f.close()
 
 ```
 ../bin/nextflow run -resume -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf 
-N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [furious_hopper] - revision: db56321d98
+N E X T F L O W  ~  version 0.31.1
+Launching `workflow.nf` [spontaneous_jennings] - revision: db56321d98
 [warm up] executor > local
-[15/fcbb75] Cached process > sayHello (saying Hello to world)
+[e6/335796] Submitted process > sayHello (saying Hello to world)
 ```
 
 
 ## Files
 
 ```
-work/15/fcbb75e39f791b2d60bc834fbe1a09/message.txt
+work/e6/3357967e7f7b16cec6c5fe2f2725bf/message.txt
 ```
 
 
@@ -55,6 +55,6 @@ work/15/fcbb75e39f791b2d60bc834fbe1a09/message.txt
 
 ```
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
-1	15/fcbb75	9711	sayHello (saying Hello to world)	CACHED	0	2018-09-28 13:20:23.284	325ms	107ms	0.0%	6.3 MB	26.9 MB	0	0
+1	e6/335796	30031	sayHello (saying Hello to world)	COMPLETED	0	2018-11-02 16:09:13.353	5.8s	866ms	3.8%	4.1 MB	7.5 MB	241.9 KB	0
 ```
 

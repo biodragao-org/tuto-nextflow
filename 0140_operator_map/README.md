@@ -39,39 +39,39 @@ process commonAcns {
 
 ```
 ../bin/nextflow run -resume -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
-N E X T F L O W  ~  version 0.32.0
-Launching `workflow.nf` [tiny_leakey] - revision: 50561d3246
+N E X T F L O W  ~  version 0.31.1
+Launching `workflow.nf` [chaotic_chandrasekhar] - revision: 50561d3246
 [warm up] executor > local
-[b8/ff16d0] Cached process > sortAcns (sorting list2.acns.txt)
-[0d/093bae] Cached process > sortAcns (sorting list4.acns.txt)
-[c8/d3234f] Cached process > sortAcns (sorting list1.acns.txt)
-[98/27f3fb] Cached process > sortAcns (sorting list3.acns.txt)
-[57/11957e] Cached process > commonAcns (comm list2.acns.txt vs list3.acns.txt)
-[e5/5f8eda] Cached process > commonAcns (comm list3.acns.txt vs list4.acns.txt)
-[f5/c6ea50] Cached process > commonAcns (comm list1.acns.txt vs list3.acns.txt)
-[e3/4ebec2] Cached process > commonAcns (comm list1.acns.txt vs list4.acns.txt)
-[bc/974983] Cached process > commonAcns (comm list1.acns.txt vs list2.acns.txt)
-[de/d26749] Cached process > commonAcns (comm list2.acns.txt vs list4.acns.txt)
+[3a/5a3670] Submitted process > sortAcns (sorting list4.acns.txt)
+[da/26776d] Submitted process > sortAcns (sorting list3.acns.txt)
+[c8/c1e9f0] Submitted process > sortAcns (sorting list2.acns.txt)
+[df/dafc28] Submitted process > sortAcns (sorting list1.acns.txt)
+[97/424ad8] Submitted process > commonAcns (comm list3.acns.txt vs list4.acns.txt)
+[ce/24607f] Submitted process > commonAcns (comm list2.acns.txt vs list3.acns.txt)
+[93/a67216] Submitted process > commonAcns (comm list2.acns.txt vs list4.acns.txt)
+[0a/52aa97] Submitted process > commonAcns (comm list1.acns.txt vs list3.acns.txt)
+[d6/7de148] Submitted process > commonAcns (comm list1.acns.txt vs list2.acns.txt)
+[f3/a4d31d] Submitted process > commonAcns (comm list1.acns.txt vs list4.acns.txt)
 ```
 
 
 ## Files
 
 ```
-work/b8/ff16d088dc0bdbe6823657651d07c4/list2.acns.txt
-work/b8/ff16d088dc0bdbe6823657651d07c4/list2.acns.txt.sorted.txt
-work/c8/d3234f6099a5dbf1f52dc715f9170c/list1.acns.txt
-work/c8/d3234f6099a5dbf1f52dc715f9170c/list1.acns.txt.sorted.txt
-work/98/27f3fb2173b2daeae99c4ba2d80950/list3.acns.txt
-work/98/27f3fb2173b2daeae99c4ba2d80950/list3.acns.txt.sorted.txt
-work/0d/093baeffd643bed7ed4eb96e786b40/list4.acns.txt
-work/0d/093baeffd643bed7ed4eb96e786b40/list4.acns.txt.sorted.txt
-work/e3/4ebec28880b9a9ebecff7ab7d3073f/comm.txt
-work/f5/c6ea5085be524f0a5b23749dbb5fc9/comm.txt
-work/e5/5f8eda71136eadee2ac76d8694758d/comm.txt
-work/de/d26749222a793efcb5548a8aadb93e/comm.txt
-work/bc/97498306dbcaf49dd8f0505107cb91/comm.txt
-work/57/11957e7fff064fb5447848eddfb98b/comm.txt
+work/97/424ad8060087b11e031dbfa64f66b7/comm.txt
+work/f3/a4d31d98ff7f9efcdb24ff2c05b789/comm.txt
+work/93/a672161419c7bd30c654539d58af96/comm.txt
+work/0a/52aa9768288a8c8aa7bfc7efb332ad/comm.txt
+work/c8/c1e9f0255063f93349022edd143185/list2.acns.txt.sorted.txt
+work/c8/c1e9f0255063f93349022edd143185/list2.acns.txt
+work/da/26776d1d143b2fdb5e6a4fc3b69c87/list3.acns.txt
+work/da/26776d1d143b2fdb5e6a4fc3b69c87/list3.acns.txt.sorted.txt
+work/3a/5a36708cdd8e1b827d6b5424372d24/list4.acns.txt.sorted.txt
+work/3a/5a36708cdd8e1b827d6b5424372d24/list4.acns.txt
+work/df/dafc28caacc205fdfecfe2a6d02bbd/list1.acns.txt.sorted.txt
+work/df/dafc28caacc205fdfecfe2a6d02bbd/list1.acns.txt
+work/d6/7de1482dc893fc0f0040f5a246e56e/comm.txt
+work/ce/24607fcbad04821374abb644d4174e/comm.txt
 ```
 
 
@@ -85,15 +85,15 @@ work/57/11957e7fff064fb5447848eddfb98b/comm.txt
 
 ```
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
-1	c8/d3234f	11984	sortAcns (sorting list1.acns.txt)	CACHED	0	2018-09-28 13:20:56.817	474ms	36ms	0.0%	0	0	0	0
-4	0d/093bae	11983	sortAcns (sorting list4.acns.txt)	CACHED	0	2018-09-28 13:20:56.797	438ms	49ms	0.0%	0	0	0	0
-2	98/27f3fb	11967	sortAcns (sorting list3.acns.txt)	CACHED	0	2018-09-28 13:20:56.740	595ms	57ms	0.0%	0	0	0	0
-3	b8/ff16d0	11971	sortAcns (sorting list2.acns.txt)	CACHED	0	2018-09-28 13:20:56.774	567ms	55ms	0.0%	0	0	0	0
-9	57/11957e	12549	commonAcns (comm list2.acns.txt vs list3.acns.txt)	CACHED	0	2018-09-28 13:20:57.806	342ms	26ms	0.0%	0	0	0	0
-7	e5/5f8eda	12273	commonAcns (comm list3.acns.txt vs list4.acns.txt)	CACHED	0	2018-09-28 13:20:57.382	397ms	53ms	0.0%	0	0	0	0
-6	f5/c6ea50	12271	commonAcns (comm list1.acns.txt vs list3.acns.txt)	CACHED	0	2018-09-28 13:20:57.371	393ms	62ms	0.0%	0	0	0	0
-10	de/d26749	12547	commonAcns (comm list2.acns.txt vs list4.acns.txt)	CACHED	0	2018-09-28 13:20:57.783	333ms	21ms	0.0%	0	0	0	0
-5	e3/4ebec2	12264	commonAcns (comm list1.acns.txt vs list4.acns.txt)	CACHED	0	2018-09-28 13:20:57.316	599ms	65ms	0.0%	0	0	0	0
-8	bc/974983	12285	commonAcns (comm list1.acns.txt vs list2.acns.txt)	CACHED	0	2018-09-28 13:20:57.405	410ms	41ms	0.0%	0	0	0	0
+2	3a/5a3670	993	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-11-02 16:10:25.700	425ms	35ms	0.0%	0	0	0	0
+1	da/26776d	1035	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-11-02 16:10:25.837	412ms	41ms	0.0%	0	0	0	0
+3	c8/c1e9f0	1116	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-11-02 16:10:26.151	535ms	31ms	0.0%	0	0	0	0
+4	df/dafc28	1134	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-11-02 16:10:26.291	436ms	50ms	0.0%	0	0	0	0
+5	97/424ad8	1240	commonAcns (comm list3.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-11-02 16:10:26.705	340ms	42ms	0.0%	0	0	0	0
+6	ce/24607f	1261	commonAcns (comm list2.acns.txt vs list3.acns.txt)	COMPLETED	0	2018-11-02 16:10:26.736	351ms	33ms	0.0%	0	0	0	0
+7	93/a67216	1365	commonAcns (comm list2.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-11-02 16:10:27.054	255ms	24ms	0.0%	0	0	0	0
+8	0a/52aa97	1397	commonAcns (comm list1.acns.txt vs list3.acns.txt)	COMPLETED	0	2018-11-02 16:10:27.113	262ms	42ms	0.0%	0	0	0	0
+10	d6/7de148	1504	commonAcns (comm list1.acns.txt vs list2.acns.txt)	COMPLETED	0	2018-11-02 16:10:27.328	327ms	37ms	0.0%	0	0	0	0
+9	f3/a4d31d	1532	commonAcns (comm list1.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-11-02 16:10:27.381	294ms	29ms	0.0%	0	0	0	0
 ```
 
