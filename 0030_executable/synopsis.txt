@@ -1,0 +1,1 @@
+Un workflow nextflow peut être utilisé en tant qu'executable en utilisant un shebang `#!`.

@@ -1,0 +1,29 @@
+le workflow suivant illustre comment passer des paramètre dans le pipeline
+
+### En utilisant les paramètres par défaut 
+
+```
+$ more workflow.nf 
+params.salutation  = "Hello"
+params.name  = "world"
+(...)
+
+../bin/nextflow run workflow.nf 
+```
+
+### En spécifiant les paramètres sur la ligne de commande
+
+```
+../bin/nextflow run workflow.nf  --salutation Bonjour --name Monde
+```
+
+### En utilisant un fichier de configuration
+
+```
+$ more my.config 
+params.salutation  = "Hola"
+params.name  = "Muchachos"
+
+../bin/nextflow run -config my.config workflow.nf  
+```
+

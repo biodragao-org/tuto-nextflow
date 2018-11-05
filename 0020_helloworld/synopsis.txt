@@ -1,0 +1,2 @@
+NextflowIO utilise le language de programmation **groovy** qui lui meme est un sous-language de **java**.
+Ainsi, la simple commande `println` fonction and un workflow nextflow
