@@ -16,9 +16,10 @@ process sortAcns {
 process commonAcns {
 	tag "comm ${sorted1.getName()} and ${sorted2.getName()}"
 	input:
-		set acn1,sorted1,acn2,sorted2 from acn_sorted1.combine(acn_sorted2)
+		set acn1,sorted1,acn2,sorted2 from acn_sorted1.
+			combine(acn_sorted2)
 	output:
-		set acn1,acn2,file("comm.txt")
+		set acn1,acn2,file("comm.txt") into comm_out
 	script:
 	"""
 	comm -12 "${sorted1}" "${sorted2}" > comm.txt

@@ -11,7 +11,7 @@ self-update: ../bin/nextflow
 ## install nextflow in the current directory
 ../bin/nextflow:
 	mkdir -p ../bin
-	cd ../bin && wget  -O - "https://get.nextflow.io" | bash
+	cd ../bin && curl "https://get.nextflow.io" | bash
 
 clean:
 	rm -f ../bin/nextflow

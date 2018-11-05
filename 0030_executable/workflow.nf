@@ -1,3 +1,4 @@
-#!../bin/nextflow
+#!/usr/bin/env ../bin/nextflow
 
-println "Hello world!"
+println("Hello world!")
+
