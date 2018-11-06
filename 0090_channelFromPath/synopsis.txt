@@ -1,0 +1,13 @@
+dans ce workflow, on définit un `flux`/ `channel`/ `stream` de noms de fichiers spécifié en argument.
+
+```
+acn_file_channel = Channel.fromPath( "${params.acns}")
+```
+
+chacun de ces fichiers sert de `input` pour le workflow.
+
+```
+        input:
+                file acnFile from acn_file_channel
+
+```

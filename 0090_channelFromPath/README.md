@@ -1,3 +1,18 @@
+## Synopsis
+dans ce workflow, on définit un `flux`/ `channel`/ `stream` de noms de fichiers spécifié en argument.
+
+```
+acn_file_channel = Channel.fromPath( "${params.acns}")
+```
+
+chacun de ces fichiers sert de `input` pour le workflow.
+
+```
+        input:
+                file acnFile from acn_file_channel
+
+```
+
 ## nextflow
 
 ### ./workflow.nf
@@ -25,7 +40,7 @@ process sortAcns {
 ```
 ../bin/nextflow run -resume -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [condescending_fermat] - revision: 5846808ae4
+Launching `workflow.nf` [grave_sammet] - revision: 5846808ae4
 [warm up] executor > local
 [23/95a314] Submitted process > sortAcns (sorting list4.acns.txt)
 [e9/198d97] Submitted process > sortAcns (sorting list3.acns.txt)
@@ -58,9 +73,9 @@ work/52/95f8d7db3744912d140c6a670847c6/list1.acns.txt
 
 ```
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
-2	23/95a314	30459	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-11-02 16:09:40.348	601ms	49ms	0.0%	0	0	0	0
-1	e9/198d97	30468	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-11-02 16:09:40.459	1.1s	33ms	0.0%	0	0	0	0
-3	a7/3e8610	30583	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-11-02 16:09:41.404	328ms	39ms	0.0%	0	0	0	0
-4	52/95f8d7	30644	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-11-02 16:09:41.636	453ms	51ms	0.0%	0	0	0	0
+2	23/95a314	6341	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-11-06 10:56:07.382	434ms	50ms	0.0%	0	0	0	0
+1	e9/198d97	6403	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-11-06 10:56:07.461	758ms	40ms	0.0%	0	0	0	0
+3	a7/3e8610	6407	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-11-06 10:56:07.845	403ms	41ms	0.0%	0	0	0	0
+4	52/95f8d7	6526	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-11-06 10:56:08.232	208ms	25ms	0.0%	0	0	0	0
 ```
 

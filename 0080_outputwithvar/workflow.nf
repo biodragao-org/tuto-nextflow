@@ -1,5 +1,3 @@
-#!./nextflow
-
 params.salutation  = "Hello"
 params.name  = "world"
 

@@ -1,3 +1,6 @@
+## Synopsis
+aide en ligne pour un workflow.
+
 ## nextflow
 
 ### ./workflow.nf
@@ -40,11 +43,11 @@ process fetchAcn {
 	
 	 if( params.web == 'wget' )
 		"""
-		wget -O "${acn}.fa" "https://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${acn}&rettype=fasta"
+		../bin/ncbiwget "${acn}" > "${acn}.fa" 
 		"""
 	else  if( params.web == 'curl' )
 		"""
-		curl -o "${acn}.fa" "https://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${acn}&rettype=fasta"
+		../bin/ncbicurl "${acn}" > "${acn}.fa" 
 		"""
 	else
 		 error "Invalid alignment mode: ${params.web}"
@@ -58,7 +61,7 @@ process fetchAcn {
 ```
 ../bin/nextflow run workflow.nf --help
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [naughty_pauling] - revision: a63838f993
+Launching `workflow.nf` [kickass_mccarthy] - revision: 46b3f52ced
 WARN: Access to undefined parameter `acns` -- Initialise it to a default value eg. `params.acns = some_value`
 
 =========================================

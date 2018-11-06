@@ -1,0 +1,10 @@
+> The map operator applies a function of your choosing to every item emitted by a channel, and returns the items so obtained as a new channel. The function applied is called the mapping function and is expressed with a closure
+
+Ici
+
+```
+map{ROW->[ ROW[0].getName() + " vs " + ROW[2].getName() , ROW[1] , ROW[3] ] }
+```
+
+on crée un tableau à trois elements : le titre , fichier trié 1, fichier trié 2
+

@@ -1,0 +1,7 @@
+Ici l'output est constituté par un `set`/`vector`/`liste` de données contenant deux objets: le nom original du fichier et le nom du fichier après le trie.
+
+```
+ output:
+                set acnFile, file("${acnFile}.sorted.txt")
+```
+

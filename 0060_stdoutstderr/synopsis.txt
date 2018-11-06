@@ -1,0 +1,3 @@
+Ce workflow illustre la redirection des flux `stdout` et `stderr` qui vont respectivement se trouver dans les fichiers `.command.out` et `.command.err`.
+
+

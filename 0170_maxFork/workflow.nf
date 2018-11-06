@@ -34,14 +34,14 @@ process listCommons {
 		val array_of_rows from commons.map{ROW->ROW[0]+","+ROW[1]}.collect()
 	output:
 		file("table.csv")
-		file("distcint.acns.txt") into distinct_acns
+		file("distinct.acns.txt") into distinct_acns
 	script:
 	"""
 	echo '${array_of_rows.join("\n")}' > table.csv
 	cut -d ',' -f2 table.csv | while read F
 	do
 		cat \$F
-	done | sort | uniq > distcint.acns.txt
+	done | sort | uniq > distinct.acns.txt
 	"""
 
 }
@@ -56,6 +56,7 @@ process eachAcn {
 		file("${acn}.fa")
 	script:
 	"""
-	curl -o "${acn}.fa" "https://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${acn}&rettype=fasta"
+	../bin/ncbicurl ${acn} > "${acn}.fa"
 	"""
 	}
+

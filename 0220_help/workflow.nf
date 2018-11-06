@@ -35,11 +35,11 @@ process fetchAcn {
 	
 	 if( params.web == 'wget' )
 		"""
-		wget -O "${acn}.fa" "https://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${acn}&rettype=fasta"
+		../bin/ncbiwget "${acn}" > "${acn}.fa" 
 		"""
 	else  if( params.web == 'curl' )
 		"""
-		curl -o "${acn}.fa" "https://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${acn}&rettype=fasta"
+		../bin/ncbicurl "${acn}" > "${acn}.fa" 
 		"""
 	else
 		 error "Invalid alignment mode: ${params.web}"

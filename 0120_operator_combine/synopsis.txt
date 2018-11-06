@@ -1,0 +1,3 @@
+> The combine operator combines (cartesian product) the items emitted by two channels.
+
+Ici c'est le premier workflow où nous combinons deux `process`.

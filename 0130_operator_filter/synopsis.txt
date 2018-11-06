@@ -1,0 +1,8 @@
+> The filter operator allows you to get only the items emitted by a channel that satisfy a condition and discarding all the others. The filtering condition can be specified by using either a regular expression, a literal value, a type qualifier (i.e. a Java class) or any boolean predicate.
+
+
+ici, après `combine` on ne garde que les lignes où le premier nom est 'plus petit' que le deuxième.
+
+```
+filter{ROW->ROW[1].getName().compareTo(ROW[3].getName())<0}
+```

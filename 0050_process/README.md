@@ -1,10 +1,15 @@
+## Synopsis
+Un exemple de workflow avec un seul process. 
+
+On precise le fichier de sortie dans `output`
+
+`tag`permet de donner un titre dans le déroulement du workflow
+
 ## nextflow
 
 ### ./workflow.nf
 
 ```groovy
-#!./nextflow
-
 params.salutation  = "Hello"
 params.name  = "world"
 
@@ -13,8 +18,8 @@ process sayHello {
 	
 	output:
 		file("message.txt")
-	script:
-	
+
+	script:	
 	"""
 	echo '${params.salutation} ${params.name}!' > message.txt
 	"""
@@ -27,28 +32,28 @@ process sayHello {
 ```
 ../bin/nextflow run workflow.nf 
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [agitated_sanger] - revision: fa4daadc32
+Launching `workflow.nf` [evil_church] - revision: b3e694b129
 [warm up] executor > local
-[eb/9f1f25] Submitted process > sayHello (saying Hello to world)
+[2b/226971] Submitted process > sayHello (saying Hello to world)
 ../bin/nextflow run workflow.nf  --salutation Bonjour --name Monde
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [shrivelled_picasso] - revision: fa4daadc32
+Launching `workflow.nf` [hopeful_laplace] - revision: b3e694b129
 [warm up] executor > local
-[c9/38db70] Submitted process > sayHello (saying Bonjour to Monde)
+[16/53a9e5] Submitted process > sayHello (saying Bonjour to Monde)
 ../bin/nextflow run -config my.config workflow.nf  
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [intergalactic_coulomb] - revision: fa4daadc32
+Launching `workflow.nf` [high_kalam] - revision: b3e694b129
 [warm up] executor > local
-[18/17a89a] Submitted process > sayHello (saying Hola to Muchachos)
+[80/50d367] Submitted process > sayHello (saying Hola to Muchachos)
 ```
 
 
 ## Files
 
 ```
-work/18/17a89a6bd5b0b4bd8c2474d5640fed/message.txt
-work/c9/38db7052c5cae6c5cf116b1e562d46/message.txt
-work/eb/9f1f254076bd6d0de95703a1cd4abf/message.txt
+work/16/53a9e51d8e43695b0e1a3530199251/message.txt
+work/2b/226971ca6b376a8830750ba7e88d3d/message.txt
+work/80/50d3670c1b349afbef1a8030abe091/message.txt
 ```
 
 

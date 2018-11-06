@@ -1,0 +1,1 @@
+Bien que `bash` soit le shell par défaut. On peut utiliser n'importe quel language, ici `python`.

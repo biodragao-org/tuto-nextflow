@@ -34,14 +34,14 @@ process listCommons {
 		val array_of_rows from commons.map{ROW->ROW[0]+","+ROW[1]}.collect()
 	output:
 		file("table.csv")
-		file("distcint.acns.txt") into distinct_acns
+		file("distinct.acns.txt") into distinct_acns
 	script:
 	"""
 	echo '${array_of_rows.join("\n")}' > table.csv
 	cut -d ',' -f2 table.csv | while read F
 	do
 		cat \$F
-	done | sort | uniq > distcint.acns.txt
+	done | sort | uniq > distinct.acns.txt
 	"""
 
 }

@@ -1,0 +1,1 @@
+> The maxForks directive allows you to define the maximum number of process instances that can be executed in parallel.

@@ -1,0 +1,1 @@
+> The `when` declaration allows you to define a condition that must be verified in order to execute the process. 

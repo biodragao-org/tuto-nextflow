@@ -1,5 +1,3 @@
-#!./nextflow
-
 params.salutation  = "Hello"
 params.name  = "world"
 
@@ -8,8 +6,8 @@ process sayHello {
 	
 	output:
 		file("message.txt")
-	script:
-	
+
+	script:	
 	"""
 	echo '${params.salutation} ${params.name}!' > message.txt
 	"""

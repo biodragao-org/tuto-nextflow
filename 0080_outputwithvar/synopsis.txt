@@ -1,0 +1,16 @@
+Dans ce workflow, l'une des variables va servir a construire le fichier de sortie.
+
+```
+	output:
+		file("${params.name}.txt")
+```
+
+on retrouve les fichiers avec les différents paramètres:
+
+
+```
+$ find work/ -name "*.txt"
+work/e8/f975daa6461a31a0b203908e68f999/Muchachos.txt
+work/ad/bce2a252ce3a5c51d46a278b91d173/world.txt
+work/87/b16983cf2e48e7d5c015e6ca23712c/Monde.txt
+```

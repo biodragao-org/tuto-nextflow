@@ -1,0 +1,1 @@
+> In most cases a process is expected to generate output that is added to the output channel. However, there are situations where it is valid for a process to not generate output. In these cases optional true may be added to the output declaration

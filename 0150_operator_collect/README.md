@@ -1,3 +1,15 @@
+## Synopsis
+> The collect operator collects all the items emitted by a channel to a List and return the resulting object as a sole emission
+
+
+```
+ commons.map{ROW->ROW[0]+","+ROW[1]}.collect()
+```
+
+va collecter toutes les paires 'label/path` et retourner une liste contenant l'output de chaque process précédent.
+
+
+
 ## nextflow
 
 ### ./workflow.nf
@@ -39,14 +51,17 @@ process listCommons {
 		val array_of_rows from commons.map{ROW->ROW[0]+","+ROW[1]}.collect()
 	output:
 		file("table.csv")
-		file("distcint.acns.txt")
+		file("distinct.acns.txt")
 	script:
 	"""
+	## table.csv est un fichier tsv. 1st column: label, 2nd column: path to file of common acns
 	echo '${array_of_rows.join("\n")}' > table.csv
+	
+	## loop over each path in the second file , concatenate and extract the uniq
 	cut -d ',' -f2 table.csv | while read F
 	do
 		cat \$F
-	done | sort | uniq > distcint.acns.txt
+	done | sort | uniq > distinct.acns.txt
 	"""
 
 }
@@ -58,41 +73,41 @@ process listCommons {
 ```
 ../bin/nextflow run -resume -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [boring_williams] - revision: 159f833755
+Launching `workflow.nf` [reverent_hugle] - revision: eea5eea3ad
 [warm up] executor > local
+[a4/ebdadf] Submitted process > sortAcns (sorting list4.acns.txt)
 [7f/6d79e3] Submitted process > sortAcns (sorting list3.acns.txt)
 [53/c535e8] Submitted process > sortAcns (sorting list2.acns.txt)
-[a4/ebdadf] Submitted process > sortAcns (sorting list4.acns.txt)
 [1c/3712cc] Submitted process > sortAcns (sorting list1.acns.txt)
-[23/653c2c] Submitted process > commonAcns (comm list2.acns.txt vs list3.acns.txt)
-[27/eb182a] Submitted process > commonAcns (comm list3.acns.txt vs list4.acns.txt)
-[66/3c39f4] Submitted process > commonAcns (comm list2.acns.txt vs list4.acns.txt)
-[56/e9a179] Submitted process > commonAcns (comm list1.acns.txt vs list2.acns.txt)
-[a7/88c133] Submitted process > commonAcns (comm list1.acns.txt vs list4.acns.txt)
-[0a/d8fc47] Submitted process > commonAcns (comm list1.acns.txt vs list3.acns.txt)
-[3b/74d308] Submitted process > listCommons (common list size: 6)
+[70/4102bf] Submitted process > commonAcns (comm list3.acns.txt vs list4.acns.txt)
+[de/ffcc78] Submitted process > commonAcns (comm list2.acns.txt vs list4.acns.txt)
+[25/e3b6b3] Submitted process > commonAcns (comm list2.acns.txt vs list3.acns.txt)
+[ce/50e3be] Submitted process > commonAcns (comm list1.acns.txt vs list3.acns.txt)
+[11/fb553b] Submitted process > commonAcns (comm list1.acns.txt vs list4.acns.txt)
+[36/f2d95d] Submitted process > commonAcns (comm list1.acns.txt vs list2.acns.txt)
+[56/3bca23] Submitted process > listCommons (common list size: 6)
 ```
 
 
 ## Files
 
 ```
-work/23/653c2c05da5f5ce023edbc0519ada3/comm.txt
 work/7f/6d79e3f15ec3b2ae5fa22a53654526/list3.acns.txt
 work/7f/6d79e3f15ec3b2ae5fa22a53654526/list3.acns.txt.sorted.txt
 work/1c/3712ccdb122e1425fd552a67f155bf/list1.acns.txt.sorted.txt
 work/1c/3712ccdb122e1425fd552a67f155bf/list1.acns.txt
-work/0a/d8fc47cd073a1e95bd0bffb8200cec/comm.txt
 work/a4/ebdadfc99970b7f4b12dfbedbdf5ba/list4.acns.txt.sorted.txt
 work/a4/ebdadfc99970b7f4b12dfbedbdf5ba/list4.acns.txt
-work/a7/88c13391137ff95454265b14f8f04e/comm.txt
-work/56/e9a179276034c3adc72cf0b7f6ce41/comm.txt
+work/36/f2d95d31c6297763ba52528f60ab05/comm.txt
+work/56/3bca23ca49b227c65fa083040f5362/distinct.acns.txt
+work/56/3bca23ca49b227c65fa083040f5362/table.csv
+work/de/ffcc78a46e6e468ef3d2d6d1b7ef3f/comm.txt
+work/11/fb553bab76dbdd939ffb394d26e27d/comm.txt
 work/53/c535e8b40011070b3c5adefd881236/list2.acns.txt.sorted.txt
 work/53/c535e8b40011070b3c5adefd881236/list2.acns.txt
-work/3b/74d3084c04845eac2a3b8da126199c/table.csv
-work/3b/74d3084c04845eac2a3b8da126199c/distcint.acns.txt
-work/66/3c39f4ba6661bff597baa7f17e61b0/comm.txt
-work/27/eb182af0b97ffd529ec983a3117817/comm.txt
+work/70/4102bf422b1e89a7b6762c94157519/comm.txt
+work/ce/50e3bea8143e36af2f262a22a08ccf/comm.txt
+work/25/e3b6b37ef04e4316b5ee9d5a68260a/comm.txt
 ```
 
 
@@ -106,16 +121,16 @@ work/27/eb182af0b97ffd529ec983a3117817/comm.txt
 
 ```
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
-1	7f/6d79e3	1715	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-11-02 16:10:33.998	356ms	24ms	0.0%	0	0	0	0
-3	53/c535e8	1720	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-11-02 16:10:34.051	454ms	38ms	0.0%	0	0	0	0
-2	a4/ebdadf	1851	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-11-02 16:10:34.377	505ms	40ms	0.0%	0	0	0	0
-4	1c/3712cc	1867	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-11-02 16:10:34.556	369ms	16ms	0.0%	0	0	0	0
-5	23/653c2c	2039	commonAcns (comm list2.acns.txt vs list3.acns.txt)	COMPLETED	0	2018-11-02 16:10:34.899	320ms	32ms	0.0%	0	0	0	0
-6	27/eb182a	2059	commonAcns (comm list3.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-11-02 16:10:34.941	311ms	40ms	0.0%	0	0	0	0
-7	66/3c39f4	2277	commonAcns (comm list2.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-11-02 16:10:35.226	243ms	49ms	0.0%	0	0	0	0
-8	56/e9a179	2309	commonAcns (comm list1.acns.txt vs list2.acns.txt)	COMPLETED	0	2018-11-02 16:10:35.283	222ms	21ms	0.0%	0	0	0	0
-9	0a/d8fc47	2496	commonAcns (comm list1.acns.txt vs list3.acns.txt)	COMPLETED	0	2018-11-02 16:10:35.510	252ms	22ms	0.0%	0	0	0	0
-10	a7/88c133	2483	commonAcns (comm list1.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-11-02 16:10:35.481	293ms	47ms	0.0%	0	0	0	0
-11	3b/74d308	2662	listCommons (common list size: 6)	COMPLETED	0	2018-11-02 16:10:35.786	267ms	25ms	0.0%	0	0	0	0
+1	7f/6d79e3	10004	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-11-06 10:57:02.846	263ms	39ms	0.0%	0	0	0	0
+2	a4/ebdadf	10000	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-11-06 10:57:02.807	418ms	30ms	0.0%	0	0	0	0
+3	53/c535e8	10123	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-11-06 10:57:03.144	525ms	35ms	0.0%	0	0	0	0
+4	1c/3712cc	10144	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-11-06 10:57:03.242	528ms	56ms	0.0%	0	0	0	0
+5	70/4102bf	10246	commonAcns (comm list3.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-11-06 10:57:03.713	387ms	14ms	0.0%	0	0	0	0
+6	de/ffcc78	10255	commonAcns (comm list2.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-11-06 10:57:03.777	352ms	61ms	0.0%	0	0	0	0
+7	25/e3b6b3	10371	commonAcns (comm list2.acns.txt vs list3.acns.txt)	COMPLETED	0	2018-11-06 10:57:04.110	347ms	34ms	0.0%	0	0	0	0
+9	ce/50e3be	10376	commonAcns (comm list1.acns.txt vs list3.acns.txt)	COMPLETED	0	2018-11-06 10:57:04.135	356ms	47ms	0.0%	0	0	0	0
+10	36/f2d95d	10495	commonAcns (comm list1.acns.txt vs list2.acns.txt)	COMPLETED	0	2018-11-06 10:57:04.505	322ms	30ms	0.0%	0	0	0	0
+8	11/fb553b	10493	commonAcns (comm list1.acns.txt vs list4.acns.txt)	COMPLETED	0	2018-11-06 10:57:04.477	404ms	40ms	0.0%	0	0	0	0
+11	56/3bca23	10612	listCommons (common list size: 6)	COMPLETED	0	2018-11-06 10:57:04.908	371ms	59ms	0.0%	0	0	0	0
 ```
 

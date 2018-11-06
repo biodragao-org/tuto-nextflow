@@ -34,14 +34,17 @@ process listCommons {
 		val array_of_rows from commons.map{ROW->ROW[0]+","+ROW[1]}.collect()
 	output:
 		file("table.csv")
-		file("distcint.acns.txt")
+		file("distinct.acns.txt")
 	script:
 	"""
+	## table.csv est un fichier tsv. 1st column: label, 2nd column: path to file of common acns
 	echo '${array_of_rows.join("\n")}' > table.csv
+	
+	## loop over each path in the second file , concatenate and extract the uniq
 	cut -d ',' -f2 table.csv | while read F
 	do
 		cat \$F
-	done | sort | uniq > distcint.acns.txt
+	done | sort | uniq > distinct.acns.txt
 	"""
 
 }

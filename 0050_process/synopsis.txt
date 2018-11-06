@@ -1,0 +1,5 @@
+Un exemple de workflow avec un seul process. 
+
+On precise le fichier de sortie dans `output`
+
+`tag`permet de donner un titre dans le déroulement du workflow

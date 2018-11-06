@@ -1,0 +1,1 @@
+> `stdout` Sends the executed process stdout over the output channel.
