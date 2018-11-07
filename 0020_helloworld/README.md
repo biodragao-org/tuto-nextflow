@@ -7,7 +7,11 @@ Ainsi, la simple commande `println` fonction and un workflow nextflow
 ### ./workflow.nf
 
 ```groovy
-println("Hello world!")
+String getSalutation() {
+	return "Hello";
+	}
+
+println( getSalutation() + " world!")
 ```
 
 
@@ -16,7 +20,7 @@ println("Hello world!")
 ```
 ../bin/nextflow run workflow.nf
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [dreamy_faggin] - revision: 456cb13169
+Launching `workflow.nf` [peaceful_waddington] - revision: 186ffc1576
 Hello world!
 ```
 

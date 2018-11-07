@@ -1,1 +1,5 @@
-println("Hello world!")
+String getSalutation() {
+	return "Hello";
+	}
+
+println( getSalutation() + " world!")
