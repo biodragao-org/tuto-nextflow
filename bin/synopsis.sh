@@ -2,6 +2,7 @@
 
 if [ -f synopsis.txt ] ; then
 	echo "## Synopsis"
+	echo
 	cat synopsis.txt
 	echo
 fi
@@ -20,7 +21,7 @@ echo
 echo "### ${F}"
 echo
 echo '```groovy'
-cat $F
+awk '{printf("%3d   %s\n",NR,$0);}'  $F
 echo '```'
 echo
 echo
@@ -30,6 +31,7 @@ fi
 echo "## Execute"
 echo
 echo '```'
+rm -rf work
 make --no-print-directory  2>&1 
 echo '```'
 echo

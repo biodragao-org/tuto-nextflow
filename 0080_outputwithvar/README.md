@@ -1,4 +1,5 @@
 ## Synopsis
+
 Dans ce workflow, l'une des variables va servir a construire le fichier de sortie.
 
 ```
@@ -21,20 +22,20 @@ work/87/b16983cf2e48e7d5c015e6ca23712c/Monde.txt
 ### ./workflow.nf
 
 ```groovy
-params.salutation  = "Hello"
-params.name  = "world"
-
-process sayHello {
-	tag "saying ${params.salutation} to ${params.name}"
-	
-	output:
-		file("${params.name}.txt")
-	script:
-	
-	"""
-	echo '${params.salutation} ${params.name}!' > ${params.name}.txt
-	"""
-}
+  1   params.salutation  = "Hello"
+  2   params.name  = "world"
+  3   
+  4   process sayHello {
+  5   	tag "saying ${params.salutation} to ${params.name}"
+  6   	
+  7   	output:
+  8   		file("${params.name}.txt")
+  9   	script:
+ 10   	
+ 11   	"""
+ 12   	echo '${params.salutation} ${params.name}!' > ${params.name}.txt
+ 13   	"""
+ 14   }
 ```
 
 
@@ -43,28 +44,28 @@ process sayHello {
 ```
 ../bin/nextflow run workflow.nf 
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [festering_ritchie] - revision: 782d453180
+Launching `workflow.nf` [awesome_pauling] - revision: 782d453180
 [warm up] executor > local
-[3f/8497f1] Submitted process > sayHello (saying Hello to world)
+[99/d2c422] Submitted process > sayHello (saying Hello to world)
 ../bin/nextflow run workflow.nf  --salutation Bonjour --name Monde
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [thirsty_wiles] - revision: 782d453180
+Launching `workflow.nf` [gloomy_celsius] - revision: 782d453180
 [warm up] executor > local
-[d8/b11432] Submitted process > sayHello (saying Bonjour to Monde)
+[b4/5fc54f] Submitted process > sayHello (saying Bonjour to Monde)
 ../bin/nextflow run -config my.config workflow.nf  
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [deadly_curie] - revision: 782d453180
+Launching `workflow.nf` [nostalgic_majorana] - revision: 782d453180
 [warm up] executor > local
-[3b/655803] Submitted process > sayHello (saying Hola to Muchachos)
+[ac/22050e] Submitted process > sayHello (saying Hola to Muchachos)
 ```
 
 
 ## Files
 
 ```
-work/d8/b1143291c4c0007a5263ea4f8b6a2a/Monde.txt
-work/3b/6558038c9ba0df5cd09bca98256421/Muchachos.txt
-work/3f/8497f1f588e4c77c31d79f5979d313/world.txt
+work/ac/22050e3f7fc72e4b8af816757b8004/Muchachos.txt
+work/b4/5fc54f92b9249f0ddd0cee78a026af/Monde.txt
+work/99/d2c422f71816726b297ecebc522c1f/world.txt
 ```
 
 

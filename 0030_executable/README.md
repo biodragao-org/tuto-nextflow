@@ -1,4 +1,5 @@
 ## Synopsis
+
 Un workflow nextflow peut être utilisé en tant qu'executable en utilisant un shebang `#!`.
 
 ## nextflow
@@ -6,10 +7,10 @@ Un workflow nextflow peut être utilisé en tant qu'executable en utilisant un s
 ### ./workflow.nf
 
 ```groovy
-#!/usr/bin/env ../bin/nextflow
-
-println("Hello world!")
-
+  1   #!/usr/bin/env ../bin/nextflow
+  2   
+  3   println("Hello world!")
+  4   
 ```
 
 
@@ -18,7 +19,7 @@ println("Hello world!")
 ```
 ./workflow.nf
 N E X T F L O W  ~  version 0.31.1
-Launching `./workflow.nf` [desperate_avogadro] - revision: 93f5d79f16
+Launching `./workflow.nf` [adoring_easley] - revision: 93f5d79f16
 Hello world!
 ```
 

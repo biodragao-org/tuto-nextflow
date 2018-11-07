@@ -1,4 +1,5 @@
 ## Synopsis
+
 le workflow suivant illustre comment passer des paramètre dans le pipeline
 
 ### En utilisant les paramètres par défaut 
@@ -34,10 +35,10 @@ params.name  = "Muchachos"
 ### ./workflow.nf
 
 ```groovy
-params.salutation  = "Hello"
-params.name  = "world"
-
-println("${params.salutation} ${params.name}!")
+  1   params.salutation  = "Hello"
+  2   params.name  = "world"
+  3   
+  4   println("${params.salutation} ${params.name}!")
 ```
 
 
@@ -46,15 +47,15 @@ println("${params.salutation} ${params.name}!")
 ```
 ../bin/nextflow run workflow.nf 
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [tiny_volta] - revision: a51114ae25
+Launching `workflow.nf` [magical_fermat] - revision: a51114ae25
 Hello world!
 ../bin/nextflow run workflow.nf  --salutation Bonjour --name Monde
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [sick_crick] - revision: a51114ae25
+Launching `workflow.nf` [elated_sammet] - revision: a51114ae25
 Bonjour Monde!
 ../bin/nextflow run -config my.config workflow.nf  
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [intergalactic_lamport] - revision: a51114ae25
+Launching `workflow.nf` [golden_austin] - revision: a51114ae25
 Hola Muchachos!
 ```
 

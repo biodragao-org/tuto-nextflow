@@ -1,4 +1,5 @@
 ## Synopsis
+
 NextflowIO utilise le language de programmation **groovy** qui lui meme est un sous-language de **java**.
 Ainsi, la simple commande `println` fonction and un workflow nextflow
 
@@ -7,11 +8,11 @@ Ainsi, la simple commande `println` fonction and un workflow nextflow
 ### ./workflow.nf
 
 ```groovy
-String getSalutation() {
-	return "Hello";
-	}
-
-println( getSalutation() + " world!")
+  1   String getSalutation() {
+  2   	return "Hello";
+  3   	}
+  4   
+  5   println( getSalutation() + " world!")
 ```
 
 
@@ -20,7 +21,7 @@ println( getSalutation() + " world!")
 ```
 ../bin/nextflow run workflow.nf
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [peaceful_waddington] - revision: 186ffc1576
+Launching `workflow.nf` [lonely_curie] - revision: 186ffc1576
 Hello world!
 ```
 
