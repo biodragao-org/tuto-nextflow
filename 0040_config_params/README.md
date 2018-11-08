@@ -47,15 +47,15 @@ params.name  = "Muchachos"
 ```
 ../bin/nextflow run workflow.nf 
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [magical_fermat] - revision: a51114ae25
+Launching `workflow.nf` [nostalgic_poitras] - revision: a51114ae25
 Hello world!
 ../bin/nextflow run workflow.nf  --salutation Bonjour --name Monde
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [elated_sammet] - revision: a51114ae25
+Launching `workflow.nf` [gigantic_wilson] - revision: a51114ae25
 Bonjour Monde!
 ../bin/nextflow run -config my.config workflow.nf  
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [golden_austin] - revision: a51114ae25
+Launching `workflow.nf` [mad_bartik] - revision: a51114ae25
 Hola Muchachos!
 ```
 

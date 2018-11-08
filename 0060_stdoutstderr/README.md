@@ -33,28 +33,28 @@ Ce workflow illustre la redirection des flux `stdout` et `stderr` qui vont respe
 ```
 ../bin/nextflow run workflow.nf 
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [chaotic_heyrovsky] - revision: 0f1c26bafc
+Launching `workflow.nf` [amazing_heyrovsky] - revision: 0f1c26bafc
 [warm up] executor > local
-[fa/b3a716] Submitted process > sayHello (saying Hello to world)
+[ab/0b9a45] Submitted process > sayHello (saying Hello to world)
 ../bin/nextflow run workflow.nf  --salutation Bonjour --name Monde
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [angry_gutenberg] - revision: 0f1c26bafc
+Launching `workflow.nf` [gloomy_faggin] - revision: 0f1c26bafc
 [warm up] executor > local
-[94/ca8591] Submitted process > sayHello (saying Bonjour to Monde)
+[b9/7c92cc] Submitted process > sayHello (saying Bonjour to Monde)
 ../bin/nextflow run -config my.config workflow.nf  
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [astonishing_hoover] - revision: 0f1c26bafc
+Launching `workflow.nf` [romantic_banach] - revision: 0f1c26bafc
 [warm up] executor > local
-[29/5459ad] Submitted process > sayHello (saying Hola to Muchachos)
+[af/5dfc4d] Submitted process > sayHello (saying Hola to Muchachos)
 ```
 
 
 ## Files
 
 ```
-work/29/5459ad8d51bf3e516c9e002804d7f9/message.txt
-work/fa/b3a716c5c638f7671ec5ff0a733066/message.txt
-work/94/ca8591e1589124f0d42a218acf06c0/message.txt
+work/af/5dfc4dffcf8133b62ec3125a6f48ef/message.txt
+work/ab/0b9a45446d5126e075de0906e0ca22/message.txt
+work/b9/7c92cccf7c52e400da2c335457812f/message.txt
 ```
 
 

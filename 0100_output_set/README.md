@@ -35,7 +35,7 @@ Ici l'output est constituté par un `set`/`vector`/`liste` de données contenant
 ```
 ../bin/nextflow run -resume -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [gloomy_bohr] - revision: efdcb56eb1
+Launching `workflow.nf` [gloomy_stone] - revision: efdcb56eb1
 [warm up] executor > local
 [37/f120d7] Submitted process > sortAcns (sorting list4.acns.txt)
 [59/db35c9] Submitted process > sortAcns (sorting list3.acns.txt)
@@ -68,9 +68,9 @@ work/47/36df62b51d61e795a13ce1abc3bc90/list2.acns.txt
 
 ```
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
-1	37/f120d7	15982	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-11-07 10:10:37.284	787ms	58ms	0.0%	0	0	0	0
-2	59/db35c9	15985	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-11-07 10:10:37.335	831ms	93ms	0.0%	0	0	0	0
-3	49/38e8e4	16106	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-11-07 10:10:38.087	509ms	42ms	0.0%	0	0	0	0
-4	47/36df62	16113	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-11-07 10:10:38.173	476ms	62ms	0.0%	0	0	0	0
+1	59/db35c9	12049	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-11-08 15:29:11.296	432ms	16ms	0.0%	0	0	0	0
+2	37/f120d7	12043	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-11-08 15:29:11.193	1.1s	53ms	0.0%	0	0	0	0
+4	49/38e8e4	12167	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-11-08 15:29:12.170	461ms	34ms	0.0%	0	0	0	0
+3	47/36df62	12198	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-11-08 15:29:12.330	550ms	35ms	0.0%	0	0	0	0
 ```
 

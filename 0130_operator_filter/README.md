@@ -50,38 +50,38 @@ filter{ROW->ROW[1].getName().compareTo(ROW[3].getName())<0}
 ```
 ../bin/nextflow run -resume -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [special_tuckerman] - revision: 41d209f8fc
+Launching `workflow.nf` [agitated_torvalds] - revision: 41d209f8fc
 [warm up] executor > local
 [f9/f8f00f] Submitted process > sortAcns (sorting list4.acns.txt)
 [5d/0c6d2a] Submitted process > sortAcns (sorting list3.acns.txt)
-[ee/26ed46] Submitted process > sortAcns (sorting list1.acns.txt)
 [b1/f2ef87] Submitted process > sortAcns (sorting list2.acns.txt)
-[b7/a14434] Submitted process > commonAcns (comm list3.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)
-[3d/b538bb] Submitted process > commonAcns (comm list1.acns.txt.sorted.txt and list3.acns.txt.sorted.txt)
-[e9/013227] Submitted process > commonAcns (comm list1.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)
-[75/6d530d] Submitted process > commonAcns (comm list2.acns.txt.sorted.txt and list3.acns.txt.sorted.txt)
-[06/2edc75] Submitted process > commonAcns (comm list2.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)
-[96/840a4c] Submitted process > commonAcns (comm list1.acns.txt.sorted.txt and list2.acns.txt.sorted.txt)
+[ee/26ed46] Submitted process > sortAcns (sorting list1.acns.txt)
+[55/ca169f] Submitted process > commonAcns (comm list3.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)
+[83/b031f3] Submitted process > commonAcns (comm list2.acns.txt.sorted.txt and list3.acns.txt.sorted.txt)
+[96/2b6c27] Submitted process > commonAcns (comm list2.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)
+[24/ff14eb] Submitted process > commonAcns (comm list1.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)
+[3c/564aad] Submitted process > commonAcns (comm list1.acns.txt.sorted.txt and list2.acns.txt.sorted.txt)
+[d5/15fd95] Submitted process > commonAcns (comm list1.acns.txt.sorted.txt and list3.acns.txt.sorted.txt)
 ```
 
 
 ## Files
 
 ```
-work/b7/a14434e8b31976133078b3c05f498d/comm.txt
 work/f9/f8f00fd0419f8692f1fada74269a56/list4.acns.txt.sorted.txt
 work/f9/f8f00fd0419f8692f1fada74269a56/list4.acns.txt
 work/ee/26ed46d55250f023486c028e12b35a/list1.acns.txt.sorted.txt
 work/ee/26ed46d55250f023486c028e12b35a/list1.acns.txt
-work/3d/b538bb54b01c62e660c9c1fbe3bd5c/comm.txt
-work/75/6d530d601cfb84f0cf56ca873c69b0/comm.txt
-work/96/840a4c44a46c81a52c8f605a2e51ea/comm.txt
+work/96/2b6c2764c581eb1e32647490c6db9f/comm.txt
 work/5d/0c6d2ae9f4e00771e702938f19c1fa/list3.acns.txt
 work/5d/0c6d2ae9f4e00771e702938f19c1fa/list3.acns.txt.sorted.txt
-work/e9/013227c2892ed8b2796f91c9b2b836/comm.txt
-work/06/2edc759bcdafee10e7f44ad42b73c1/comm.txt
+work/d5/15fd95d2dcb66f3c6cdb3ab0d01ccb/comm.txt
+work/3c/564aada77222fc25cde6cdad7fdef0/comm.txt
+work/83/b031f3250f3a72d9a5d914695a5d39/comm.txt
 work/b1/f2ef87ccffc9b84a65f00fe91c9e4d/list2.acns.txt.sorted.txt
 work/b1/f2ef87ccffc9b84a65f00fe91c9e4d/list2.acns.txt
+work/55/ca169f93f6b37eee7d8c857d4f7a4e/comm.txt
+work/24/ff14ebd91a7ebc8b6314c80c0bd62a/comm.txt
 ```
 
 
@@ -95,15 +95,15 @@ work/b1/f2ef87ccffc9b84a65f00fe91c9e4d/list2.acns.txt
 
 ```
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
-2	f9/f8f00f	17908	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-11-07 10:11:11.513	493ms	55ms	0.0%	0	0	0	0
-1	5d/0c6d2a	17917	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-11-07 10:11:11.614	555ms	37ms	0.0%	0	0	0	0
-3	ee/26ed46	18032	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-11-07 10:11:12.055	597ms	54ms	0.0%	0	0	0	0
-4	b1/f2ef87	18042	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-11-07 10:11:12.194	510ms	58ms	0.0%	0	0	0	0
-5	b7/a14434	18156	commonAcns (comm list3.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)	COMPLETED	0	2018-11-07 10:11:12.679	433ms	33ms	0.0%	0	0	0	0
-6	3d/b538bb	18157	commonAcns (comm list1.acns.txt.sorted.txt and list3.acns.txt.sorted.txt)	COMPLETED	0	2018-11-07 10:11:12.714	458ms	41ms	0.0%	0	0	0	0
-7	e9/013227	18274	commonAcns (comm list1.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)	COMPLETED	0	2018-11-07 10:11:13.132	319ms	54ms	0.0%	0	0	0	0
-8	75/6d530d	18297	commonAcns (comm list2.acns.txt.sorted.txt and list3.acns.txt.sorted.txt)	COMPLETED	0	2018-11-07 10:11:13.182	334ms	25ms	0.0%	0	0	0	0
-10	96/840a4c	18420	commonAcns (comm list1.acns.txt.sorted.txt and list2.acns.txt.sorted.txt)	COMPLETED	0	2018-11-07 10:11:13.521	343ms	17ms	0.0%	0	0	0	0
-9	06/2edc75	18391	commonAcns (comm list2.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)	COMPLETED	0	2018-11-07 10:11:13.469	496ms	10ms	0.0%	0	0	0	0
+2	f9/f8f00f	13965	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-11-08 15:29:44.451	407ms	9ms	0.0%	0	0	0	0
+1	5d/0c6d2a	13975	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-11-08 15:29:44.564	394ms	25ms	0.0%	0	0	0	0
+3	b1/f2ef87	14089	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-11-08 15:29:44.871	309ms	22ms	0.0%	0	0	0	0
+4	ee/26ed46	14119	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-11-08 15:29:44.968	292ms	24ms	0.0%	0	0	0	0
+7	83/b031f3	14219	commonAcns (comm list2.acns.txt.sorted.txt and list3.acns.txt.sorted.txt)	COMPLETED	0	2018-11-08 15:29:45.283	326ms	37ms	0.0%	0	0	0	0
+5	55/ca169f	14212	commonAcns (comm list3.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)	COMPLETED	0	2018-11-08 15:29:45.205	429ms	21ms	0.0%	0	0	0	0
+6	96/2b6c27	14332	commonAcns (comm list2.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)	COMPLETED	0	2018-11-08 15:29:45.613	344ms	24ms	0.0%	0	0	0	0
+9	24/ff14eb	14369	commonAcns (comm list1.acns.txt.sorted.txt and list4.acns.txt.sorted.txt)	COMPLETED	0	2018-11-08 15:29:45.691	314ms	48ms	0.0%	0	0	0	0
+10	3c/564aad	14450	commonAcns (comm list1.acns.txt.sorted.txt and list2.acns.txt.sorted.txt)	COMPLETED	0	2018-11-08 15:29:45.971	263ms	30ms	0.0%	0	0	0	0
+8	d5/15fd95	14474	commonAcns (comm list1.acns.txt.sorted.txt and list3.acns.txt.sorted.txt)	COMPLETED	0	2018-11-08 15:29:46.014	272ms	34ms	0.0%	0	0	0	0
 ```
 

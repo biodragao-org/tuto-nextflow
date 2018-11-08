@@ -19,7 +19,7 @@ Un workflow nextflow peut être utilisé en tant qu'executable en utilisant un s
 ```
 ./workflow.nf
 N E X T F L O W  ~  version 0.31.1
-Launching `./workflow.nf` [adoring_easley] - revision: 93f5d79f16
+Launching `./workflow.nf` [scruffy_bartik] - revision: 93f5d79f16
 Hello world!
 ```
 

@@ -60,434 +60,434 @@
 ```
 ../bin/nextflow run workflow.nf --acns '../data/list*.acns.txt'
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [crazy_panini] - revision: ce9cc7016c
+Launching `workflow.nf` [deadly_minsky] - revision: ce9cc7016c
 [warm up] executor > local
-[08/0cd6f6] Submitted process > Accession_from_N_to_Z (NM_001293170.1 From N to Z)
-[27/1e17f3] Submitted process > Accession_from_A_to_M (AF188530.1 From A to M)
-[dc/1d3122] Submitted process > Accession_from_N_to_Z (NM_001199860.1 From N to Z)
-[3d/008418] Submitted process > Accession_from_A_to_M (AF188126.1 From A to M)
-[12/24a835] Submitted process > Accession_from_N_to_Z (NM_001199861.1 From N to Z)
-[20/a2930e] Submitted process > Accession_from_A_to_M (AF004836.1 From A to M)
-[c8/b3a7e1] Submitted process > Accession_from_N_to_Z (NM_001199862.1 From N to Z)
-[07/2075a0] Submitted process > Accession_from_A_to_M (AF002816.1 From A to M)
-[2b/c43bde] Submitted process > Accession_from_N_to_Z (NM_001199863.1 From N to Z)
-[15/2fbd0e] Submitted process > Accession_from_A_to_M (AF002815.1 From A to M)
-[8b/dfd408] Submitted process > Accession_from_N_to_Z (NM_003636.3 From N to Z)
-[c5/020af5] Submitted process > Accession_from_A_to_M (CS172270.1 From A to M)
-[23/226650] Submitted process > Accession_from_N_to_Z (NM_172130.2 From N to Z)
-[42/fd50d9] Submitted process > Accession_from_A_to_M (CS172261.1 From A to M)
-[c1/26b006] Submitted process > Accession_from_N_to_Z (NM_001142703.1 From N to Z)
-[1b/71faec] Submitted process > Accession_from_A_to_M (AF188126.1 From A to M)
-[3c/8484e3] Submitted process > Accession_from_N_to_Z (NM_001142704.1 From N to Z)
-[a5/5687eb] Submitted process > Accession_from_N_to_Z (NM_001220.4 From N to Z)
-[9b/eb58d4] Submitted process > Accession_from_A_to_M (M74217.1 From A to M)
-[96/1b5921] Submitted process > Accession_from_N_to_Z (NM_172078.2 From N to Z)
-[4a/d251f1] Submitted process > Accession_from_A_to_M (AY116592.1 From A to M)
-[f8/6900bd] Submitted process > Accession_from_N_to_Z (NM_172079.2 From N to Z)
-[42/1094ec] Submitted process > Accession_from_N_to_Z (NM_172080.2 From N to Z)
-[af/88c8e2] Submitted process > Accession_from_A_to_M (J04346.1 From A to M)
-[7b/c332a3] Submitted process > Accession_from_N_to_Z (NM_172081.2 From N to Z)
-[47/12c17a] Submitted process > Accession_from_N_to_Z (NM_172082.2 From N to Z)
-[95/a78871] Submitted process > Accession_from_A_to_M (M74219.1 From A to M)
-[ee/ac4a46] Submitted process > Accession_from_N_to_Z (NM_198947.3 From N to Z)
-[b1/a32355] Submitted process > Accession_from_N_to_Z (NM_172083.2 From N to Z)
-[8e/b6aa19] Submitted process > Accession_from_N_to_Z (NM_172084.2 From N to Z)
-[14/6f3692] Submitted process > Accession_from_N_to_Z (NM_001363989.1 From N to Z)
-[21/bb545d] Submitted process > Accession_from_A_to_M (M74216.1 From A to M)
-[d8/c4addc] Submitted process > Accession_from_N_to_Z (NM_001363990.1 From N to Z)
-[05/8ac984] Submitted process > Accession_from_N_to_Z (NM_015981.3 From N to Z)
-[5f/cd8842] Submitted process > Accession_from_N_to_Z (NM_171825.2 From N to Z)
-[4e/97c804] Submitted process > Accession_from_A_to_M (AY116593.1 From A to M)
-[23/e75a7b] Submitted process > Accession_from_A_to_M (K02254.1 From A to M)
-[bf/6aae3a] Submitted process > Accession_from_A_to_M (M22308.1 From A to M)
-[ad/ee9429] Submitted process > Accession_from_N_to_Z (NM_001174053.1 From N to Z)
-[a5/3e5e2c] Submitted process > Accession_from_A_to_M (M87502.1 From A to M)
-[e5/c0b7f9] Submitted process > Accession_from_N_to_Z (NM_001174054.1 From N to Z)
-[8a/9e82c8] Submitted process > Accession_from_A_to_M (M29287.1 From A to M)
-[25/fb0291] Submitted process > Accession_from_N_to_Z (NM_007595.5 From N to Z)
-[2a/3e240f] Submitted process > Accession_from_N_to_Z (NM_001164144.2 From N to Z)
-[eb/4cde2b] Submitted process > Accession_from_A_to_M (M74218.1 From A to M)
-[43/558d04] Submitted process > Accession_from_A_to_M (AF480296.1 From A to M)
-[82/126676] Submitted process > Accession_from_N_to_Z (NM_001164145.2 From N to Z)
-[8e/78aa20] Submitted process > Accession_from_N_to_Z (NM_032436.3 From N to Z)
-[c7/0078b3] Submitted process > Accession_from_A_to_M (AF480295.1 From A to M)
-[cf/50186a] Submitted process > Accession_from_N_to_Z (NM_174910.2 From N to Z)
-[5b/d6f873] Submitted process > Accession_from_N_to_Z (NM_001122842.2 From N to Z)
-[04/8e5e33] Submitted process > Accession_from_A_to_M (AF480294.1 From A to M)
-[50/876533] Submitted process > Accession_from_N_to_Z (NM_001199619.1 From N to Z)
-[38/d3fbe6] Submitted process > Accession_from_A_to_M (AF480293.1 From A to M)
-[8d/ad8cae] Submitted process > Accession_from_N_to_Z (NM_001199620.1 From N to Z)
-[1b/a16cc2] Submitted process > Accession_from_A_to_M (AF480292.1 From A to M)
-[aa/5f1ac8] Submitted process > Accession_from_A_to_M (AF480291.1 From A to M)
-[15/202768] Submitted process > Accession_from_A_to_M (AF480290.1 From A to M)
-[52/255730] Submitted process > Accession_from_A_to_M (AF480289.1 From A to M)
-[6c/fa1a2a] Submitted process > Accession_from_N_to_Z (NM_001199621.1 From N to Z)
-[05/c46210] Submitted process > Accession_from_A_to_M (AF480288.1 From A to M)
-[99/8c7eab] Submitted process > Accession_from_N_to_Z (NM_001199622.1 From N to Z)
-[4e/17c8a3] Submitted process > Accession_from_N_to_Z (NM_017590.5 From N to Z)
-[2f/1986c6] Submitted process > Accession_from_A_to_M (AF480287.1 From A to M)
-[a8/e5d622] Submitted process > Accession_from_A_to_M (AF480286.1 From A to M)
-[95/eaf120] Submitted process > Accession_from_N_to_Z (NM_181782.4 From N to Z)
-[89/c99b6c] Submitted process > Accession_from_A_to_M (AF480285.1 From A to M)
-[90/b80783] Submitted process > Accession_from_A_to_M (AF480284.1 From A to M)
-[78/90d4bf] Submitted process > Accession_from_N_to_Z (NR_138070.1 From N to Z)
-[a3/b4ea01] Submitted process > Accession_from_A_to_M (AF480283.1 From A to M)
-[e6/e8d8d0] Submitted process > Accession_from_A_to_M (AF480282.1 From A to M)
-[03/4626b1] Submitted process > Accession_from_A_to_M (AF480281.1 From A to M)
-[a0/7ead7f] Submitted process > Accession_from_N_to_Z (X65939.1 From N to Z)
-[ed/fc7569] Submitted process > Accession_from_N_to_Z (X65938.1 From N to Z)
-[3d/583290] Submitted process > Accession_from_A_to_M (AF480280.1 From A to M)
-[14/c6493b] Submitted process > Accession_from_N_to_Z (X65940.1 From N to Z)
-[9c/ac9fee] Submitted process > Accession_from_N_to_Z (X14057.1 From N to Z)
-[0e/3c9a67] Submitted process > Accession_from_A_to_M (AF480279.1 From A to M)
-[a6/7b75ac] Submitted process > Accession_from_N_to_Z (X60546.1 From N to Z)
-[2c/3db399] Submitted process > Accession_from_N_to_Z (U65924.1 From N to Z)
-[38/95b632] Submitted process > Accession_from_A_to_M (AF480278.1 From A to M)
-[41/4936d6] Submitted process > Accession_from_N_to_Z (Z21640.1 From N to Z)
-[3c/411562] Submitted process > Accession_from_A_to_M (AF480277.1 From A to M)
-[b3/fce853] Submitted process > Accession_from_N_to_Z (Z21639.1 From N to Z)
-[17/e3cf98] Submitted process > Accession_from_A_to_M (AF480276.1 From A to M)
-[36/a2866b] Submitted process > Accession_from_N_to_Z (X00421.1 From N to Z)
-[e4/54a6f7] Submitted process > Accession_from_A_to_M (AF480275.1 From A to M)
-[fc/b90833] Submitted process > Accession_from_A_to_M (AF480274.1 From A to M)
-[0c/2fb52c] Submitted process > Accession_from_N_to_Z (U88717.1 From N to Z)
-[cb/d3b2c2] Submitted process > Accession_from_A_to_M (AF480273.1 From A to M)
-[2c/e24826] Submitted process > Accession_from_A_to_M (AF480272.1 From A to M)
-[21/a27c4e] Submitted process > Accession_from_A_to_M (AF480271.1 From A to M)
-[5a/b4a6a8] Submitted process > Accession_from_N_to_Z (NC_029006.1 From N to Z)
-[eb/97ca24] Submitted process > Accession_from_A_to_M (AF480270.1 From A to M)
-[2b/a867ee] Submitted process > Accession_from_A_to_M (AF480269.1 From A to M)
-[c3/2c60b2] Submitted process > Accession_from_N_to_Z (XM_001460179.1 From N to Z)
-[9a/605d71] Submitted process > Accession_from_A_to_M (AF480268.1 From A to M)
-[49/ba2128] Submitted process > Accession_from_A_to_M (AF480267.1 From A to M)
-[04/09a66c] Submitted process > Accession_from_N_to_Z (XM_001449677.1 From N to Z)
-[87/f23858] Submitted process > Accession_from_A_to_M (AF480266.1 From A to M)
-[47/5e4f03] Submitted process > Accession_from_A_to_M (AF480265.1 From A to M)
-[3e/fd7c0c] Submitted process > Accession_from_N_to_Z (XM_001445002.1 From N to Z)
-[27/78f68b] Submitted process > Accession_from_N_to_Z (XM_001441019.1 From N to Z)
-[4f/12ba4f] Submitted process > Accession_from_A_to_M (AF480264.1 From A to M)
-[98/8a0dab] Submitted process > Accession_from_N_to_Z (XM_001437902.1 From N to Z)
-[fb/171731] Submitted process > Accession_from_A_to_M (AF480263.1 From A to M)
-[59/85a794] Submitted process > Accession_from_N_to_Z (XM_001424708.1 From N to Z)
-[9d/444d68] Submitted process > Accession_from_A_to_M (CS172267.1 From A to M)
-[47/90b5e7] Submitted process > Accession_from_N_to_Z (XM_001424093.1 From N to Z)
-[99/564792] Submitted process > Accession_from_N_to_Z (NM_017590.5 From N to Z)
-[4a/6cd4f0] Submitted process > Accession_from_A_to_M (AF004836.1 From A to M)
-[20/9a72e1] Submitted process > Accession_from_A_to_M (AF002816.1 From A to M)
-[e4/028762] Submitted process > Accession_from_N_to_Z (NR_029944.1 From N to Z)
-[b8/dc4770] Submitted process > Accession_from_A_to_M (AF002815.1 From A to M)
-[29/45aa49] Submitted process > Accession_from_A_to_M (CT868670.1 From A to M)
-[1d/0dd6d0] Submitted process > Accession_from_A_to_M (CT868429.1 From A to M)
-[a8/531edf] Submitted process > Accession_from_A_to_M (CT868318.1 From A to M)
-[57/57b29f] Submitted process > Accession_from_A_to_M (KM983332.1 From A to M)
-[2f/d65ce5] Submitted process > Accession_from_A_to_M (CT868274.1 From A to M)
-[17/efe203] Submitted process > Accession_from_A_to_M (CT868085.1 From A to M)
-[6a/fc7df4] Submitted process > Accession_from_A_to_M (CT868068.1 From A to M)
-[c2/b0d06f] Submitted process > Accession_from_A_to_M (CT868030.1 From A to M)
-[45/8a95e7] Submitted process > Accession_from_A_to_M (CT867988.1 From A to M)
-[fc/f018bb] Submitted process > Accession_from_A_to_M (CT868163.1 From A to M)
-[42/ed1d9e] Submitted process > Accession_from_A_to_M (CT867991.1 From A to M)
-[6d/465da9] Submitted process > Accession_from_A_to_M (AX244968.1 From A to M)
-[a9/72cfb6] Submitted process > Accession_from_A_to_M (AX244967.1 From A to M)
-[31/417e4b] Submitted process > Accession_from_A_to_M (AX244966.1 From A to M)
-[52/5669c1] Submitted process > Accession_from_A_to_M (AX244965.1 From A to M)
-[6c/fbaf3b] Submitted process > Accession_from_A_to_M (AX244964.1 From A to M)
-[ee/608763] Submitted process > Accession_from_A_to_M (AX244963.1 From A to M)
-[b5/8291de] Submitted process > Accession_from_A_to_M (AX244962.1 From A to M)
-[b6/b72dcf] Submitted process > Accession_from_A_to_M (AX244961.1 From A to M)
-[80/a25941] Submitted process > Accession_from_A_to_M (LP969861.1 From A to M)
-[34/f5ece3] Submitted process > Accession_from_A_to_M (LP969860.1 From A to M)
-[44/76db2f] Submitted process > Accession_from_A_to_M (LP969859.1 From A to M)
-[21/559a8b] Submitted process > Accession_from_A_to_M (LP969858.1 From A to M)
-[66/d4730e] Submitted process > Accession_from_A_to_M (LP969857.1 From A to M)
-[3d/e40b99] Submitted process > Accession_from_A_to_M (LP969856.1 From A to M)
-[11/10d0f4] Submitted process > Accession_from_A_to_M (LP969855.1 From A to M)
-[90/d82a77] Submitted process > Accession_from_A_to_M (LP969854.1 From A to M)
-[24/a35070] Submitted process > Accession_from_A_to_M (LP969853.1 From A to M)
-[1a/b09e6d] Submitted process > Accession_from_A_to_M (LP969852.1 From A to M)
-[e7/d13185] Submitted process > Accession_from_A_to_M (LP969851.1 From A to M)
-[da/777c9d] Submitted process > Accession_from_A_to_M (LP969850.1 From A to M)
-[a9/83c99c] Submitted process > Accession_from_A_to_M (LP969849.1 From A to M)
-[be/f45e5a] Submitted process > Accession_from_A_to_M (LP969848.1 From A to M)
-[3d/416ae2] Submitted process > Accession_from_A_to_M (LP969847.1 From A to M)
-[75/7bbbac] Submitted process > Accession_from_A_to_M (LP969846.1 From A to M)
-[d6/77546d] Submitted process > Accession_from_A_to_M (LP969845.1 From A to M)
-[2e/390f8c] Submitted process > Accession_from_A_to_M (LP969844.1 From A to M)
-[39/998b52] Submitted process > Accession_from_A_to_M (LP969843.1 From A to M)
-[3c/b7a332] Submitted process > Accession_from_A_to_M (LP969842.1 From A to M)
-[09/bfa15f] Submitted process > Accession_from_A_to_M (LP969841.1 From A to M)
-[ab/1b7fb7] Submitted process > Accession_from_A_to_M (LP969840.1 From A to M)
-[46/379960] Submitted process > Accession_from_A_to_M (LP969839.1 From A to M)
-[8a/87934d] Submitted process > Accession_from_A_to_M (LP969838.1 From A to M)
-[49/992064] Submitted process > Accession_from_A_to_M (LP969837.1 From A to M)
-[8c/d3cf3d] Submitted process > Accession_from_A_to_M (LP969836.1 From A to M)
-[39/d89fab] Submitted process > Accession_from_A_to_M (LP969834.1 From A to M)
-[30/ef4148] Submitted process > Accession_from_A_to_M (LP969832.1 From A to M)
-[4b/3763a5] Submitted process > Accession_from_A_to_M (AF338248.1 From A to M)
-[a2/438346] Submitted process > Accession_from_A_to_M (AF338247.1 From A to M)
-[e0/66fb1b] Submitted process > Accession_from_A_to_M (AF338246.1 From A to M)
-[2a/887fba] Submitted process > Accession_from_A_to_M (AF338245.1 From A to M)
-[f6/54eea1] Submitted process > Accession_from_A_to_M (AF338244.1 From A to M)
-[1a/cf2c87] Submitted process > Accession_from_A_to_M (AF188530.1 From A to M)
-[21/e8ce3a] Submitted process > Accession_from_A_to_M (AF004836.1 From A to M)
-[f6/8a9e95] Submitted process > Accession_from_A_to_M (AF002816.1 From A to M)
-[96/61a11a] Submitted process > Accession_from_A_to_M (AF002815.1 From A to M)
-[76/fd42d7] Submitted process > Accession_from_A_to_M (FJ475056.1 From A to M)
-[37/6fe96f] Submitted process > Accession_from_A_to_M (FJ475055.1 From A to M)
-[63/260028] Submitted process > Accession_from_A_to_M (JX417182.1 From A to M)
-[4c/49dd1a] Submitted process > Accession_from_A_to_M (JX417181.1 From A to M)
-[f7/9046a3] Submitted process > Accession_from_A_to_M (JX417180.1 From A to M)
-[2e/bc03e1] Submitted process > Accession_from_A_to_M (JQ687100.1 From A to M)
-[97/a45232] Submitted process > Accession_from_A_to_M (JQ687099.1 From A to M)
-[6e/4e0914] Submitted process > Accession_from_A_to_M (GU144588.1 From A to M)
-[3a/3d9f77] Submitted process > Accession_from_A_to_M (AY116592.1 From A to M)
-[c5/a7c63f] Submitted process > Accession_from_A_to_M (AF188126.1 From A to M)
-[bd/43a889] Submitted process > Accession_from_A_to_M (AX244968.1 From A to M)
-[75/c9925c] Submitted process > Accession_from_A_to_M (AX244967.1 From A to M)
-[6a/825260] Submitted process > Accession_from_A_to_M (AX244966.1 From A to M)
-[72/ea8a7e] Submitted process > Accession_from_A_to_M (AX244965.1 From A to M)
-[5a/648c5d] Submitted process > Accession_from_A_to_M (AX244964.1 From A to M)
-[42/6402f7] Submitted process > Accession_from_A_to_M (AX244963.1 From A to M)
-[ff/5fbf1f] Submitted process > Accession_from_A_to_M (AX244962.1 From A to M)
-[19/a08406] Submitted process > Accession_from_A_to_M (AX244961.1 From A to M)
-[32/031a58] Submitted process > Accession_from_A_to_M (AJ279563.1 From A to M)
-[3a/a5fcd7] Submitted process > Accession_from_A_to_M (AJ279561.1 From A to M)
-[fa/3ef7a3] Submitted process > Accession_from_A_to_M (AJ279560.1 From A to M)
-[5e/061412] Submitted process > Accession_from_A_to_M (AJ279559.1 From A to M)
-[c3/42975f] Submitted process > Accession_from_A_to_M (AJ279558.1 From A to M)
-[24/3a3735] Submitted process > Accession_from_A_to_M (AJ279557.1 From A to M)
-[f3/c54d82] Submitted process > Accession_from_A_to_M (AJ279556.1 From A to M)
-[f6/9ca43a] Submitted process > Accession_from_A_to_M (AJ279555.1 From A to M)
-[70/a440ef] Submitted process > Accession_from_A_to_M (AJ279554.1 From A to M)
-[a9/17c835] Submitted process > Accession_from_A_to_M (A12993.1 From A to M)
-[22/4cc396] Submitted process > Accession_from_A_to_M (A12992.1 From A to M)
-[96/f5db2c] Submitted process > Accession_from_A_to_M (A12991.1 From A to M)
-[aa/bee5d0] Submitted process > Accession_from_A_to_M (A12990.1 From A to M)
-[f9/adfd1c] Submitted process > Accession_from_A_to_M (A12989.1 From A to M)
-[ca/acccaa] Submitted process > Accession_from_A_to_M (A12988.1 From A to M)
-[1e/5a9d02] Submitted process > Accession_from_A_to_M (A12987.1 From A to M)
-[f3/814d66] Submitted process > Accession_from_A_to_M (A12986.1 From A to M)
-[9f/731d66] Submitted process > Accession_from_A_to_M (A12985.1 From A to M)
-[7e/28d8a1] Submitted process > Accession_from_A_to_M (A12997.1 From A to M)
-[17/f54a75] Submitted process > Accession_from_A_to_M (A12996.1 From A to M)
-[fd/9300ce] Submitted process > Accession_from_A_to_M (A12995.1 From A to M)
-[8d/e5a356] Submitted process > Accession_from_A_to_M (A12994.1 From A to M)
+[2f/d47291] Submitted process > Accession_from_N_to_Z (NM_001293170.1 From N to Z)
+[a9/d4bdf3] Submitted process > Accession_from_A_to_M (AF188530.1 From A to M)
+[a5/cb72fb] Submitted process > Accession_from_N_to_Z (NM_001199860.1 From N to Z)
+[eb/80a0f5] Submitted process > Accession_from_A_to_M (AF188126.1 From A to M)
+[a4/8658aa] Submitted process > Accession_from_N_to_Z (NM_001199861.1 From N to Z)
+[40/81aff1] Submitted process > Accession_from_A_to_M (AF004836.1 From A to M)
+[f1/42d99c] Submitted process > Accession_from_N_to_Z (NM_001199862.1 From N to Z)
+[84/91e30d] Submitted process > Accession_from_A_to_M (AF002816.1 From A to M)
+[29/a57564] Submitted process > Accession_from_N_to_Z (NM_001199863.1 From N to Z)
+[b7/b4efe6] Submitted process > Accession_from_A_to_M (AF002815.1 From A to M)
+[3d/29b342] Submitted process > Accession_from_N_to_Z (NM_003636.3 From N to Z)
+[24/f42a72] Submitted process > Accession_from_A_to_M (CS172270.1 From A to M)
+[c4/da21e8] Submitted process > Accession_from_N_to_Z (NM_172130.2 From N to Z)
+[18/52e93f] Submitted process > Accession_from_A_to_M (CS172261.1 From A to M)
+[f9/8adf4b] Submitted process > Accession_from_N_to_Z (NM_001142703.1 From N to Z)
+[c4/2e7145] Submitted process > Accession_from_N_to_Z (NM_001142704.1 From N to Z)
+[ae/743c51] Submitted process > Accession_from_A_to_M (AF188126.1 From A to M)
+[65/1bea5b] Submitted process > Accession_from_N_to_Z (NM_001220.4 From N to Z)
+[11/2c7532] Submitted process > Accession_from_A_to_M (M74217.1 From A to M)
+[fc/21704b] Submitted process > Accession_from_A_to_M (AY116592.1 From A to M)
+[15/8e6b6b] Submitted process > Accession_from_N_to_Z (NM_172078.2 From N to Z)
+[56/8b1361] Submitted process > Accession_from_N_to_Z (NM_172079.2 From N to Z)
+[60/566e5e] Submitted process > Accession_from_A_to_M (J04346.1 From A to M)
+[5c/9c113a] Submitted process > Accession_from_A_to_M (M74219.1 From A to M)
+[df/deefdf] Submitted process > Accession_from_N_to_Z (NM_172080.2 From N to Z)
+[8a/8c80f6] Submitted process > Accession_from_A_to_M (M74216.1 From A to M)
+[0c/574cb4] Submitted process > Accession_from_N_to_Z (NM_172081.2 From N to Z)
+[32/0cacbd] Submitted process > Accession_from_A_to_M (AY116593.1 From A to M)
+[24/b6fcf3] Submitted process > Accession_from_N_to_Z (NM_172082.2 From N to Z)
+[1e/c28f91] Submitted process > Accession_from_A_to_M (K02254.1 From A to M)
+[c3/e187b8] Submitted process > Accession_from_N_to_Z (NM_198947.3 From N to Z)
+[f8/be3590] Submitted process > Accession_from_A_to_M (M22308.1 From A to M)
+[9e/433e2d] Submitted process > Accession_from_N_to_Z (NM_172083.2 From N to Z)
+[db/d91b76] Submitted process > Accession_from_A_to_M (M87502.1 From A to M)
+[1a/de036f] Submitted process > Accession_from_N_to_Z (NM_172084.2 From N to Z)
+[1b/5b4ee0] Submitted process > Accession_from_A_to_M (M29287.1 From A to M)
+[66/4b092f] Submitted process > Accession_from_N_to_Z (NM_001363989.1 From N to Z)
+[a6/5129e4] Submitted process > Accession_from_A_to_M (M74218.1 From A to M)
+[17/d0388c] Submitted process > Accession_from_N_to_Z (NM_001363990.1 From N to Z)
+[be/ba4a8c] Submitted process > Accession_from_A_to_M (AF480296.1 From A to M)
+[6a/278758] Submitted process > Accession_from_N_to_Z (NM_015981.3 From N to Z)
+[ea/08473f] Submitted process > Accession_from_A_to_M (AF480295.1 From A to M)
+[b5/dc9734] Submitted process > Accession_from_N_to_Z (NM_171825.2 From N to Z)
+[aa/fddf21] Submitted process > Accession_from_N_to_Z (NM_001174053.1 From N to Z)
+[31/c50a1f] Submitted process > Accession_from_A_to_M (AF480294.1 From A to M)
+[f8/9da7b3] Submitted process > Accession_from_N_to_Z (NM_001174054.1 From N to Z)
+[a8/dada41] Submitted process > Accession_from_A_to_M (AF480293.1 From A to M)
+[ea/0b8e89] Submitted process > Accession_from_N_to_Z (NM_007595.5 From N to Z)
+[96/20e57c] Submitted process > Accession_from_A_to_M (AF480292.1 From A to M)
+[ad/c6659c] Submitted process > Accession_from_N_to_Z (NM_001164144.2 From N to Z)
+[a2/bb997d] Submitted process > Accession_from_A_to_M (AF480291.1 From A to M)
+[35/183893] Submitted process > Accession_from_N_to_Z (NM_001164145.2 From N to Z)
+[b3/b75e38] Submitted process > Accession_from_A_to_M (AF480290.1 From A to M)
+[5e/2bdfd1] Submitted process > Accession_from_N_to_Z (NM_032436.3 From N to Z)
+[eb/4b5df5] Submitted process > Accession_from_A_to_M (AF480289.1 From A to M)
+[95/c21549] Submitted process > Accession_from_N_to_Z (NM_174910.2 From N to Z)
+[cb/0b4cf1] Submitted process > Accession_from_A_to_M (AF480288.1 From A to M)
+[cb/51fad6] Submitted process > Accession_from_N_to_Z (NM_001122842.2 From N to Z)
+[b2/4cfd3c] Submitted process > Accession_from_A_to_M (AF480287.1 From A to M)
+[1d/e9c4c7] Submitted process > Accession_from_N_to_Z (NM_001199619.1 From N to Z)
+[30/52360f] Submitted process > Accession_from_A_to_M (AF480286.1 From A to M)
+[74/18f2d1] Submitted process > Accession_from_N_to_Z (NM_001199620.1 From N to Z)
+[d9/d5e183] Submitted process > Accession_from_A_to_M (AF480285.1 From A to M)
+[f2/ca80c5] Submitted process > Accession_from_N_to_Z (NM_001199621.1 From N to Z)
+[4f/72f6fb] Submitted process > Accession_from_A_to_M (AF480284.1 From A to M)
+[a6/9debfa] Submitted process > Accession_from_A_to_M (AF480283.1 From A to M)
+[6e/dabcf9] Submitted process > Accession_from_N_to_Z (NM_001199622.1 From N to Z)
+[f3/778496] Submitted process > Accession_from_N_to_Z (NM_017590.5 From N to Z)
+[04/df9e4d] Submitted process > Accession_from_A_to_M (AF480282.1 From A to M)
+[36/aa11c6] Submitted process > Accession_from_N_to_Z (NM_181782.4 From N to Z)
+[6e/5168f7] Submitted process > Accession_from_A_to_M (AF480281.1 From A to M)
+[d5/d86068] Submitted process > Accession_from_N_to_Z (NR_138070.1 From N to Z)
+[d0/c27cba] Submitted process > Accession_from_A_to_M (AF480280.1 From A to M)
+[d2/b7ba64] Submitted process > Accession_from_N_to_Z (X65939.1 From N to Z)
+[4a/e16862] Submitted process > Accession_from_A_to_M (AF480279.1 From A to M)
+[45/f67fa7] Submitted process > Accession_from_N_to_Z (X65938.1 From N to Z)
+[f0/45101f] Submitted process > Accession_from_A_to_M (AF480278.1 From A to M)
+[bc/2a8b97] Submitted process > Accession_from_N_to_Z (X65940.1 From N to Z)
+[4b/376ca3] Submitted process > Accession_from_A_to_M (AF480277.1 From A to M)
+[aa/c62be2] Submitted process > Accession_from_A_to_M (AF480276.1 From A to M)
+[d7/9cb16f] Submitted process > Accession_from_A_to_M (AF480275.1 From A to M)
+[67/52c365] Submitted process > Accession_from_N_to_Z (X14057.1 From N to Z)
+[53/196516] Submitted process > Accession_from_N_to_Z (X60546.1 From N to Z)
+[a6/d0000d] Submitted process > Accession_from_A_to_M (AF480274.1 From A to M)
+[bb/0214a5] Submitted process > Accession_from_A_to_M (AF480273.1 From A to M)
+[27/d42b56] Submitted process > Accession_from_N_to_Z (U65924.1 From N to Z)
+[df/3733cb] Submitted process > Accession_from_A_to_M (AF480272.1 From A to M)
+[98/c16c9e] Submitted process > Accession_from_A_to_M (AF480271.1 From A to M)
+[23/825bc8] Submitted process > Accession_from_N_to_Z (Z21640.1 From N to Z)
+[b0/af53ba] Submitted process > Accession_from_A_to_M (AF480270.1 From A to M)
+[b6/ea0eb7] Submitted process > Accession_from_N_to_Z (Z21639.1 From N to Z)
+[a4/b26107] Submitted process > Accession_from_A_to_M (AF480269.1 From A to M)
+[85/9422e0] Submitted process > Accession_from_N_to_Z (X00421.1 From N to Z)
+[6e/78e65c] Submitted process > Accession_from_A_to_M (AF480268.1 From A to M)
+[19/5ae688] Submitted process > Accession_from_N_to_Z (U88717.1 From N to Z)
+[02/520c63] Submitted process > Accession_from_A_to_M (AF480267.1 From A to M)
+[8d/07236b] Submitted process > Accession_from_N_to_Z (NC_029006.1 From N to Z)
+[a8/e8f21c] Submitted process > Accession_from_A_to_M (AF480266.1 From A to M)
+[c4/4af49b] Submitted process > Accession_from_A_to_M (AF480265.1 From A to M)
+[02/f99b29] Submitted process > Accession_from_N_to_Z (XM_001460179.1 From N to Z)
+[9a/608741] Submitted process > Accession_from_N_to_Z (XM_001449677.1 From N to Z)
+[35/ffe678] Submitted process > Accession_from_N_to_Z (XM_001445002.1 From N to Z)
+[84/90425a] Submitted process > Accession_from_A_to_M (AF480264.1 From A to M)
+[5a/dc26df] Submitted process > Accession_from_N_to_Z (XM_001441019.1 From N to Z)
+[65/94e14b] Submitted process > Accession_from_A_to_M (AF480263.1 From A to M)
+[07/8e1c83] Submitted process > Accession_from_A_to_M (CS172267.1 From A to M)
+[97/732cce] Submitted process > Accession_from_N_to_Z (XM_001437902.1 From N to Z)
+[4c/ce08ec] Submitted process > Accession_from_A_to_M (AF004836.1 From A to M)
+[85/0c1fb2] Submitted process > Accession_from_A_to_M (AF002816.1 From A to M)
+[ba/78b7a7] Submitted process > Accession_from_N_to_Z (XM_001424708.1 From N to Z)
+[e8/eb5e1d] Submitted process > Accession_from_A_to_M (AF002815.1 From A to M)
+[a0/d390ae] Submitted process > Accession_from_N_to_Z (XM_001424093.1 From N to Z)
+[8d/7b4ca6] Submitted process > Accession_from_A_to_M (CT868670.1 From A to M)
+[46/409ab7] Submitted process > Accession_from_A_to_M (CT868429.1 From A to M)
+[cc/f3cc3b] Submitted process > Accession_from_N_to_Z (NM_017590.5 From N to Z)
+[61/05ac25] Submitted process > Accession_from_A_to_M (CT868318.1 From A to M)
+[55/bdae7e] Submitted process > Accession_from_A_to_M (KM983332.1 From A to M)
+[a0/47f363] Submitted process > Accession_from_N_to_Z (NR_029944.1 From N to Z)
+[e0/5fc6c2] Submitted process > Accession_from_A_to_M (CT868274.1 From A to M)
+[76/4f2dde] Submitted process > Accession_from_A_to_M (CT868085.1 From A to M)
+[23/47c932] Submitted process > Accession_from_A_to_M (CT868068.1 From A to M)
+[72/05a642] Submitted process > Accession_from_A_to_M (CT868030.1 From A to M)
+[c0/c74f28] Submitted process > Accession_from_A_to_M (CT867988.1 From A to M)
+[c0/5fa5d1] Submitted process > Accession_from_A_to_M (CT868163.1 From A to M)
+[0e/4030f7] Submitted process > Accession_from_A_to_M (CT867991.1 From A to M)
+[72/9d1ff5] Submitted process > Accession_from_A_to_M (AX244968.1 From A to M)
+[8a/8a7aad] Submitted process > Accession_from_A_to_M (AX244967.1 From A to M)
+[17/844b48] Submitted process > Accession_from_A_to_M (AX244966.1 From A to M)
+[2b/7ae5cc] Submitted process > Accession_from_A_to_M (AX244965.1 From A to M)
+[1b/8969c5] Submitted process > Accession_from_A_to_M (AX244964.1 From A to M)
+[b6/aacf7b] Submitted process > Accession_from_A_to_M (AX244963.1 From A to M)
+[1a/0ad54d] Submitted process > Accession_from_A_to_M (AX244962.1 From A to M)
+[34/825c24] Submitted process > Accession_from_A_to_M (AX244961.1 From A to M)
+[b7/6d0741] Submitted process > Accession_from_A_to_M (LP969861.1 From A to M)
+[4d/25d807] Submitted process > Accession_from_A_to_M (LP969860.1 From A to M)
+[51/cbdc7a] Submitted process > Accession_from_A_to_M (LP969859.1 From A to M)
+[ad/bfcccb] Submitted process > Accession_from_A_to_M (LP969858.1 From A to M)
+[8b/31582f] Submitted process > Accession_from_A_to_M (LP969857.1 From A to M)
+[0d/ef37ae] Submitted process > Accession_from_A_to_M (LP969856.1 From A to M)
+[d3/0b68a8] Submitted process > Accession_from_A_to_M (LP969855.1 From A to M)
+[9c/595cf4] Submitted process > Accession_from_A_to_M (LP969854.1 From A to M)
+[39/54dd9e] Submitted process > Accession_from_A_to_M (LP969853.1 From A to M)
+[a7/540b58] Submitted process > Accession_from_A_to_M (LP969852.1 From A to M)
+[20/6cef13] Submitted process > Accession_from_A_to_M (LP969851.1 From A to M)
+[cf/96d587] Submitted process > Accession_from_A_to_M (LP969850.1 From A to M)
+[21/e0ffee] Submitted process > Accession_from_A_to_M (LP969849.1 From A to M)
+[1b/cafa7b] Submitted process > Accession_from_A_to_M (LP969848.1 From A to M)
+[90/a1dd1a] Submitted process > Accession_from_A_to_M (LP969847.1 From A to M)
+[d8/a6202e] Submitted process > Accession_from_A_to_M (LP969846.1 From A to M)
+[fe/b1922d] Submitted process > Accession_from_A_to_M (LP969845.1 From A to M)
+[e6/7dbf24] Submitted process > Accession_from_A_to_M (LP969844.1 From A to M)
+[d7/afa9cf] Submitted process > Accession_from_A_to_M (LP969843.1 From A to M)
+[ae/be0049] Submitted process > Accession_from_A_to_M (LP969842.1 From A to M)
+[07/f2bc21] Submitted process > Accession_from_A_to_M (LP969841.1 From A to M)
+[85/34fcb6] Submitted process > Accession_from_A_to_M (LP969840.1 From A to M)
+[53/c1e82a] Submitted process > Accession_from_A_to_M (LP969839.1 From A to M)
+[ec/5cb073] Submitted process > Accession_from_A_to_M (LP969838.1 From A to M)
+[1d/dcc3cc] Submitted process > Accession_from_A_to_M (LP969837.1 From A to M)
+[87/122147] Submitted process > Accession_from_A_to_M (LP969836.1 From A to M)
+[90/1d2102] Submitted process > Accession_from_A_to_M (LP969834.1 From A to M)
+[10/909855] Submitted process > Accession_from_A_to_M (LP969832.1 From A to M)
+[50/22f34d] Submitted process > Accession_from_A_to_M (AF338248.1 From A to M)
+[0a/730aa1] Submitted process > Accession_from_A_to_M (AF338247.1 From A to M)
+[9a/3efec9] Submitted process > Accession_from_A_to_M (AF338246.1 From A to M)
+[9d/e76138] Submitted process > Accession_from_A_to_M (AF338245.1 From A to M)
+[76/89769f] Submitted process > Accession_from_A_to_M (AF338244.1 From A to M)
+[51/f5fdfb] Submitted process > Accession_from_A_to_M (AF188530.1 From A to M)
+[09/1a388e] Submitted process > Accession_from_A_to_M (AF004836.1 From A to M)
+[20/eed338] Submitted process > Accession_from_A_to_M (AF002816.1 From A to M)
+[25/473320] Submitted process > Accession_from_A_to_M (AF002815.1 From A to M)
+[c8/9b42c6] Submitted process > Accession_from_A_to_M (FJ475056.1 From A to M)
+[9f/0e37b5] Submitted process > Accession_from_A_to_M (FJ475055.1 From A to M)
+[ed/1e97ff] Submitted process > Accession_from_A_to_M (JX417182.1 From A to M)
+[ba/62c8a6] Submitted process > Accession_from_A_to_M (JX417181.1 From A to M)
+[59/39d3a9] Submitted process > Accession_from_A_to_M (JX417180.1 From A to M)
+[bb/257cf2] Submitted process > Accession_from_A_to_M (JQ687100.1 From A to M)
+[cc/a8b30f] Submitted process > Accession_from_A_to_M (JQ687099.1 From A to M)
+[5c/4b76cc] Submitted process > Accession_from_A_to_M (GU144588.1 From A to M)
+[82/c6a46d] Submitted process > Accession_from_A_to_M (AY116592.1 From A to M)
+[37/b2e2f3] Submitted process > Accession_from_A_to_M (AF188126.1 From A to M)
+[00/c46801] Submitted process > Accession_from_A_to_M (AX244968.1 From A to M)
+[b6/bb3705] Submitted process > Accession_from_A_to_M (AX244967.1 From A to M)
+[de/99e4a0] Submitted process > Accession_from_A_to_M (AX244966.1 From A to M)
+[3b/f49753] Submitted process > Accession_from_A_to_M (AX244965.1 From A to M)
+[2d/497c6c] Submitted process > Accession_from_A_to_M (AX244964.1 From A to M)
+[f0/78a7a3] Submitted process > Accession_from_A_to_M (AX244963.1 From A to M)
+[e7/7d4c7a] Submitted process > Accession_from_A_to_M (AX244962.1 From A to M)
+[b2/5335ed] Submitted process > Accession_from_A_to_M (AX244961.1 From A to M)
+[13/303525] Submitted process > Accession_from_A_to_M (AJ279563.1 From A to M)
+[cb/5a0a8f] Submitted process > Accession_from_A_to_M (AJ279561.1 From A to M)
+[76/0115a7] Submitted process > Accession_from_A_to_M (AJ279560.1 From A to M)
+[02/cd3ae4] Submitted process > Accession_from_A_to_M (AJ279559.1 From A to M)
+[37/733b34] Submitted process > Accession_from_A_to_M (AJ279558.1 From A to M)
+[9d/6ac767] Submitted process > Accession_from_A_to_M (AJ279557.1 From A to M)
+[e4/945339] Submitted process > Accession_from_A_to_M (AJ279556.1 From A to M)
+[6b/fb1ed5] Submitted process > Accession_from_A_to_M (AJ279555.1 From A to M)
+[5b/9d3585] Submitted process > Accession_from_A_to_M (AJ279554.1 From A to M)
+[fe/7ab840] Submitted process > Accession_from_A_to_M (A12993.1 From A to M)
+[13/249f60] Submitted process > Accession_from_A_to_M (A12992.1 From A to M)
+[dd/c3d399] Submitted process > Accession_from_A_to_M (A12991.1 From A to M)
+[61/00710c] Submitted process > Accession_from_A_to_M (A12990.1 From A to M)
+[0e/0cb7fe] Submitted process > Accession_from_A_to_M (A12989.1 From A to M)
+[3e/f9d739] Submitted process > Accession_from_A_to_M (A12988.1 From A to M)
+[01/5abdef] Submitted process > Accession_from_A_to_M (A12987.1 From A to M)
+[3c/6eb1b2] Submitted process > Accession_from_A_to_M (A12986.1 From A to M)
+[72/fd4f14] Submitted process > Accession_from_A_to_M (A12985.1 From A to M)
+[b7/360459] Submitted process > Accession_from_A_to_M (A12997.1 From A to M)
+[c5/6a96a2] Submitted process > Accession_from_A_to_M (A12996.1 From A to M)
+[28/44e6b0] Submitted process > Accession_from_A_to_M (A12995.1 From A to M)
+[6f/6c84c9] Submitted process > Accession_from_A_to_M (A12994.1 From A to M)
 ```
 
 
 ## Files
 
 ```
-work/9f/731d66d43348d16da2464f683bce27/A12985.1.am.txt
-work/63/2600286205b806a309f92606d6981e/JX417182.1.am.txt
-work/98/8a0dabf4ada7e36f3bdd6b5c9f6727/XM_001437902.1.nz.txt
-work/38/d3fbe6d938462b54aece98ddbe9ef5/AF480293.1.am.txt
-work/38/95b6325e9c85a45fbc543786be50dc/AF480278.1.am.txt
-work/23/e75a7bc68afa141918f02fcfd0ab4e/K02254.1.am.txt
-work/23/2266509c9d90e4f6e30ab7ca8a99bb/NM_172130.2.nz.txt
-work/9a/605d71af233843b82f2795c41d55a6/AF480268.1.am.txt
-work/cb/d3b2c25e3c6a589531dddd62f4a16b/AF480273.1.am.txt
-work/57/57b29f4d5bcc742f825c19af0d43f3/KM983332.1.am.txt
-work/af/88c8e2bffdd3b612bc8e7ee5a995ff/J04346.1.am.txt
-work/97/a4523275097d6be2debcd426d71238/JQ687099.1.am.txt
-work/a8/531edf3f5e403bbb477cb844bac519/CT868318.1.am.txt
-work/a8/e5d622c7fc56257d27dd01f13a7795/AF480286.1.am.txt
-work/f8/6900bdf1d3ab9d1baf6aec3aeac136/NM_172079.2.nz.txt
-work/6d/465da9bc9c74f87d2f53645d95312c/AX244968.1.am.txt
-work/c3/42975fda70b9a3a917f86a57a636e3/AJ279558.1.am.txt
-work/c3/2c60b21ae88616f212743e043bb468/XM_001460179.1.nz.txt
-work/fb/171731d26d7e4a5edc62df78aa58b0/AF480263.1.am.txt
-work/f3/814d66b15d794ce4f16b5dd8b9a817/A12986.1.am.txt
-work/f3/c54d82711d257b78f90bba7dfa6cf5/AJ279556.1.am.txt
-work/f9/adfd1c6a0c82e7743af6fbe43bc136/A12989.1.am.txt
-work/1e/5a9d02709ef6e343a181b60b41e275/A12987.1.am.txt
-work/21/a27c4e34a2d4f705c4b1cb4c545b3e/AF480271.1.am.txt
-work/21/559a8b4f831d8c313a589f27830df5/LP969858.1.am.txt
-work/21/bb545d397ec05038d4a24a805b2c70/M74216.1.am.txt
-work/21/e8ce3a294f82c1d4ea69507f3896d1/AF004836.1.am.txt
-work/ee/ac4a469d85368d57ced8593926f37e/NM_198947.3.nz.txt
-work/ee/608763778224e671c6af68adcf7ff0/AX244963.1.am.txt
-work/07/2075a014bbf36c5727fa6e917d00c1/AF002816.1.am.txt
-work/5a/648c5d4275f09438f8a10d691c2677/AX244964.1.am.txt
-work/5a/b4a6a81a1bfd17b9804a2557bcd8d5/NC_029006.1.nz.txt
-work/59/85a79467b9b608c56d37cc19f84b91/XM_001424708.1.nz.txt
-work/d8/c4addcdc140fe3d50d163c132cd328/NM_001363990.1.nz.txt
-work/9c/ac9fee5aa689fea22e581878a912e0/X14057.1.nz.txt
-work/44/76db2f1b5b9c01628a4b2297971c75/LP969859.1.am.txt
-work/31/417e4bf02ba0694a864b551763b1ec/AX244966.1.am.txt
-work/43/558d04f65a2c6916a50108067d6288/AF480296.1.am.txt
-work/a3/b4ea01c0cb6ec140f830d02fddb61b/AF480283.1.am.txt
-work/82/126676e00183fa6e0146da5c42b944/NM_001164145.2.nz.txt
-work/17/efe2038b71057ca7007e2964988504/CT868085.1.am.txt
-work/17/f54a75f61cc6d8a60777afa08043b3/A12996.1.am.txt
-work/17/e3cf98ef7b853d7794557c08f8d940/AF480276.1.am.txt
-work/22/4cc396482b97b371562e92ad66c49b/A12992.1.am.txt
-work/39/998b52475c1a27c89c6582e250a389/LP969843.1.am.txt
-work/39/d89fabad93228e8ab9dd5f871358f0/LP969834.1.am.txt
-work/fc/f018bbffc441e877d9a93b623d1e54/CT868163.1.am.txt
-work/fc/b90833eb866cb134b89e38441069ae/AF480274.1.am.txt
-work/6a/fc7df4895893821cf60c4d518b7214/CT868068.1.am.txt
-work/6a/82526013b1fb82be33ee1410fdb1cf/AX244966.1.am.txt
-work/32/031a5847e041e681f48ccf4c96d8a8/AJ279563.1.am.txt
-work/3d/0084183ef203b74a1e22235231df22/AF188126.1.am.txt
-work/3d/e40b9915d74ef3e34cd7893aeb25be/LP969856.1.am.txt
-work/3d/416ae23534d943a78c2b8ad18e4f52/LP969847.1.am.txt
-work/3d/58329037d1b4a894ede9e732c7b4a8/AF480280.1.am.txt
-work/b5/8291ded11d0e0b2353c1d79b45809e/AX244962.1.am.txt
-work/e7/d131856f4d16f8defcdf5417a846b9/LP969851.1.am.txt
-work/9d/444d68927775fc1394078056f2be72/CS172267.1.am.txt
-work/95/a788712aa5ccb2cd4d5f761d700966/M74219.1.am.txt
-work/95/eaf120bcee78e723747eab57b6b4f5/NM_181782.4.nz.txt
-work/e4/54a6f76213e0317411a46805db399e/AF480275.1.am.txt
-work/e4/02876227a9744563872f7098f45b48/NR_029944.1.nz.txt
-work/8e/78aa20f957b8a0866900023f072946/NM_032436.3.nz.txt
-work/8e/b6aa19504b3b05bd0debef6b8a1833/NM_172084.2.nz.txt
-work/ff/5fbf1f3027414f4e3ed8709a42e7d3/AX244962.1.am.txt
-work/36/a2866bad3437990800096cf425ea52/X00421.1.nz.txt
-work/29/45aa49b57ba36e9a19daa7e3ce2978/CT868670.1.am.txt
-work/15/2fbd0e0e537019aa49bd35549c2ee8/AF002815.1.am.txt
-work/15/202768ef25cad7f230f9a7afac5583/AF480290.1.am.txt
-work/4b/3763a56f3fb7318e81d9fffb39991b/AF338248.1.am.txt
-work/50/8765336d4a625dca4ec020f6a6df61/NM_001199619.1.nz.txt
-work/1a/b09e6d7396cb40583b8c92b360e949/LP969852.1.am.txt
-work/1a/cf2c8775a4ae1be77eeb7a01a30e2d/AF188530.1.am.txt
-work/a2/43834685a47d39b8df02100f0e1544/AF338247.1.am.txt
-work/e6/e8d8d0ce5053926aecb62ea5a74865/AF480282.1.am.txt
-work/4c/49dd1a8ec60272b64b5fe0bc90b7ab/JX417181.1.am.txt
-work/c2/b0d06f6e1013245aa8a22950b81ad1/CT868030.1.am.txt
-work/5e/0614122299c3a65bbd758038125355/AJ279559.1.am.txt
-work/cf/50186aff387855264706b8ee4568ad/NM_174910.2.nz.txt
-work/05/8ac984bf1cd9a8c082f81b2d89e408/NM_015981.3.nz.txt
-work/05/c462102e6c74655b6340e822d2cf48/AF480288.1.am.txt
-work/0e/3c9a67c677b7eefd27153d34045ba5/AF480279.1.am.txt
-work/75/c9925cac8d1e84262ce7e834894a0e/AX244967.1.am.txt
-work/75/7bbbac20ccc36c32307dbf87dda374/LP969846.1.am.txt
-work/7e/28d8a1e4bfeb115264324a72affcf8/A12997.1.am.txt
-work/6e/4e091499d6fd6b3a7efd73f807e3ff/GU144588.1.am.txt
-work/8b/dfd40881a09e6e94fd6c0116f70305/NM_003636.3.nz.txt
-work/19/a08406d2d0fee76efa9d01bd0d932f/AX244961.1.am.txt
-work/ca/acccaa06e39e1a43ffc9d791fcddfa/A12988.1.am.txt
-work/1b/a16cc2f6cd8a016d658fcdb520a360/AF480292.1.am.txt
-work/1b/71faeca7c8e0b39cccaa82cadb9836/AF188126.1.am.txt
-work/09/bfa15f102fa084c29710c352e20241/LP969841.1.am.txt
-work/c8/b3a7e14adae4bbf69a11dbd609bfaf/NM_001199862.1.nz.txt
-work/96/61a11ab487a9a68c23e7e3527e2e48/AF002815.1.am.txt
-work/96/f5db2c225f181448488a82cae14595/A12991.1.am.txt
-work/96/1b5921954023e3801a54d9abc9c141/NM_172078.2.nz.txt
-work/76/fd42d7ac75e98f50a84a770b5d236c/FJ475056.1.am.txt
-work/4e/97c804cf0e8e1e57807f21df0b381a/AY116593.1.am.txt
-work/4e/17c8a3c02561b23799cc87aaac4e1c/NM_017590.5.nz.txt
-work/3e/fd7c0ca53764e7aed5b2fa33642dbb/XM_001445002.1.nz.txt
-work/37/6fe96f8f632cabae61aa8e1537749d/FJ475055.1.am.txt
-work/a6/7b75acc88cbe69def74a0ad96857a5/X60546.1.nz.txt
-work/dc/1d3122d3dae16385dbbef53a52de0a/NM_001199860.1.nz.txt
-work/12/24a83535a6ce397e0784005297b1ba/NM_001199861.1.nz.txt
-work/2b/a867ee0d4275fbfaf174fbbddc589f/AF480269.1.am.txt
-work/2b/c43bdedb059bb4821f87b9cf825d64/NM_001199863.1.nz.txt
-work/e0/66fb1bc276f1b7a5f6f8a86eea25df/AF338246.1.am.txt
-work/c1/26b006f85dcb044305d33c24a57560/NM_001142703.1.nz.txt
-work/49/992064df854ef4b79f061128f99d00/LP969837.1.am.txt
-work/49/ba212869284c57bf1b38c322e9823b/AF480267.1.am.txt
-work/3c/4115623a6aa1140014c79a6c5af3e1/AF480277.1.am.txt
-work/3c/b7a3328ca2149ab6a3fa8206688635/LP969842.1.am.txt
-work/3c/8484e3d7a70098675de4895aa583b5/NM_001142704.1.nz.txt
-work/2e/390f8c3641775548afb50f6f6dfa1d/LP969844.1.am.txt
-work/2e/bc03e172750e7d287784f09fbe8f58/JQ687100.1.am.txt
-work/b6/b72dcf0c0efe77e548e603ccfa409c/AX244961.1.am.txt
-work/4a/6cd4f0e2b702397872cd7199f654e2/AF004836.1.am.txt
-work/4a/d251f1b5a04c0f31fbb1f9390825ea/AY116592.1.am.txt
-work/a9/17c835fd6c24f43dc9290ee4696384/A12993.1.am.txt
-work/a9/83c99c217c0f12ff940281304cf409/LP969849.1.am.txt
-work/a9/72cfb68b9a62e8190f5c7939e1d188/AX244967.1.am.txt
-work/ed/fc7569cecf54a201db8b18add0f470/X65938.1.nz.txt
-work/da/777c9db6a0a02f294af105af0ca563/LP969850.1.am.txt
-work/e5/c0b7f97a65927ae3f9f98e598a218c/NM_001174054.1.nz.txt
-work/89/c99b6ce5a176ea3c957432f0592c88/AF480285.1.am.txt
-work/11/10d0f45ad267571a40eb5ed0972b6b/LP969855.1.am.txt
-work/aa/bee5d01361bac5fefb283026f57caf/A12990.1.am.txt
-work/aa/5f1ac88b0c6d11d2a4ac371d653ee5/AF480291.1.am.txt
-work/eb/97ca246213469c4c1dc3d57e3e01a3/AF480270.1.am.txt
-work/eb/4cde2b2a4976d904e56ab46cacebf3/M74218.1.am.txt
-work/3a/3d9f77497f0151f85d8743f1aabb10/AY116592.1.am.txt
-work/3a/a5fcd757a756af7273b3b84143f8ab/AJ279561.1.am.txt
-work/03/4626b1d0cb39df928a1b067c3d9e6c/AF480281.1.am.txt
-work/8a/87934deaed3d6dd22d039f86a876c7/LP969838.1.am.txt
-work/8a/9e82c832f95ba6e0eadabfe5cf58d5/M29287.1.am.txt
-work/9b/eb58d4a3a6b3b02c226726950b03e3/M74217.1.am.txt
-work/42/ed1d9e96f559504a8490ee3cb5b475/CT867991.1.am.txt
-work/42/fd50d9a8ae71a6d9a52135090c7bae/CS172261.1.am.txt
-work/42/6402f712b1a2514e04933713ab9c59/AX244963.1.am.txt
-work/42/1094ecbe18dd06c8a5212a2820c30d/NM_172080.2.nz.txt
-work/c5/a7c63fb1f7d22664549b195edf4a9a/AF188126.1.am.txt
-work/c5/020af5b7a30cf9c311586181289817/CS172270.1.am.txt
-work/90/b80783884feac9f07f3a0519cde026/AF480284.1.am.txt
-work/90/d82a7796569005db578faa058500af/LP969854.1.am.txt
-work/41/4936d61a1dbfdc09d4a62edcfa5f98/Z21640.1.nz.txt
-work/fd/9300ceede96c4f285dc94a68e99e61/A12995.1.am.txt
-work/bd/43a889997ec27adf7768c9c189a64a/AX244968.1.am.txt
-work/bf/6aae3a0bcdc45e32bb1e622ff5abe7/M22308.1.am.txt
-work/46/379960c0bd442adc8289e413e7c527/LP969839.1.am.txt
-work/72/ea8a7e4e63eb5495a7fdf3444656f0/AX244965.1.am.txt
-work/f7/9046a37f74ce4d9e681d1c2380ec4b/JX417180.1.am.txt
-work/14/6f36929c88db645e6c5bd5edfbb0d5/NM_001363989.1.nz.txt
-work/14/c6493b95ad0cc59623dce29f51a7b0/X65940.1.nz.txt
-work/1d/0dd6d012762578ea5e8eefd1cca94e/CT868429.1.am.txt
-work/d6/77546d3491d710700729600b35213f/LP969845.1.am.txt
-work/52/2557301792d94b87e1054e3e28dd90/AF480289.1.am.txt
-work/52/5669c19d6ab3e4bf32fca4f24fe734/AX244965.1.am.txt
-work/5b/d6f8735aeece8bee9942de32ace801/NM_001122842.2.nz.txt
-work/8c/d3cf3dd335e112fa2d145ba7954a4d/LP969836.1.am.txt
-work/04/8e5e3369d2c569945f24f81bf4da57/AF480294.1.am.txt
-work/04/09a66c95d9a643ca9892e38e1e770a/XM_001449677.1.nz.txt
-work/78/90d4bfeeea49f34e47d9f4411d39be/NR_138070.1.nz.txt
-work/80/a25941ca57c92ed04e5e5222368ae0/LP969861.1.am.txt
-work/ad/ee94294bf9c91a0966999f5e2c4e53/NM_001174053.1.nz.txt
-work/be/f45e5a2cf44d9333a30d492ebdfecc/LP969848.1.am.txt
-work/66/d4730ee7b044130c2b799423481182/LP969857.1.am.txt
-work/a0/7ead7f8893c8c0373e98b9949b3b27/X65939.1.nz.txt
-work/70/a440efa2a98c6a3178099dd7779037/AJ279554.1.am.txt
-work/6c/fa1a2a4ba8cfc64af9dabba82196cb/NM_001199621.1.nz.txt
-work/6c/fbaf3b40b3dfa6d85710d490658fe5/AX244964.1.am.txt
-work/ab/1b7fb7ffcf6c3ae853cd31b6f0ee4c/LP969840.1.am.txt
-work/7b/c332a3bb884e589efc4d9b79572838/NM_172081.2.nz.txt
-work/2c/3db3992609dd6cc101b31fed3379ae/U65924.1.nz.txt
-work/2c/e24826f603a8f42dd5b2433be9e6dd/AF480272.1.am.txt
-work/b1/a323556201ba1a1b62a056b681b780/NM_172083.2.nz.txt
-work/87/f23858683598e51521f74481f66cc6/AF480266.1.am.txt
-work/27/78f68b34f33c3570780c8264516834/XM_001441019.1.nz.txt
-work/27/1e17f31a8a303174bf289d8589017e/AF188530.1.am.txt
-work/0c/2fb52cf514f853c7b2afeeecb051fc/U88717.1.nz.txt
-work/fa/3ef7a39aaf9aef18ad0208e649f186/AJ279560.1.am.txt
-work/2a/3e240f4e8b9d3a079cbe973ebd2fa3/NM_001164144.2.nz.txt
-work/2a/887fba3df270e17f43f09bde2b52bb/AF338245.1.am.txt
-work/30/ef4148afdb830ee7546d45cf151b12/LP969832.1.am.txt
-work/8d/ad8caef81fff66d58d5ba7fb7f4f66/NM_001199620.1.nz.txt
-work/8d/e5a3567709d9e19c46e0f3f1232331/A12994.1.am.txt
-work/45/8a95e76e04215490327d0b1c46e4b3/CT867988.1.am.txt
-work/20/a2930e552217c95696a2ea18545c5d/AF004836.1.am.txt
-work/20/9a72e16c94b78ef809e23928bcbdc8/AF002816.1.am.txt
-work/2f/1986c6c728b6fe9d21c62f420f0e35/AF480287.1.am.txt
-work/2f/d65ce575ca71dd9dfd2064344b3b66/CT868274.1.am.txt
-work/24/3a3735b3744f3bbdd28172102cff48/AJ279557.1.am.txt
-work/24/a350700f618ca66cba9e6056be6c9a/LP969853.1.am.txt
-work/b3/fce85344d5fcb666cc38d0df2cbc40/Z21639.1.nz.txt
-work/5f/cd8842b3682109f493da295dea6c99/NM_171825.2.nz.txt
-work/34/f5ece3bb9eef356d012ebdec503df6/LP969860.1.am.txt
-work/a5/5687eb0bf324718847d90da9f6685b/NM_001220.4.nz.txt
-work/a5/3e5e2cab61cf080b3dc90611537380/M87502.1.am.txt
-work/b8/dc47702bac926d10d5880c40ef618a/AF002815.1.am.txt
-work/f6/9ca43a00fc258dea1591d350003e9b/AJ279555.1.am.txt
-work/f6/54eea1f4fa606f1907f63a5a2c235b/AF338244.1.am.txt
-work/f6/8a9e955c8438756d9239fd58a8d5e9/AF002816.1.am.txt
-work/c7/0078b3c0b6e3e04fa2ec82bd1164fc/AF480295.1.am.txt
-work/25/fb02915a3584826f5e05cb1d9750b8/NM_007595.5.nz.txt
-work/08/0cd6f6368e23bbb4c70a50b673dce6/NM_001293170.1.nz.txt
-work/4f/12ba4f11dd390870faacbaf56aa9b2/AF480264.1.am.txt
-work/47/5e4f03bf01b036297e78ffe825a7f9/AF480265.1.am.txt
-work/47/12c17a782e595d4f7ba9eb84b257aa/NM_172082.2.nz.txt
-work/47/90b5e764f101455c8e5c424d6de71a/XM_001424093.1.nz.txt
-work/99/8c7eab7e78b558f01e06b83452ece1/NM_001199622.1.nz.txt
-work/99/564792040110d4ce42fb591e7f244e/NM_017590.5.nz.txt
+work/9f/0e37b5541ac590de3f7ecc07399431/FJ475055.1.am.txt
+work/98/c16c9e90df2fc13cdc88c24fdd70ac/AF480271.1.am.txt
+work/23/47c932c26c47f807a3fe39f27437e9/CT868068.1.am.txt
+work/23/825bc8d181997d22285081916dc79c/Z21640.1.nz.txt
+work/9a/3efec956bd922a24b0f7f376a7dbac/AF338246.1.am.txt
+work/9a/6087416122156354161745fd0ea910/XM_001449677.1.nz.txt
+work/cb/51fad6baa75c60f7e7017fe2048330/NM_001122842.2.nz.txt
+work/cb/5a0a8f89d8826cb5d64c61382c7e2a/AJ279561.1.am.txt
+work/cb/0b4cf1f726640f37845211bdba8397/AF480288.1.am.txt
+work/6f/6c84c9217461142b3b078039a53a0e/A12994.1.am.txt
+work/97/732cce313529d20b705e0ad699cc34/XM_001437902.1.nz.txt
+work/a8/dada41079da4c90406b67060ba7704/AF480293.1.am.txt
+work/a8/e8f21c4dbbc34b964566a41005b1b8/AF480266.1.am.txt
+work/0d/ef37ae236c3916c3a44c39cf9fbbc9/LP969856.1.am.txt
+work/6b/fb1ed5821ffba7057640b40f9f19a0/AJ279555.1.am.txt
+work/18/52e93f0766db8dbb7f331700eab970/CS172261.1.am.txt
+work/f8/be35903156c952397d9517d673311f/M22308.1.am.txt
+work/f8/9da7b3f3ebfecd849646e6c7898129/NM_001174054.1.nz.txt
+work/ec/5cb073489c029aca99b7b1f532c67f/LP969838.1.am.txt
+work/c3/e187b852c6c44f91605ad085a9b698/NM_198947.3.nz.txt
+work/b7/b4efe6143a2cb46c39a3a7abb5006e/AF002815.1.am.txt
+work/b7/36045957baa1de254f65d7161f1c0a/A12997.1.am.txt
+work/b7/6d07418188c42b1010ad6fffe5c85c/LP969861.1.am.txt
+work/f3/778496023766f8349e4799278038af/NM_017590.5.nz.txt
+work/f9/8adf4b8cf0d7ab1e0c25c95446ee5a/NM_001142703.1.nz.txt
+work/1e/c28f91a5f9bba52f85b2179df37996/K02254.1.am.txt
+work/21/e0ffeed4b0f1d97fe2ab6fb346e913/LP969849.1.am.txt
+work/0a/730aa1dac769a0d9f26d1153baaafb/AF338247.1.am.txt
+work/07/8e1c83e91568b045c9fdbaf26149f3/CS172267.1.am.txt
+work/07/f2bc2185d495540a76fa0724182b7f/LP969841.1.am.txt
+work/5a/dc26df9eef7dcfac3a9045ebb99710/XM_001441019.1.nz.txt
+work/59/39d3a9be9bcff6bcdaeea29aaeecc4/JX417180.1.am.txt
+work/d8/a6202e7ce0c7a6c8154f5e6f43a788/LP969846.1.am.txt
+work/9c/595cf49b81003b9ed11842f8bbd2a2/LP969854.1.am.txt
+work/d7/afa9cf07ef50050e0b349352ecb3b9/LP969843.1.am.txt
+work/d7/9cb16f60cb6a671ff3b0772155f796/AF480275.1.am.txt
+work/5c/4b76cc6600040c86f878a0e4de8bcb/GU144588.1.am.txt
+work/5c/9c113ae7a2798f0341eeeb22efd5bc/M74219.1.am.txt
+work/4d/25d807035c261c0a40267591d0f1be/LP969860.1.am.txt
+work/ba/78b7a7350b48da07611b27c2917fae/XM_001424708.1.nz.txt
+work/ba/62c8a6246d141bdb6a9b975ce74192/JX417181.1.am.txt
+work/31/c50a1f251b00ccd942fbce9c55a833/AF480294.1.am.txt
+work/b0/af53ba1626aad9f0cc8245206f5ed7/AF480270.1.am.txt
+work/82/c6a46d5cfef82212d5a3845eb2e9eb/AY116592.1.am.txt
+work/17/d0388ced61ffc46464f4674b6cd933/NM_001363990.1.nz.txt
+work/17/844b4835ac8e4875e33344a43db255/AX244966.1.am.txt
+work/39/54dd9e9f55a14b95e55e37cb3278a9/LP969853.1.am.txt
+work/fc/21704b36fe608d83ae0040a3cf04c9/AY116592.1.am.txt
+work/a4/8658aa51fd9c25e8fa90a0d9778ffa/NM_001199861.1.nz.txt
+work/a4/b261079f36bd75d845fc003eb944fe/AF480269.1.am.txt
+work/6a/278758cf2ccb9891f38046ffc9d47e/NM_015981.3.nz.txt
+work/32/0cacbd394bdc516a46c5ebbd79b46e/AY116593.1.am.txt
+work/13/3035251c11d1b9d7dd38cc51213ace/AJ279563.1.am.txt
+work/13/249f60970678736275488f2fc9fa67/A12992.1.am.txt
+work/3d/29b342831726ebed901208f8afd960/NM_003636.3.nz.txt
+work/b5/dc9734df3b6376449d894804542c47/NM_171825.2.nz.txt
+work/e7/7d4c7a9c10186ddc2ac597e2ab125f/AX244962.1.am.txt
+work/9d/6ac767e28bcbf1c9123d5249498d65/AJ279557.1.am.txt
+work/9d/e7613877ef3377a4d9c51a6ea5bb3b/AF338245.1.am.txt
+work/95/c21549f095a99b20cfa2eaec7280a6/NM_174910.2.nz.txt
+work/f2/ca80c5f2293724256d37990c378c04/NM_001199621.1.nz.txt
+work/cc/a8b30f2a7c5011a6e16cd28308fc6f/JQ687099.1.am.txt
+work/cc/f3cc3bd1eadabcc46445e41661cc97/NM_017590.5.nz.txt
+work/e4/9453397c8940ae570392fcc4d43f0f/AJ279556.1.am.txt
+work/36/aa11c69d008a1734aa41d100464b8e/NM_181782.4.nz.txt
+work/29/a57564e1e2730dc0e74644ddab7825/NM_001199863.1.nz.txt
+work/d9/d5e183156ec3797a4aa4614c3b7c56/AF480285.1.am.txt
+work/15/8e6b6b9b97104188dea2a0e36fd37a/NM_172078.2.nz.txt
+work/4b/376ca3379423de75b7ef1df924519d/AF480277.1.am.txt
+work/c0/c74f289331e1ef0f22aa7d199236ca/CT867988.1.am.txt
+work/c0/5fa5d125705fa346b64d4136fe41fd/CT868163.1.am.txt
+work/50/22f34d7dd66a56c803b6bfd7de4287/AF338248.1.am.txt
+work/65/94e14bf21927b431cd63abfce665ff/AF480263.1.am.txt
+work/65/1bea5ba0fb4999ab853feac87f042d/NM_001220.4.nz.txt
+work/1a/0ad54d62be56e10670fe450abec913/AX244962.1.am.txt
+work/1a/de036fcc08234b14a55ff9bbd677e7/NM_172084.2.nz.txt
+work/bb/0214a5e6d347e3cf7cce79b84b54b4/AF480273.1.am.txt
+work/bb/257cf2d5df7d5f0ed1657e8a2a7ca7/JQ687100.1.am.txt
+work/bc/2a8b977758f97ed867fc85925928ae/X65940.1.nz.txt
+work/a2/bb997dc6c629a8e00bd62faf11b344/AF480291.1.am.txt
+work/10/909855565b5a2d0cc2a59614b1602d/LP969832.1.am.txt
+work/a7/540b58692787d53648ad11415ca342/LP969852.1.am.txt
+work/9e/433e2dc1329782c202b5299559dbc1/NM_172083.2.nz.txt
+work/e6/7dbf2471db7816170cf16b518ea281/LP969844.1.am.txt
+work/84/90425ae49f74a6ba0929dd0dcc7ba0/AF480264.1.am.txt
+work/84/91e30d1c645bb2f373183ef14c94bc/AF002816.1.am.txt
+work/4c/ce08ec81422521bfa875ed5f83f736/AF004836.1.am.txt
+work/5e/2bdfd1f93b0ebdcbf4c0f010f10556/NM_032436.3.nz.txt
+work/e8/eb5e1da396c97a9f0090014a58f5dd/AF002815.1.am.txt
+work/cf/96d587b6ed41efcfa711bbc3f8dc7f/LP969850.1.am.txt
+work/67/52c365d1a7d8c708c146d23d752ae4/X14057.1.nz.txt
+work/02/f99b29cab42b63a5fabb9906110d2c/XM_001460179.1.nz.txt
+work/02/520c6369e66197f04d68c408282408/AF480267.1.am.txt
+work/02/cd3ae4de22017f2005f32c9187aac9/AJ279559.1.am.txt
+work/61/05ac2535115bb2b4857f7227586a06/CT868318.1.am.txt
+work/61/00710c0d6f15c401e5ae6f90ff4579/A12990.1.am.txt
+work/0e/4030f77b3023e1987fe6b483c5b986/CT867991.1.am.txt
+work/0e/0cb7fe9b4cf82cb8552096dd5fdba1/A12989.1.am.txt
+work/6e/5168f72c1d4b849630787a1e2f01fa/AF480281.1.am.txt
+work/6e/dabcf9cd0122ef5298987bf88eb65d/NM_001199622.1.nz.txt
+work/6e/78e65c3b470a1f9f5f5ff78adcfcac/AF480268.1.am.txt
+work/8b/31582fd31122ef30480203be6f36f1/LP969857.1.am.txt
+work/19/5ae688c2059f21857500223eec7654/U88717.1.nz.txt
+work/56/8b13617df584f29ef7fea693357707/NM_172079.2.nz.txt
+work/1b/8969c5678e8547c2027a17ef8fd744/AX244964.1.am.txt
+work/1b/5b4ee0bd5944225140e562f2794ca3/M29287.1.am.txt
+work/1b/cafa7b65345faba26bbcca66f1e5d0/LP969848.1.am.txt
+work/09/1a388e01f59c0a5bd726cae037e758/AF004836.1.am.txt
+work/c8/9b42c6cac7c1cc7bc8efd76f708845/FJ475056.1.am.txt
+work/96/20e57cd0777b5fcaf803c13512c3ac/AF480292.1.am.txt
+work/76/89769fb23d4ed6d949a75b905bd9fd/AF338244.1.am.txt
+work/76/4f2ddeb0d404b16a3013a1fd934256/CT868085.1.am.txt
+work/76/0115a7c097c20d22aa0a95eaf7596d/AJ279560.1.am.txt
+work/d2/b7ba644e223b2f4d7a6322e4bafaef/X65939.1.nz.txt
+work/3e/f9d7396d9c2de352c29057dc41d668/A12988.1.am.txt
+work/37/733b34f16e41da7fa60ccb173e85f7/AJ279558.1.am.txt
+work/37/b2e2f32716df3099fbe24fadc5752f/AF188126.1.am.txt
+work/b2/4cfd3c54633349352cef6478c577f2/AF480287.1.am.txt
+work/b2/5335ed24edadb09d25565f2ece3160/AX244961.1.am.txt
+work/2d/497c6c3a91ed406c68543bb905598d/AX244964.1.am.txt
+work/de/99e4a06e52f8df0ecb2d0f7c4a3d6c/AX244966.1.am.txt
+work/a6/9debfa6aa0b9c35cc72cabf767b56d/AF480283.1.am.txt
+work/a6/d0000d0cfd9590b84df3e8b752a10e/AF480274.1.am.txt
+work/a6/5129e4027cd90c7d0012a0977058bd/M74218.1.am.txt
+work/2b/7ae5cc4f203a2ced4a9d16b502bd5c/AX244965.1.am.txt
+work/d5/d86068707932e15c6db4b3e2e93bd8/NR_138070.1.nz.txt
+work/e0/5fc6c2d326fa6effe359982b9ff1dd/CT868274.1.am.txt
+work/3c/6eb1b2c5fb40144897cd9c064876fb/A12986.1.am.txt
+work/00/c46801cddb2e424dcae0956dd55f00/AX244968.1.am.txt
+work/b6/aacf7b73925ec118827f419da11100/AX244963.1.am.txt
+work/b6/ea0eb716e73a1c4405deced82a584f/Z21639.1.nz.txt
+work/b6/bb37054a1a969fc12216ed7d74ef70/AX244967.1.am.txt
+work/4a/e1686242481cd5a855de64234855ac/AF480279.1.am.txt
+work/f0/78a7a356c792cef02a97b15433be4f/AX244963.1.am.txt
+work/f0/45101fe4e746f5151aebe1f129fab0/AF480278.1.am.txt
+work/a9/d4bdf366835c884e9c25203d531aba/AF188530.1.am.txt
+work/ed/1e97ffdde1343adf540d18bce9716c/JX417182.1.am.txt
+work/d3/0b68a8ec6bf65ffb0441ad0f025747/LP969855.1.am.txt
+work/11/2c7532490d9e1e07f184b0603dac46/M74217.1.am.txt
+work/aa/fddf215bfcad1a975086e7f150fa84/NM_001174053.1.nz.txt
+work/aa/c62be29839ad18b8c2aff223f78263/AF480276.1.am.txt
+work/60/566e5e783ff76619d0533a47aa7ecc/J04346.1.am.txt
+work/eb/80a0f5cb83c3d4d8f49d978cb28499/AF188126.1.am.txt
+work/eb/4b5df56fb1427f08f5b317c33aaabd/AF480289.1.am.txt
+work/51/cbdc7ae7292853201412b6a10440e2/LP969859.1.am.txt
+work/51/f5fdfbd25011fdf22353f90d210c15/AF188530.1.am.txt
+work/28/44e6b0590c3f3705ab43a4559526a2/A12995.1.am.txt
+work/8a/8c80f672d973cbee3f70776af76de3/M74216.1.am.txt
+work/8a/8a7aad2b9bb4249e7c395efbbeaec0/AX244967.1.am.txt
+work/c5/6a96a2749eee0a8c15f711c8b29303/A12996.1.am.txt
+work/90/1d2102d9a9f3a7ff247eecb1a723a4/LP969834.1.am.txt
+work/90/a1dd1ad23dc03a205ab7b0b0bc7b76/LP969847.1.am.txt
+work/74/18f2d1044a152c4d804cfc893a4234/NM_001199620.1.nz.txt
+work/c4/4af49ba1eb21f5a0e607fb8b3783bc/AF480265.1.am.txt
+work/c4/da21e8eab636833a3a96504321472f/NM_172130.2.nz.txt
+work/c4/2e7145ab2fab570aaf92b487a2e63e/NM_001142704.1.nz.txt
+work/46/409ab7831984e9eaa89a65e39d424c/CT868429.1.am.txt
+work/53/c1e82a46205c8a26f572e2dbfdeeaa/LP969839.1.am.txt
+work/53/196516fd61cdb1c91c7d6832548dda/X60546.1.nz.txt
+work/f1/42d99c6b1b8e416781f9d3cb76a384/NM_001199862.1.nz.txt
+work/df/deefdf9bd76171eaf20a516fa21dc7/NM_172080.2.nz.txt
+work/df/3733cb7803493010dac9d869bd25bb/AF480272.1.am.txt
+work/72/9d1ff5d9a2df122f6e6e82910a0e8f/AX244968.1.am.txt
+work/72/05a6428e7dca57fb26f6db400c126a/CT868030.1.am.txt
+work/72/fd4f144daf7419b70c54d3b03ae031/A12985.1.am.txt
+work/85/34fcb6f7de28227f6eaef9a7165aca/LP969840.1.am.txt
+work/85/0c1fb2f808d7dd5a15531030c6d1b2/AF002816.1.am.txt
+work/85/9422e0e412ca718402b4f4b0b1a4b9/X00421.1.nz.txt
+work/1d/e9c4c740f2f77a9529f5c7482b25e5/NM_001199619.1.nz.txt
+work/1d/dcc3cce09bb1f3bab997a739e75a67/LP969837.1.am.txt
+work/3b/f49753450bb301506862c05e9aa69e/AX244965.1.am.txt
+work/5b/9d358524fa6f2fc68d7cc0e00476eb/AJ279554.1.am.txt
+work/dd/c3d399fcae19a54e7dc6070ffdd402/A12991.1.am.txt
+work/04/df9e4d7984a709c06f104684e573dd/AF480282.1.am.txt
+work/ad/bfcccbdd79317638767d6dea00ca13/LP969858.1.am.txt
+work/ad/c6659ca3a513ab739821e940db2377/NM_001164144.2.nz.txt
+work/be/ba4a8c731279ccc19ace82c8ea4774/AF480296.1.am.txt
+work/66/4b092fe9bf74525298335cfb1e7db3/NM_001363989.1.nz.txt
+work/a0/47f36344ef6767830ecb2291419545/NR_029944.1.nz.txt
+work/a0/d390aeec4b56d75f2f6f4ae29344d6/XM_001424093.1.nz.txt
+work/ea/08473f770e43a54a8262971c45bcdc/AF480295.1.am.txt
+work/ea/0b8e89361facca38f680b56c57c954/NM_007595.5.nz.txt
+work/35/1838938f41a5d188776283040b278e/NM_001164145.2.nz.txt
+work/35/ffe678337791e0c49e58f3592b6984/XM_001445002.1.nz.txt
+work/55/bdae7e5cadf3f802bdfb6bb0924819/KM983332.1.am.txt
+work/87/12214773e8ac981c7a6c5f859df0cb/LP969836.1.am.txt
+work/27/d42b56450a3619e4153aee81f5a740/U65924.1.nz.txt
+work/0c/574cb4496656cb029df0909160ef3b/NM_172081.2.nz.txt
+work/db/d91b761d0d9e8e6afeac8b0cd05515/M87502.1.am.txt
+work/30/52360f724f37995a9eeb9d32a05976/AF480286.1.am.txt
+work/8d/07236b49b603bfd5cdc6b02b6eb6b1/NC_029006.1.nz.txt
+work/8d/7b4ca692906f56e5b025c3e76e1e67/CT868670.1.am.txt
+work/45/f67fa732be11fbd1ba46493b69023d/X65938.1.nz.txt
+work/20/eed33815d7789afd61cd8a9ed11d70/AF002816.1.am.txt
+work/20/6cef13db6c086bec239ee6f553a4bf/LP969851.1.am.txt
+work/2f/d472910d440cb723c6d2c27384aed3/NM_001293170.1.nz.txt
+work/24/f42a721830b391622af813935ddf59/CS172270.1.am.txt
+work/24/b6fcf39ac6cdab5b43474e3cdb5e12/NM_172082.2.nz.txt
+work/ae/743c51297b8f6780feb28bafec6196/AF188126.1.am.txt
+work/ae/be00499681abcf3717f6a2cdb8bb6d/LP969842.1.am.txt
+work/b3/b75e3820df8c18aa5f4034b1810666/AF480290.1.am.txt
+work/01/5abdef31112eb16c891f49506e846f/A12987.1.am.txt
+work/fe/7ab8408e783ded34615ef622b9f8b4/A12993.1.am.txt
+work/fe/b1922dfe67dfb670ef3cc185e06b9f/LP969845.1.am.txt
+work/34/825c24b4b425cfc918e6fd315f95a8/AX244961.1.am.txt
+work/a5/cb72fb13d76396f7becf96a50de18b/NM_001199860.1.nz.txt
+work/25/473320965571b4a4489b0b0650d46c/AF002815.1.am.txt
+work/4f/72f6fb1c7ca5ec06c7dfc6a7a2a285/AF480284.1.am.txt
+work/40/81aff1c250c063ade250702609a79c/AF004836.1.am.txt
+work/d0/c27cba7450eae59f50ab4562edbee2/AF480280.1.am.txt
 ```
 
 

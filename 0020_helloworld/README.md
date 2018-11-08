@@ -21,7 +21,7 @@ Ainsi, la simple commande `println` fonction and un workflow nextflow
 ```
 ../bin/nextflow run workflow.nf
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [lonely_curie] - revision: 186ffc1576
+Launching `workflow.nf` [nasty_hopper] - revision: 186ffc1576
 Hello world!
 ```
 

@@ -41,7 +41,7 @@ chacun de ces fichiers sert de `input` pour le workflow.
 ```
 ../bin/nextflow run -resume -with-trace trace.tsv -with-report report.html -with-timeline timeline.html -with-dag flowchart.png workflow.nf --acns '../data/list*.acns.txt'
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [soggy_lovelace] - revision: 5846808ae4
+Launching `workflow.nf` [furious_linnaeus] - revision: 5846808ae4
 [warm up] executor > local
 [e9/198d97] Submitted process > sortAcns (sorting list3.acns.txt)
 [23/95a314] Submitted process > sortAcns (sorting list4.acns.txt)
@@ -74,9 +74,9 @@ work/52/95f8d7db3744912d140c6a670847c6/list1.acns.txt
 
 ```
 task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	rss	vmem	rchar	wchar
-1	e9/198d97	15626	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-11-07 10:10:29.508	547ms	82ms	0.0%	0	0	0	0
-2	23/95a314	15640	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-11-07 10:10:29.671	755ms	51ms	0.0%	0	0	0	0
-3	a7/3e8610	15750	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-11-07 10:10:30.353	405ms	45ms	0.0%	0	0	0	0
-4	52/95f8d7	15768	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-11-07 10:10:30.442	330ms	28ms	0.0%	0	0	0	0
+1	e9/198d97	11692	sortAcns (sorting list3.acns.txt)	COMPLETED	0	2018-11-08 15:29:02.171	787ms	96ms	0.0%	0	0	0	0
+2	23/95a314	11701	sortAcns (sorting list4.acns.txt)	COMPLETED	0	2018-11-08 15:29:02.285	884ms	50ms	0.0%	0	0	0	0
+3	a7/3e8610	11839	sortAcns (sorting list2.acns.txt)	COMPLETED	0	2018-11-08 15:29:03.008	609ms	51ms	0.0%	0	0	0	0
+4	52/95f8d7	11862	sortAcns (sorting list1.acns.txt)	COMPLETED	0	2018-11-08 15:29:03.180	452ms	54ms	0.0%	0	0	0	0
 ```
 

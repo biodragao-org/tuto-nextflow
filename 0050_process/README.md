@@ -33,28 +33,28 @@ On precise le fichier de sortie dans `output`
 ```
 ../bin/nextflow run workflow.nf 
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [ridiculous_cray] - revision: b3e694b129
+Launching `workflow.nf` [sleepy_heisenberg] - revision: b3e694b129
 [warm up] executor > local
-[af/38e81b] Submitted process > sayHello (saying Hello to world)
+[be/a552b8] Submitted process > sayHello (saying Hello to world)
 ../bin/nextflow run workflow.nf  --salutation Bonjour --name Monde
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [friendly_miescher] - revision: b3e694b129
+Launching `workflow.nf` [jolly_pesquet] - revision: b3e694b129
 [warm up] executor > local
-[07/b91b14] Submitted process > sayHello (saying Bonjour to Monde)
+[96/bd993a] Submitted process > sayHello (saying Bonjour to Monde)
 ../bin/nextflow run -config my.config workflow.nf  
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [pedantic_albattani] - revision: b3e694b129
+Launching `workflow.nf` [kickass_shaw] - revision: b3e694b129
 [warm up] executor > local
-[26/1c5916] Submitted process > sayHello (saying Hola to Muchachos)
+[86/5310a3] Submitted process > sayHello (saying Hola to Muchachos)
 ```
 
 
 ## Files
 
 ```
-work/af/38e81b7186a90bcb59833c8686c299/message.txt
-work/07/b91b14135b6cef71b523a1a2cc5582/message.txt
-work/26/1c5916482ee0ab0f40ef983b4d4e5b/message.txt
+work/96/bd993a9d561b6ad94f7a9e5e418e2d/message.txt
+work/86/5310a324a0728b1635cbf68676092e/message.txt
+work/be/a552b8fefa4ef34e51593165629a84/message.txt
 ```
 
 

@@ -22,11 +22,11 @@
  13   	
  14   	 if( params.web == 'wget' )
  15   		"""
- 16   		../bin/ncbiwget "${acn}" > "${acn}.fa" 
+ 16   		wget -O "${acn}.fa"   "https://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${acn}&rettype=fasta"
  17   		"""
  18   	else  if( params.web == 'curl' )
  19   		"""
- 20   		../bin/ncbicurl "${acn}" > "${acn}.fa" 
+ 20   		curl -o "${acn}.fa" -f -L  "https://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${acn}&rettype=fasta"
  21   		"""
  22   	else
  23   		 error "Invalid alignment mode: ${params.web}"
@@ -40,45 +40,26 @@
 ```
 ../bin/nextflow run workflow.nf --acns '../data/list1.acns.txt' --web wget
 N E X T F L O W  ~  version 0.31.1
-Launching `workflow.nf` [big_spence] - revision: 97626d9205
+Launching `workflow.nf` [jolly_mahavira] - revision: cfa4a30e81
 [warm up] executor > local
-[a5/696294] Submitted process > fetchAcn (download NM_017590.5 using wget)
-ERROR ~ Error executing process > 'fetchAcn (download NM_017590.5 using wget)'
-
-Caused by:
-  Process `fetchAcn (download NM_017590.5 using wget)` terminated with an error exit status (1)
-
-Command executed:
-
-  ../bin/ncbiwget "NM_017590.5" > "NM_017590.5.fa"
-
-Command exit status:
-  1
-
-Command output:
-  (empty)
-
-Command error:
-  .command.sh: line 2: ../bin/ncbiwget: No such file or directory
-
-Work dir:
-  /home/lindenb/src/tuto-nextflow/0200_conditional/work/a5/696294fa13fd5d6905c3314dedb846
-
-Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
-
- -- Check '.nextflow.log' file for details
-[55/4b43ae] Submitted process > fetchAcn (download LP969861.1 using wget)
-WARN: Killing pending tasks (1)
-Makefile:4: recipe for target 'all' failed
-make[1]: *** [all] Error 1
+[8f/c83e00] Submitted process > fetchAcn (download NM_017590.5 using wget)
+[38/35e945] Submitted process > fetchAcn (download LP969861.1 using wget)
+../bin/nextflow run workflow.nf --acns '../data/list1.acns.txt' --web curl
+N E X T F L O W  ~  version 0.31.1
+Launching `workflow.nf` [amazing_cray] - revision: cfa4a30e81
+[warm up] executor > local
+[7e/ff8043] Submitted process > fetchAcn (download NM_017590.5 using curl)
+[48/89adbd] Submitted process > fetchAcn (download LP969861.1 using curl)
 ```
 
 
 ## Files
 
 ```
-work/55/4b43ae188a68876305968768bb7cc6/LP969861.1.fa
-work/a5/696294fa13fd5d6905c3314dedb846/NM_017590.5.fa
+work/38/35e94547d342d79d500157a5b4d315/LP969861.1.fa
+work/48/89adbdb2a10b4b18e217dd5f751350/LP969861.1.fa
+work/7e/ff8043f3221288dee510bb06684998/NM_017590.5.fa
+work/8f/c83e00ca56222c5e48602d6a75da41/NM_017590.5.fa
 ```
 
 
