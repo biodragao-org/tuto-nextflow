@@ -1,4 +1,0 @@
-#!/bin/bash
-
- curl -f -L  "https://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${1}&rettype=fasta" || \
-	(echo ">$1";seq 1 `echo "$1" | sha1sum  | tr -d 'a-z -' | cut -c1-2` | while read C; do echo -n N ; done;echo)

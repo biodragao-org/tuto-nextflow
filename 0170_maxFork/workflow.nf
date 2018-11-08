@@ -56,7 +56,7 @@ process eachAcn {
 		file("${acn}.fa")
 	script:
 	"""
-	../bin/ncbicurl ${acn} > "${acn}.fa"
+ 	curl -o "${acn}.fa" -f -L  "https://www.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=${acn}&rettype=fasta" 
 	"""
 	}
 
